@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Diferenciais from '../components/Diferenciais.astro';
+import SobreResumo from '../components/SobreResumo.astro';
+import ServicosHome from '../components/ServicosHome.astro';
+import Depoimentos from '../components/Depoimentos.astro';
+import CTAFinal from '../components/CTAFinal.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_CONFIG } from '../data/config';
+---
+
+<Layout
+  title={`Aluguel de Caçamba | ${SITE_CONFIG.name}`}
+  description={SITE_CONFIG.description}
+>
+  <Header />
+
+  <main>
+    <Hero />
+    <Diferenciais />
+    <SobreResumo />
+    <ServicosHome />
+    <Depoimentos />
+    <CTAFinal />
+  </main>
+
+  <Footer />
+</Layout>

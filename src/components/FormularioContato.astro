@@ -1,0 +1,116 @@
+---
+import { SITE_CONFIG } from '../data/config';
+
+interface Props {
+  variant?: 'page' | 'inline';
+}
+
+const { variant = 'page' } = Astro.props;
+
+const paddingClasses = variant === 'page' ? 'p-8 md:p-12' : 'p-6 md:p-10';
+---
+
+<form
+  class={`rounded-2xl bg-white border border-gray-200 ${paddingClasses} shadow-lg`}
+  action="/contato"
+  method="POST"
+  data-netlify="true"
+  name="orcamento-cacamba"
+  netlify-honeypot="bot-field"
+>
+  <!-- Honeypot anti-spam -->
+  <p class="hidden">
+    <label>Não preencha: <input name="bot-field" /></label>
+  </p>
+
+  <div class="space-y-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">
+          Nome completo
+        </label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          autocomplete="name"
+          class="w-full rounded-xl border border-gray-300 px-5 py-4 text-gray-900 placeholder-gray-400 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all min-h-[56px]"
+          placeholder="Seu nome"
+        />
+      </div>
+
+      <div>
+        <label for="telefone" class="block text-sm font-semibold text-gray-700 mb-2">
+          Telefone / WhatsApp
+        </label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          required
+          autocomplete="tel"
+          inputmode="tel"
+          class="w-full rounded-xl border border-gray-300 px-5 py-4 text-gray-900 placeholder-gray-400 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all min-h-[56px]"
+          placeholder={SITE_CONFIG.phone}
+        />
+      </div>
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+        E-mail
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        class="w-full rounded-xl border border-gray-300 px-5 py-4 text-gray-900 placeholder-gray-400 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all min-h-[56px]"
+        placeholder="seu@email.com"
+      />
+    </div>
+
+    <div>
+      <label for="servico" class="block text-sm font-semibold text-gray-700 mb-2">
+        Serviço de interesse
+      </label>
+      <select
+        id="servico"
+        name="servico"
+        class="w-full rounded-xl border border-gray-300 px-5 py-4 text-gray-900 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all bg-white min-h-[56px]"
+      >
+        <option value="">Selecione uma opção</option>
+        <option value="cacamba-3m3">Caçamba 3m³</option>
+        <option value="cacamba-5m3">Caçamba 5m³</option>
+        <option value="cacamba-7m3">Caçamba 7m³</option>
+        <option value="retirada-entulho">Retirada de Entulho</option>
+        <option value="nao-sei">Ainda não sei</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="mensagem" class="block text-sm font-semibold text-gray-700 mb-2">
+        Mensagem
+      </label>
+      <textarea
+        id="mensagem"
+        name="mensagem"
+        rows="4"
+        class="w-full rounded-xl border border-gray-300 px-5 py-4 text-gray-900 placeholder-gray-400 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all resize-none"
+        placeholder="Descreva sua obra, localidade e prazo..."
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full rounded-xl bg-primary px-8 py-5 text-base font-bold text-accent hover:bg-yellow-300 transition-colors shadow-lg shadow-primary/20 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 min-h-[56px]"
+    >
+      Solicitar Orçamento Grátis
+    </button>
+
+    <p class="text-xs text-gray-500 text-center mt-4">
+      Responderemos em até 30 minutos via WhatsApp ou e-mail.
+    </p>
+  </div>
+</form>

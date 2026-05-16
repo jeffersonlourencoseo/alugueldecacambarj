@@ -1,0 +1,59 @@
+---
+const servicos = [
+  {
+    titulo: 'Caçamba 3m³',
+    descricao: 'Ideal para pequenas reformas residenciais e limpeza de terrenos. Compacta e prática.',
+    icone: '🏠',
+  },
+  {
+    titulo: 'Caçamba 5m³',
+    descricao: 'Perfeita para obras médias e reformas comerciais. Nosso modelo mais solicitado.',
+    icone: '🏗️',
+  },
+  {
+    titulo: 'Caçamba 7m³',
+    descricao: 'Para grandes obras e demolições. Alta capacidade de armazenamento de entulho.',
+    icone: '🏭',
+  },
+  {
+    titulo: 'Retirada de Entulho',
+    descricao: 'Transporte e descarte correto do resíduo. Documentação e licença ambiental inclusa.',
+    icone: '🚛',
+  },
+];
+---
+
+<section id="servicos" class="py-24 md:py-32 bg-gray-50">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="max-w-3xl mb-16">
+      <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+        Nossos Serviços
+      </span>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+        Soluções Completas em Locação
+      </h2>
+
+      <p class="text-lg text-gray-600">
+        Escolha o tamanho ideal para sua obra e conte com entrega rápida,
+        retirada pontual e preço transparente.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+      {servicos.map((servico) => (
+        <div class="group rounded-2xl bg-white p-10 md:p-12 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+          <div class="mb-6 text-4xl">{servico.icone}</div>
+
+          <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+            {servico.titulo}
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed">
+            {servico.descricao}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
