@@ -6,23 +6,23 @@ export const SITE_CONFIG = {
   locale: 'pt_BR',
 
   // NAP (Name, Address, Phone) - Dados locais
-  phone: '(11) 98765-4321',
-  phoneRaw: '+5511987654321',
-  phoneE164: '5511987654321',
-  whatsapp: '5511987654321',
+  phone: '(21) 99775-1577',
+  phoneRaw: '+5521997751577',
+  phoneE164: '5521997751577',
+  whatsapp: '5521997751577',
   email: 'contato@alugueldecacambario.com.br',
 
   address: {
-    streetAddress: 'Rua das Caçambas, 123',
-    addressLocality: 'São Paulo',
-    addressRegion: 'SP',
-    postalCode: '01234-567',
+    streetAddress: 'Av. Brasil, 11201 - Penha Circular',
+    addressLocality: 'Rio de Janeiro',
+    addressRegion: 'RJ',
+    postalCode: '21012-351',
     addressCountry: 'BR',
   },
 
   geo: {
-    latitude: '-23.550520',
-    longitude: '-46.633308',
+    latitude: '-22.8383',
+    longitude: '-43.2814',
   },
 
   hours: [
@@ -35,13 +35,13 @@ export const SITE_CONFIG = {
   ],
 
   social: {
-    whatsapp: 'https://wa.me/5511987654321?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba.',
+    whatsapp: 'https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21',
   },
 
   description:
-    'Aluguel de caçambas estacionárias com entrega em 24h, preço justo e documentação ambiental. Retirada de entulho para obras e reformas na Região Metropolitana de São Paulo.',
+    'Aluguel de caçambas estacionárias com entrega em 24h, preço justo e documentação ambiental. Retirada de entulho para obras e reformas no Rio de Janeiro - RJ.',
 
-  ogImage: '/og-image.jpg',
+  ogImage: '/og-image.svg',
 
   keywords: [
     'aluguel de caçamba',

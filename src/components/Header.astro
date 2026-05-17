@@ -1,6 +1,11 @@
 ---
+import { SITE_CONFIG } from '../data/config';
+
+const waUrl = SITE_CONFIG.social.whatsapp;
+
 const navLinks = [
-  { href: '/sobre', label: 'Sobre' },
+  { href: '/', label: 'Início' },
+  { href: '/sobre', label: 'Quem Somos' },
   { href: '/servicos', label: 'Serviços' },
   { href: '/blog', label: 'Blog' },
   { href: '/contato', label: 'Contato' },
@@ -28,7 +33,9 @@ const navLinks = [
 
       <div class="flex items-center gap-4">
         <a
-          href="/contato"
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           class="hidden sm:inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-bold text-accent hover:bg-yellow-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Solicitar Orçamento
@@ -67,7 +74,9 @@ const navLinks = [
           </a>
         ))}
         <a
-          href="/contato"
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           class="mt-2 inline-flex items-center justify-center rounded-lg bg-primary px-4 py-3 text-base font-bold text-accent hover:bg-yellow-300 transition-colors"
         >
           Solicitar Orçamento

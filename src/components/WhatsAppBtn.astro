@@ -5,7 +5,7 @@ interface Props {
   mensagem?: string;
 }
 
-const { mensagem = 'Olá! Gostaria de solicitar um orçamento de caçamba.' } = Astro.props;
+const { mensagem = 'Olá, achei vocês no google e gostaria de mais informações!' } = Astro.props;
 
 const url = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(mensagem)}`;
 ---
