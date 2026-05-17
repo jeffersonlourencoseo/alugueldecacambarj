@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://alugueldecacambario.com.br/sitemap.xml
