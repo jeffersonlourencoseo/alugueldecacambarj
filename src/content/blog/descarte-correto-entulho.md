@@ -1,4 +1,4 @@
----
+﻿---
 title: "Descarte Correto de Entulho: Guia Completo de Obrigações, Leis e Boas Práticas no RJ"
 description: "Entenda toda a legislação sobre descarte de entulho no Rio de Janeiro, a importância da caçamba estacionária licenciada, como evitar multas ambientais e o que acontece com seu entulho depois da retirada."
 pubDate: 2026-05-10
@@ -93,7 +93,7 @@ Reduzir o volume de resíduos não recicláveis diminui o número de caçambas n
 CDF, nota fiscal e licença ambiental devem ser arquivados em pasta física e digital. O prazo prescricional para autuações ambientais é de 5 anos. Se um fiscal aparecer daqui a 3 anos perguntando onde foi parar o entulho de 2026, você precisa comprovar.
 
 ### 4. Contrate empresas com frota própria e licença em dia
-Empresas que terceirizam 100% do transporte têm menos controle sobre o destino final. Prefira empresas com frota própria, que podem rastrear cada viada e garantir que o entulho chegou ao aterro correto.
+Empresas que terceirizam 100% do transporte têm menos controle sobre o destino final. Prefira empresas com frota própria, que podem rastrear cada viagem e garantir que o entulho chegou ao aterro correto.
 
 ### 5. Capacite a equipe sobre separação e descarte
 Operários que separam corretamente no momento do descarte evitam retrabalho e contaminação de lotes recicláveis. Inclua a gestão de resíduos no treinamento de integração de novos funcionários.
@@ -109,7 +109,7 @@ O custo do **descarte de entulho** varia conforme o volume, a distância até o 
 | Aluguel caçamba 7m³ + descarte | R$ 600 – R$ 800 | Entrega, retirada, CDF, NF |
 | Descarte clandestino (ilegal) | R$ 150 – R$ 300 | Nada. Risco de multa de R$ 50.000 |
 
-**A matemática é simples**: pagar R$ 200 a mais por um serviço regular evita uma multa de R$ 50.000. O descarte correto é, na verdade, o opção mais barata.
+**A matemática é simples**: pagar R$ 200 a mais por um serviço regular evita uma multa de R$ 50.000. O descarte correto é, na verdade, a opção mais barata.
 
 ## Impacto ambiental do descarte incorreto no Rio de Janeiro
 
@@ -121,6 +121,56 @@ O Rio de Janeiro sofre historicamente com os efeitos do descarte irregular de en
 - **Degradação de áreas verdes**: terrenos baldios viram "miniaterros clandestinos", atraíndo insetos e vetores
 
 Cada obra que faz o descarte correto contribui para reduzir esses problemas. A construção civil é parte da solução, não do problema.
+
+## O que acontece em aterros de construção civil licenciados no RJ?
+
+Depois da **remoção de resíduos pós obra**, o caminhão não para em qualquer lugar. Ele segue para **aterros licenciados** pelo INEA e pela Prefeitura do Rio, estruturas preparadas para receber, tratar e destinar toneladas de resíduos da construção civil sem contaminar o solo ou a água subterrânea.
+
+### Recebimento e pesagem
+Na entrada do aterro, cada carga passa por uma balança rodoviária. O peso bruto, a tara do veículo e o peso líquido do entulho são registrados em sistema informatizado. Esse controle permite rastrear exatamente quanto material cada obra enviou e cruzar os dados com o Certificado de Destinação Final.
+
+### Triagem mecânica e manual
+O entulho é descarregado em uma área de triagem, onde máquinas e operadores separam os resíduos por tipologia:
+
+- **Concreto e alvenaria**: vão direto para britagem e posterior reutilização como agregado reciclado.
+- **Metais ferrosos**: são retirados por ímãs industriais e destinados às siderúrgicas.
+- **Madeira, plástico e vidro**: separados para cooperativas e indústrias recicladoras.
+- **Resíduos perigosos**: tintas, solventes, produtos químicos ou materiais contaminados são identificados e encaminhados para tratamento térmico ou químico especializado.
+
+### Disposição final segura
+O que não pode ser reciclado é disposto em células de aterro com impermeabilização de geomembranas de polietileno de alta densidade, drenagem de lixiviado e monitoramento contínuo de lençóis freáticos. Essa barreira evita que metais pesados, cianetos ou outros poluentes migrem para o solo e para rios próximos.
+
+### Licenciamento ambiental
+Os **aterros licenciados** no Rio de Janeiro precisam manter a Licença de Operação (LO) do INEA em dia, além de autorização da Secretaria Municipal de Meio Ambiente. Fiscalizações periódicas verificam se o aterro cumpre limites de capacidade, se possui plano de gerenciamento de resíduos e se devolve à cidade dados sobre o volume recebido. O **transporte de entulho** só é considerado legal quando o destino final está dentro dessa cadeia regulamentada.
+
+## Como denunciar descarte irregular de entulho no Rio de Janeiro
+
+Apesar das leis rigorosas, o descarte clandestino ainda ocorre em terrenos baldios, margens de rios e áreas de preservação. A população e os profissionais da construção civil podem — e devem — agir.
+
+### Canais de denúncia
+
+- **Disque Denúncia Rio**: ligue para 2253-1177 ou acesse o site disquedenuncia.org.br para reportar crimes ambientais com anonimato.
+- **INEA**: denúncias pelo formulário online do Instituto Estadual do Ambiente ou pelo telefone de ouvidoria.
+- **Guarda Municipal do Rio**: atuação imediata em flagrantes de descarte em logradouros públicos.
+- **1746 Central de Atendimento da Prefeitura**: registros de entulho abandonado em calçadas, bueiros e praças.
+- **Aplicativo Cartão Cidadão**: permite envio de fotos com geolocalização diretamente para a fiscalização municipal.
+
+### O que informar na denúncia
+Para que a autoridade consiga agir rapidamente, forneça:
+
+- Endereço exato ou geolocalização do ponto de descarte
+- Data e horário aproximados
+- Descrição do veículo, placa e empresa, se visível
+- Fotos e vídeos que mostrem o volume e a tipologia do resíduo
+- Identificação do responsável pela obra, se conhecido
+
+### Responsabilidade e consequências
+Quando a denúncia é comprovada, o infrator pode ser autuado administrativamente com multas progressivas, embargo da obra e inscrição em cadastro de devedores ambientais. Em casos graves, o Ministério Público pode ajuizar ação civil pública exigindo a remoção do entulho e a recuperação da área degradada.
+
+### A importância da caçamba legal
+A melhor forma de evitar que seu entulho vire estatística de descarte irregular é contratar uma **caçamba legal** desde o início da obra. Empresas regulares realizam **coleta de entulho** com documentação completa, rastreabilidade da carga e entrega garantida em **aterros licenciados**.
+
+Se você quer entender melhor todas as obrigações legais antes de iniciar uma reforma ou construção, leia nosso guia sobre [permissões para descarte de entulho em obras](/blog/permissoes-entulho-construcao-civil/). E para descobrir como o material descartado pode voltar à cadeia produtiva, confira nosso artigo sobre [reciclagem de entulho na construção civil](/blog/reciclagem-entulho-construcao/).
 
 ## Conclusão: descarte correto é obrigação e vantagem
 

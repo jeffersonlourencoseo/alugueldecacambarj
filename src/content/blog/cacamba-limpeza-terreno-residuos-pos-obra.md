@@ -24,7 +24,7 @@ Sem uma estratégia clara, esse material se acumula em cantos do canteiro, invad
 
 ## Tipos de limpeza e a caçamba ideal
 
-Dependendo do objetivo da limpeza, o tipo de **caçamba de entulho** e a abordagem logística mudam:
+Dependendo do objetivo da limpeza, o tipo de **caçamba de entulho** e a abordagem logística mudam. Se tiver dúvidas sobre qual modelo contratar, consulte nosso guia [como escolher a caçamba ideal](/blog/como-escolher-cacamba-ideal/) antes de fechar o **aluguel de caçamba**:
 
 ### Limpeza de terreno bruto
 
@@ -117,7 +117,7 @@ A fase pós-obra exige logística mais cuidadosa que a fase de produção:
 ### Local de instalação
 - Posicione a caçamba no máximo a 20m da porta principal do imóvel
 - Evite áreas com piso já acabado — prefira calçada, área de serviço externa ou garagem
-- Use protetores de piso (placas de polietileno ou tábuas) sob as patas da caçamba
+- Use protetores de piso (placas de polietileno ou tábuas) sob as patas da caçamba e siga as recomendações de [segurança no uso de caçamba estacionária](/blog/seguranca-uso-cacamba-estacionaria/)
 
 ### Retirada
 - Combine a retirada no ato da entrega — já defina a data
@@ -147,6 +147,33 @@ A limpeza pós-obra tem custos diretos e indiretos:
 | Equipamentos auxiliares | R$ 50 – R$ 150 | Alugue em lojas de construção |
 
 **Economia total**: separando recicláveis e planejando a logística, é possível reduzir em 20% a 30% o custo total da limpeza pós-obra.
+
+## Limpeza pós-obra em condomínios e descarte de resíduos vegetais
+
+### Limpeza pós-obra em condomínios: cuidados especiais
+
+A **remoção de resíduos pós obra** em condomínios residenciais ou comerciais exige atenção redobrada às regras internas e à convivência com outros moradores. Ao contrário de uma casa isolada, a **caçamba para limpeza** precisa passar por portarias, respeitar horários rígidos de carga e descarga e ocupar vagas de visitante ou áreas comuns sem causar transtornos.
+
+Antes de solicitar o **aluguel de caçamba**, consulte a administração do condomínio sobre:
+
+- **Autorização prévia**: muitos condomínios exigem solicitação por escrito com antecedência de 48 horas
+- **Horários permitidos**: geralmente limitados a dias úteis das 8h às 18h, com proibição aos sábados e domingos
+- **Vaga para instalação**: a caçamba deve ficar em local que não bloqueie garagens, rampas de acesso ou hidrantes
+- **Elevador de carga**: se o entulho sai pelo subsolo, verifique peso máximo do elevador e proteção das paredes internas
+
+Em apartamentos acabados, a **remoção de entulho** deve ser feita com carrinhos de mão com rodas de borracha e lonas no corredor, evitando arranhões no piso polido ou porcelanato. A **limpeza de terreno** na área comum do condomínio — como jardins, playground ou estacionamento — também precisa ser concluída no mesmo dia da retirada da caçamba, para não acumular poeira e folhas em áreas de lazer.
+
+### Descarte de resíduos vegetais e orgânicos após limpeza de terreno
+
+Após a **limpeza de terreno**, é comum sobrar grande volume de resíduos vegetais: galhos, troncos, folhagem, raízes e terra vegetal. Esse material não pode ser descartado junto com o entulho de construção civil em qualquer aterro. A legislação ambiental do Rio de Janeiro exige que resíduos verdes sejam encaminhados a composteiras ou aterros específicos para resíduos orgânicos.
+
+Na prática, a separação já na **caçamba para limpeza** facilita o destino correto:
+
+- **Galhos e troncos grossos**: podem ser triturados e virar adubo ou lenha. Algumas empresas de **aluguel de caçamba** oferecem serviço de triagem em parceria com composteiras municipais.
+- **Terra vegetal limpa**: pode ser reaproveitada no paisagismo do próprio lote, reduzindo a necessidade de compra de terra nova.
+- **Mistura de terra com entulho**: quando a terra está misturada a cimento, tijolos ou cerâmica, o volume deve ir para aterro de construção civil. Nesse caso, combine com a empresa de **remoção de entulho** a separação no momento da retirada.
+
+A **remoção de resíduos pós obra** em terrenos com vegetação densa costuma gerar 20% a 30% a mais de volume do que o estimado apenas para entulho. Por isso, ao calcular a **caçamba para limpeza** de terreno bruto, adicione essa margem vegetal à conta. A CaçambaRápido orienta clientes sobre como separar esses materiais ainda no canteiro, evitando multas ambientais e custos extras de triagem no aterro.
 
 ## Conclusão: a limpeza é o último capítulo da obra
 

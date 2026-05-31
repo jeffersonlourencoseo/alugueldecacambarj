@@ -45,9 +45,14 @@ A nota fiscal do **aluguel da caçamba** e da **retirada do entulho** serve como
 
 Guarde todos os documentos fiscais e ambientais por pelo menos **5 anos** — o prazo prescricional para autuações ambientais no Brasil. Organize em pasta física e digital, com backup em nuvem. Em caso de auditoria do INEA, Receita Federal ou prefeitura, você precisa comprovar a regularidade completa.
 
-### CADRI — Certificado de Apresentação de Documentos de Responsabilidade Intermediária
+### MTR — Manifesto de Transporte de Resíduos e PGRS
 
-No estado do Rio de Janeiro, empresas que geram ou transportam resíduos perigosos ou em grande volume devem possuir CADRI emitido pelo INEA. Para entulho comum de construção civil (classe II-A), o CDF e a nota fiscal geralmente são suficientes, mas obras grandes (geração superior a 10m³/dia ou obras públicas) devem consultar o INEA sobre necessidade adicional de CADRI.
+Para obras de grande porte no Rio de Janeiro, além do CDF, podem ser exigidos documentos adicionais pelo INEA:
+
+- **MTR (Manifesto de Transporte de Resíduos)**: obrigatório para transporte de resíduos perigosos (classe I) e recomendado para grandes volumes de resíduos de construção civil (classe II-A). O MTR comprova a cadeia de custódia do resíduo desde o gerador até o destino final.
+- **PGRS (Plano de Gerenciamento de Resíduos Sólidos)**: obrigatório para obras com geração superior a 10m³/dia ou obras públicas. O PGRS descreve como os resíduos serão gerenciados, separados, transportados e destinados.
+
+O **CADRI** é um certificado exigido pelo órgão ambiental de São Paulo (CETESB), não pelo INEA no Rio de Janeiro. No RJ, a regularidade da empresa é atestada pela licença ambiental do INEA e pelo CDF de cada transporte.
 
 ## Como verificar se uma empresa de caçamba é regular
 
@@ -105,10 +110,73 @@ A burocracia de **descarte de entulho** varia conforme o porte da obra:
 
 ### Obras grandes (> 200m² ou geração > 10m³)
 - Obrigatório Plano de Gerenciamento de Resíduos Sólidos (PGRS)
-- Pode ser exigido CADRI pelo INEA
+- Pode ser exigido MTR e PGRS pelo INEA
 - Aterro de destinação deve possuir LO (Licença de Operação)
 - Recomendável acompanhamento técnico de engenheiro ambiental
 - Grandes obras públicas exigem processo licitatório para descarte
+
+## Como preencher o PGRS para obras de construção civil
+
+O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é obrigatório para obras com geração superior a 10 m³/dia, edifícios públicos e empreendimentos em áreas de preservação ambiental no Rio de Janeiro. Apesar de parecer complexo, o preenchimento correto do PGRS segue uma lógica simples quando dividido em etapas.
+
+### 1. Caracterização dos resíduos gerados
+
+A primeira etapa consiste em levantar todos os tipos de resíduos que a obra produzirá. Na construção civil, os principais são:
+- **Classe II-A — Resíduos não perigosos (entulho)**: concreto, tijolos, cerâmica, argamassa e solo limpo
+- **Classe II-B — Resíduos não perigosos especiais**: gesso, fibrocimento (eternit) e madeira tratada
+- **Classe I — Resíduos perigosos**: thinner, tintas, solventes, pilhas e lâmpadas fluorescentes
+
+Cada classe exige destinação diferente. O entulho (II-A) pode ir para **aterros licenciados** de classe II, enquanto o gesso (II-B) precisa de destinação específica e o resíduo perigoso (I) exige empresas especializadas com cadastro no INEA.
+
+### 2. Definição de metas de redução e reciclagem
+
+O PGRS deve conter metas mensuráveis de minimização, reutilização e reciclagem. Um bom exemplo é: “Reduzir em 30% o volume de entulho enviado ao aterro em 6 meses, por meio da triagem no canteiro e venda de sucata metálica.” Metas claras demonstram compromisso ambiental e facilitam auditorias.
+
+### 3. Fluxograma de transporte e destinação
+
+Descreva graficamente ou textualmente o caminho dos resíduos desde a geração até a disposição final. Inclua:
+- Local de armazenamento temporário no canteiro
+- Frequência de retirada pela empresa de caçamba
+- Nome e endereço do aterro de destinação
+- CNPJ e número da licença ambiental da transportadora
+
+Esse fluxograma é o cerne do PGRS: ele prova que o responsável técnico conhece e controla a cadeia do **descarte de resíduos sólidos**.
+
+### 4. Programa de capacitação e comunicação
+
+O PGRS exige ainda um breve programa de treinamento para funcionários, ensinando a separação correta no canteiro e os riscos do descarte irregular. Fotos de treinamentos, listas de presença e cartilhas distribuídas servem como comprovação em fiscalização.
+
+Para obras menores que não exigem PGRS formal, a adoção voluntária desse plano simples já é um diferencial de sustentabilidade e proteção jurídica. Quer aprofundar as boas práticas de separação e destinação? Confira nosso guia completo sobre [descarte correto de entulho](/blog/descarte-correto-entulho/).
+
+## Prazos de validade e renovação de licenças ambientais no RJ
+
+No Rio de Janeiro, as licenças ambientais emitidas pelo INEA possuem prazos de validade específicos que variam conforme o tipo de empreendimento e o porte da operação. Entender esses prazos é fundamental para não correr o risco de contratar uma empresa com licença vencida, o que expõe o responsável pela obra a sanções administrativas e criminais.
+
+A Licença Prévia (LP) geralmente tem validade de 1 a 2 anos, período em que o empreendedor deve concluir o projeto básico e solicitar a Licença de Instalação (LI). Já a LI possui prazo vinculado ao cronograma físico da obra, normalmente entre 6 meses e 3 anos. A Licença de Operação (LO), que autoriza efetivamente o funcionamento do aterro e a coleta do entulho, é renovada periodicamente — a cada 1, 3 ou 5 anos, dependendo do histórico ambiental do empreendimento.
+
+Empresas de aluguel de caçamba que operam com licença vencida incorrem na infração grave prevista na Resolução CONAMA 237/1997 e na legislação estadual. Para o contratante, isso significa que o CDF emitido por uma empresa irregular pode ser considerado nulo, comprometendo toda a cadeia de **documentação de entulho**.
+
+### Como verificar a validade da licença no INEA
+
+Acesse o portal do INEA e utilize o número da licença ou o CNPJ da empresa. A consulta retorna:
+- Tipo de licença ativa (LP, LI ou LO)
+- Data de emissão e vencimento
+- Condições específicas impostas (monitoramento, relatórios de cumprimento)
+- Status de regularidade (ativa, vencida, suspensa ou cassada)
+
+Se a licença estiver próxima do vencimento (menos de 90 dias), questione a empresa sobre o processo de renovação. Empresas organizadas iniciam o pedido de renovação com 120 dias de antecedência, apresentando relatórios de monitoramento, atualizações cadastrais e, quando necessário, novos estudos de impacto ambiental.
+
+### Renovação e condicionantes ambientais
+
+A renovação da LO exige comprovação de cumprimento das condicionantes da licença original. Isso inclui:
+- Relatórios trimestrais ou semestrais de monitoramento de lençóis freáticos
+- Registros fotográficos de células de aterro
+- Comprovação de capacitação da equipe operacional
+- Manutenção de seguros ambientais e garantias financeiras
+
+**Aterros licenciados** que descumprem condicionantes podem ter a licença suspensa ou cassada. Nesses casos, o aterro deixa de ser considerado um destino legal para o descarte de entulho, e qualquer CDF emitido por ele perde a validade retroativamente. Por isso, além de verificar a empresa transportadora, é prudente consultar a situação do aterro de destinação final no cadastro do INEA.
+
+Manter a **documentação de entulho** organizada por obra e por retirada de caçamba facilita a demonstração de conformidade em vistorias do INEA, prefeitura ou órgãos de defesa do consumidor. Para evitar problemas com licenças vencidas e entender todos os riscos jurídicos, leia também nosso artigo sobre [caçamba legal para evitar multas no RJ](/blog/cacamba-legal-evitar-multas-rj/).
 
 ## Como garantir conformidade total na sua obra
 
