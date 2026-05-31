@@ -1,4 +1,4 @@
----
+﻿---
 title: "Caçamba para Limpeza de Terreno e Remoção de Resíduos Pós-Obra: Guia Completo no RJ"
 description: "Saiba como usar caçambas para limpeza de terreno, remoção de resíduos pós-obra, retirada de entulhos e preparação de áreas para construção no Rio de Janeiro."
 pubDate: 2026-04-12
@@ -98,6 +98,8 @@ Blocos cerâmicos e tijolos que não foram danificados podem ser reutilizados em
 ## Equipamentos auxiliares para limpeza
 
 Além da **caçamba de entulho**, equipamentos auxiliares aceleram a limpeza e reduzem o risco de danos ao imóvel acabado:
+
+![Carrinho de limpeza pós-obra e caçamba de entulho](/images/carrinho_Limpeza_gml181_1.webp)
 
 - **Carrinhos de mão industriais**: para transportar entulho do interior do imóvel até a caçamba sem riscar pisos
 - **Vassouras industriais e rodos**: para limpeza final de poeira fina

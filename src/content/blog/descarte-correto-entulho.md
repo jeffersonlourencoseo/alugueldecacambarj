@@ -6,7 +6,9 @@ author: "CaçambaRápido"
 tags: ["sustentabilidade", "legislação", "entulho", "meio ambiente"]
 ---
 
-O **descarte irregular de entulho** é uma infração ambiental grave no Brasil. Além das multas que podem destruir o orçamento de uma obra, o descarte clandestino prejudica a cidade, entope bueiros, polui rios, compromete a saúde pública e gera responsabilização criminal para gestores e proprietários. A solução correta é a **locação de caçambas estacionárias** com empresas licenciadas que garantam destinação em **aterros licenciados** e forneçam toda a documentação comprobatória.
+O **descarte irregular de entulho** é uma infração ambiental grave no Brasil.
+
+![Descarte correto de entulho em caçamba licenciada](/images/cacamba-de-entulho.webp) Além das multas que podem destruir o orçamento de uma obra, o descarte clandestino prejudica a cidade, entope bueiros, polui rios, compromete a saúde pública e gera responsabilização criminal para gestores e proprietários. A solução correta é a **locação de caçambas estacionárias** com empresas licenciadas que garantam destinação em **aterros licenciados** e forneçam toda a documentação comprobatória.
 
 Neste guia completo, vamos detalhar o que diz a lei, como funciona a cadeia de descarte, o que acontece com seu entulho depois da retirada, como evitar multas e como implementar boas práticas de gestão de resíduos na sua obra, condomínio ou empresa.
 

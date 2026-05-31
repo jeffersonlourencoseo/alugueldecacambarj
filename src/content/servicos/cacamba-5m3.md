@@ -1,4 +1,4 @@
----
+﻿---
 title: "Caçamba 5m³"
 description: "Caçamba estacionária de 5 metros cúbicos, a mais solicitada do mercado para obras médias e reformas comerciais."
 preco: "A partir de R$ 450"
@@ -7,6 +7,8 @@ idealPara: ["Reformas comerciais", "Construção de muros", "Obras médias", "De
 ---
 
 A caçamba de 5m³ é o modelo mais popular entre nossos clientes. Oferece o equilíbrio perfeito entre capacidade e praticidade.
+
+![Caçamba de entulho 5m³ para obras médias](/images/cacamba-de-entulho.webp)
 
 ## Características
 

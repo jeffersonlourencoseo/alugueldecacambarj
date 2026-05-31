@@ -1,4 +1,4 @@
----
+﻿---
 title: "Caçamba 7m³"
 description: "Caçamba estacionária de 7 metros cúbicos para grandes obras, demolições e construções que geram alto volume de entulho."
 preco: "A partir de R$ 600"
@@ -7,6 +7,8 @@ idealPara: ["Grandes demolições", "Construção de casas", "Obras industriais"
 ---
 
 Para obras que geram alto volume de resíduos, a caçamba de 7m³ é a solução definitiva. Evite múltiplas locações e otimize seu tempo.
+
+![Caçamba de entulho 7m³ para grandes obras](/images/cacamba-de-entulho.webp)
 
 ## Características
 

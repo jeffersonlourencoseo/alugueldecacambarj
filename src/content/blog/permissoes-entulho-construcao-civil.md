@@ -1,4 +1,4 @@
----
+﻿---
 title: "Licenças e Permissões para Descarte de Entulho na Construção Civil: Guia Jurídico Completo"
 description: "Saiba quais documentos são necessários para o descarte legal de entulho no Rio de Janeiro, como consultar licenças no INEA, como evitar multas ambientais e o que muda para obras pequenas, médias e grandes."
 pubDate: 2026-05-03
@@ -6,7 +6,9 @@ author: "CaçambaRápido"
 tags: ["legislação", "documentação", "sustentabilidade", "INEA"]
 ---
 
-O descarte irregular de entulho é uma das principais causas de multas ambientais em obras de construção civil no Rio de Janeiro. Conhecer as licenças e permissões necessárias é essencial para manter a regularidade do canteiro, evitar problemas legais, proteger o meio ambiente e garantir que a obra não seja interrompida por fiscalização. Neste guia jurídico completo, detalhamos todos os documentos exigidos, como obtê-los, como verificar se uma empresa é regular e o que muda para obras de diferentes portes.
+O descarte irregular de entulho é uma das principais causas de multas ambientais em obras de construção civil no Rio de Janeiro.
+
+![Documentação para descarte de entulho](/images/cacamba-de-entulho.webp) Conhecer as licenças e permissões necessárias é essencial para manter a regularidade do canteiro, evitar problemas legais, proteger o meio ambiente e garantir que a obra não seja interrompida por fiscalização. Neste guia jurídico completo, detalhamos todos os documentos exigidos, como obtê-los, como verificar se uma empresa é regular e o que muda para obras de diferentes portes.
 
 Seja você um arquiteto, engenheiro, mestre de obras, síndico de condomínio ou proprietário de comércio, entender a burocracia ambiental do **descarte de entulho** transforma uma dor de cabeça em um processo simples e seguro.
 

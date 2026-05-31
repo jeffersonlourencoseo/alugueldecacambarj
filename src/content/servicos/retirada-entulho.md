@@ -1,4 +1,4 @@
----
+﻿---
 title: "Retirada de Entulho"
 description: "Serviço completo de remoção e destinação de entulho com documentação e licença ambiental."
 preco: "Sob consulta"
@@ -7,6 +7,8 @@ idealPara: ["Obra concluída", "Limpeza pós-reforma", "Remoção de resíduos a
 ---
 
 Serviço completo de retirada de entulho com equipe especializada, veículos próprios e documentação ambiental.
+
+![Serviço de retirada de entulho com caçamba estacionária](/images/locacao-de-cacambas.webp)
 
 ## O que está incluso
 

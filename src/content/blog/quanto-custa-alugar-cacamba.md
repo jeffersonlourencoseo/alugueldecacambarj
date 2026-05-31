@@ -6,7 +6,9 @@ author: "Ana Paula Costa"
 tags: ["preço", "orçamento", "dicas", "caçamba"]
 ---
 
-O valor do **aluguel de caçamba de entulho** varia de acordo com o tamanho do equipamento, a região de atendimento no Rio de Janeiro, o prazo de locação e os serviços inclusos no pacote. Conhecer esses fatores em detalhes ajuda a planejar o orçamento da obra com mais precisão e evitar custos inesperados que podem estourar o orçamento.
+O valor do **aluguel de caçamba de entulho** varia de acordo com o tamanho do equipamento, a região de atendimento no Rio de Janeiro, o prazo de locação e os serviços inclusos no pacote.
+
+![Caçamba de entulho no Rio de Janeiro](/images/cacamba-de-entulho.webp) Conhecer esses fatores em detalhes ajuda a planejar o orçamento da obra com mais precisão e evitar custos inesperados que podem estourar o orçamento.
 
 Neste guia completo de preços para 2026, vamos detalhar quanto custa **alugar caçamba de entulho** em cada região do Rio, o que está incluso no valor, como negociar melhores condições e quais são os custos ocultos que muitas empresas não revelam de cara. Seja você um profissional da construção civil, um síndico de condomínio ou um dono de comércio, essa informação vai economizar dinheiro na sua próxima obra.
 

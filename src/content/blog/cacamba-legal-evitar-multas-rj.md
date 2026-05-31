@@ -1,4 +1,4 @@
----
+﻿---
 title: "Caçamba Legal: O Que É, Por Que Importa e Como Evitar Multas no Rio de Janeiro"
 description: "Entenda o que é uma caçamba legal, por que usar empresas licenciadas, como consultar aterros no INEA, como evitar multas de até R$ 50.000 e como fazer o descarte correto de entulho no RJ."
 pubDate: 2026-03-29
@@ -6,7 +6,9 @@ author: "CaçambaRápido"
 tags: ["caçamba legal", "multas", "INEA", "aterros licenciados", "documentação"]
 ---
 
-O termo **"caçamba legal"** ganhou força nos últimos anos no Rio de Janeiro. Ele não se refere a um modelo específico de equipamento, mas sim a toda a cadeia de **aluguel de caçamba de entulho** que opera dentro da lei: empresa licenciada, motorista habilitado, transporte em caminhão regularizado, descarte em **aterro licenciado** e emissão completa de documentação fiscal e ambiental.
+O termo **"caçamba legal"** ganhou força nos últimos anos no Rio de Janeiro.
+
+![Caçamba legal no Rio de Janeiro](/images/cacamba-de-entulho.webp) Ele não se refere a um modelo específico de equipamento, mas sim a toda a cadeia de **aluguel de caçamba de entulho** que opera dentro da lei: empresa licenciada, motorista habilitado, transporte em caminhão regularizado, descarte em **aterro licenciado** e emissão completa de documentação fiscal e ambiental.
 
 Usar uma **caçamba legal** não é apenas uma questão de ética empresarial — é uma necessidade jurídica que protege o gestor da obra, o proprietário do imóvel e a própria empresa contratante de multas que podem destruir o orçamento, interromper a obra e, em casos extremos, resultar em processo criminal.
 

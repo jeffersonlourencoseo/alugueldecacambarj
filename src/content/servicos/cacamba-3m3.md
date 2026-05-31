@@ -1,4 +1,4 @@
----
+﻿---
 title: "Caçamba 3m³"
 description: "Caçamba estacionária de 3 metros cúbicos, ideal para pequenas reformas e limpeza de terrenos."
 preco: "A partir de R$ 350"
@@ -7,6 +7,8 @@ idealPara: ["Reformas residenciais", "Troca de piso", "Limpeza de terreno", "Peq
 ---
 
 A caçamba de 3m³ é a escolha perfeita para quem precisa descartar entulho de pequeno volume sem ocupar muito espaço.
+
+![Caçamba de entulho 3m³ estacionária no local da obra](/images/cacamba-de-entulho.webp)
 
 ## Características
 

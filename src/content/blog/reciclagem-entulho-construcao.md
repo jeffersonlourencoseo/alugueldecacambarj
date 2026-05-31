@@ -6,7 +6,9 @@ author: "CaçambaRápido"
 tags: ["sustentabilidade", "reciclagem", "economia", "meio ambiente"]
 ---
 
-A construção civil é uma das maiores geradoras de resíduos no Brasil. De acordo com <a href="https://www.ibge.gov.br/" target="_blank" rel="noopener noreferrer">dados do IBGE</a>, o setor é responsável por cerca de **50% dos resíduos sólidos urbanos** no país. No estado do Rio de Janeiro, onde a construção e a reforma são atividades constantes, o volume de **entulho** gerado anualmente chega a milhões de toneladas. No entanto, boa parte desse material pode ser reciclada e reaproveitada, reduzindo o impacto ambiental, os custos de aterro e até gerando receita extra para construtoras, incorporadoras e pequenos empreiteiros.
+A construção civil é uma das maiores geradoras de resíduos no Brasil.
+
+![Reciclagem de entulho de construção civil](/images/cacamba-de-entulho.webp) De acordo com <a href="https://www.ibge.gov.br/" target="_blank" rel="noopener noreferrer">dados do IBGE</a>, o setor é responsável por cerca de **50% dos resíduos sólidos urbanos** no país. No estado do Rio de Janeiro, onde a construção e a reforma são atividades constantes, o volume de **entulho** gerado anualmente chega a milhões de toneladas. No entanto, boa parte desse material pode ser reciclada e reaproveitada, reduzindo o impacto ambiental, os custos de aterro e até gerando receita extra para construtoras, incorporadoras e pequenos empreiteiros.
 
 Neste guia completo sobre **reciclagem de entulho**, vamos explorar quais materiais podem ser reciclados, como implementar um programa de reciclagem na prática, os benefícios financeiros e ambientais, o papel da **caçamba de entulho** no processo e como a legislação brasileira incentiva — e, em alguns casos, exige — a reciclagem na construção civil.
 

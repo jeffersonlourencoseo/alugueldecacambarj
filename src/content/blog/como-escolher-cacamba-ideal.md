@@ -6,7 +6,9 @@ author: "Marcos Oliveira"
 tags: ["guia", "dicas", "caçamba", "obra"]
 ---
 
-Escolher a **caçamba de entulho** certa pode economizar tempo, dinheiro e dor de cabeça na sua obra. O tamanho ideal depende do tipo de serviço, volume de entulho, espaço disponível no local e até do peso dos resíduos. Neste guia completo, explicamos tudo o que você precisa considerar antes de fazer o **aluguel de caçamba de entulho** no Rio de Janeiro.
+Escolher a **caçamba de entulho** certa pode economizar tempo, dinheiro e dor de cabeça na sua obra.
+
+![Como escolher a caçamba ideal para sua obra](/images/cacamba-de-entulho-como-escolher.webp) O tamanho ideal depende do tipo de serviço, volume de entulho, espaço disponível no local e até do peso dos resíduos. Neste guia completo, explicamos tudo o que você precisa considerar antes de fazer o **aluguel de caçamba de entulho** no Rio de Janeiro.
 
 Seja uma pequena reforma de banheiro, uma demolição completa ou a construção de uma casa do zero, a escolha errada da caçamba pode gerar custos extras, atrasos e até problemas com vizinhos ou fiscalização. Por isso, investir alguns minutos no planejamento faz toda a diferença.
 
