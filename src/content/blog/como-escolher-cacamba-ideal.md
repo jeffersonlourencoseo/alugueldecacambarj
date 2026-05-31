@@ -1,7 +1,7 @@
 ---
 title: "Como Escolher a Caçamba Ideal para Sua Obra"
 description: "Guia prático para selecionar o tamanho correto de caçamba estacionária para reformas, construção e demolição no Rio de Janeiro."
-pubDate: 2025-03-10
+pubDate: 2026-05-31
 author: "CaçambaRápido"
 tags: ["guia", "dicas", "caçamba"]
 ---

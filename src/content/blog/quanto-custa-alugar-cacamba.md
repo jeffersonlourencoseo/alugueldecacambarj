@@ -1,7 +1,7 @@
 ---
 title: "Quanto Custa Alugar uma Caçamba em 2025?"
 description: "Entenda os fatores que influenciam o preço do aluguel de caçamba no Rio de Janeiro e saiba como fazer um orçamento sem surpresas."
-pubDate: 2025-04-20
+pubDate: 2026-05-24
 author: "CaçambaRápido"
 tags: ["preço", "orçamento", "dicas"]
 ---

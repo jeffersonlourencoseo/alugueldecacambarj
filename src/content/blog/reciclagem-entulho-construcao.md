@@ -1,7 +1,7 @@
 ---
 title: "Reciclagem de Entulho: Como Sua Obra Pode Ser Sustentável"
 description: "Descubra como a reciclagem de entulho de construção civil ajuda o meio ambiente, reduz custos e pode gerar créditos ambientais para empresas."
-pubDate: 2025-05-18
+pubDate: 2026-04-26
 author: "CaçambaRápido"
 tags: ["sustentabilidade", "reciclagem", "economia"]
 ---

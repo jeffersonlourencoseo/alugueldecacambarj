@@ -1,7 +1,7 @@
 ---
 title: "Licenças e Permissões para Descarte de Entulho na Construção Civil"
 description: "Saiba quais documentos são necessários para o descarte legal de entulho no Rio de Janeiro e como evitar multas ambientais na sua obra."
-pubDate: 2025-05-05
+pubDate: 2026-05-03
 author: "CaçambaRápido"
 tags: ["legislação", "documentação", "sustentabilidade"]
 ---

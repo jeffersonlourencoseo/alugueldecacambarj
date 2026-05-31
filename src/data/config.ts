@@ -86,5 +86,11 @@ export const SITE_CONFIG = {
     'caçamba 7m3',
     'aluguel de caçamba rio de janeiro',
     'caçamba rj',
+    'aluguel de contêineres de lixo',
+    'remoção de resíduos e lixo',
+    'remoção de resíduos industriais',
+    'descarte de resíduos sólidos',
+    'aterros licenciados',
+    'locação de caçambas para eventos',
   ],
 } as const;

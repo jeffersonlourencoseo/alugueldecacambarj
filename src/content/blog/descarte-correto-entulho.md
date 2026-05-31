@@ -1,7 +1,7 @@
 ---
 title: "Descarte Correto de Entulho: Obrigações e Boas Práticas"
 description: "Entenda a legislação sobre descarte de entulho no Rio de Janeiro, a importância da caçamba estacionária licenciada e como evitar multas ambientais."
-pubDate: 2025-04-05
+pubDate: 2026-05-10
 author: "CaçambaRápido"
 tags: ["sustentabilidade", "legislação", "entulho"]
 ---

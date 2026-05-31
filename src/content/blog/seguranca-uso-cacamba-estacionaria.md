@@ -1,7 +1,7 @@
 ---
 title: "Segurança no Uso da Caçamba Estacionária: 5 Regras Essenciais"
 description: "Evite acidentes e danos materiais seguindo estas dicas de segurança para o uso correto de caçambas estacionárias em obras e reformas."
-pubDate: 2025-05-12
+pubDate: 2026-05-17
 author: "CaçambaRápido"
 tags: ["segurança", "dicas", "obra"]
 ---
