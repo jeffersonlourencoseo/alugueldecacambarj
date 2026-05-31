@@ -1,0 +1,33 @@
+**PROMPT:**
+
+"Como um especialista em Copywriting para SEO Local e UI Design, preciso estruturar o conteúdo final (Phase 4) do site de **Aluguel de Caçamba**. 
+
+Siga as instruções de estrutura para cada página, respeitando os padrões de respiro (py-32) e padding (p-12) definidos anteriormente.
+
+### 1. Página Inicial (HOME)
+Refatore a `index.astro` para conter as seguintes seções na ordem indicada:
+- **Hero:** Deve ter uma Tag (ex: 'Líder em Andaimes'), Título (H1), Subtítulo persuasivo e dois botões: 'Solicitar Orçamento no WhatsApp' e 'Ver Nossos Equipamentos'.
+- **Diferenciais:** Grid com 3 ou 4 blocos destacando diferenciais (ex: Entrega em 2h, Equipamentos Revisados, Melhor Preço). Use ícones ou emojis.
+- **Sobre Nós (Resumo):** Um bloco com texto sobre a empresa e um botão 'Conheça nossa História' levando para a página sobre.
+- **Nossos Equipamentos:** Grade mostrando até 6 serviços da coleção 'servicos'. Inclua um botão 'Ver Todos os Equipamentos' levando para a listagem completa.
+- **Depoimentos:** Seção com 3 cards de clientes satisfeitos (use nomes e fotos fictícias).
+- **Chamada de Contato:** Seção final com texto direto e dois botões grandes: 'Conversar no WhatsApp' e 'Ligar Agora'.
+
+### 2. Página Sobre (SOBRE)
+A `sobre.astro` não deve ser apenas texto. Estruture-a em seções visuais:
+- **Nossa História:** Como a empresa começou.
+- **Missão, Visão e Valores:** Use um grid ou lista icônica.
+- **Compromisso com a Segurança:** Fale sobre as normas técnicas (NR-18) e manutenção.
+- **Nossa Equipe:** Foco no atendimento humanizado.
+
+### 3. Página de Contato (CONTATO)
+Refatore a `contato.astro` para:
+- **Página Sobre:** Elaborar uma página institucional completa dividida em seções (ex: Nossa História, Missão/Valores, Padrões de Segurança e Por que nos escolher).
+- **Página de Serviço Detalhado:** O modelo dinâmico (`[slug].astro`) não deve ser apenas o texto do Markdown. Estruture-o com um Hero do Serviço, Seção de Especificações Técnicas, Benefícios/Aplicações e um CTA de fechamento (WhatsApp + Ligação).
+- **Página de Post do Blog:** Transforme o post em um "Portal de Notícias". Use uma estrutura de leitura limpa (prose), inclua uma barra lateral com CTA para orçamento, e uma seção final sugerindo "Outras Dicas de Obra" (posts relacionados).
+- **Página Contato:** Estruturar o NAP (Nome/Endereço/Tel) e o formulário funcional e com design limpo.
+
+Mantenha a consistência visual, use as cores `primary` e `accent`, e garanta que o site pareça uma ferramenta de vendas profissional e de alto padrão."
+
+
+

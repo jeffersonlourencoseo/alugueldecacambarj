@@ -1,0 +1,14 @@
+**PROMPT:**
+
+"Aja como um desenvolvedor especialista em Astro e UX Design. Preciso criar a base (Phase 1) de um site de **Aluguel de Caçamba** focado em SEO Local.
+
+Siga estas especificações de DESIGN PROFISSIONAL:
+1. **Reset e Base:** Use **Astro 4.x** e **Tailwind CSS**. A linguagem deve ser **pt-BR**. Use o gerenciador de pacotes padrão (**npm**).
+2. **Fundamentos de Respiro:** Defina no `Layout.astro` que todas as seções principais terão um preenchimento generoso (`py-24` no mobile e `py-32` no desktop). Nunca deixe o conteúdo 'sufocado'.
+3. **Containers:** Use um container centralizado (`container mx-auto`) com padding lateral de segurança (`px-6` a `px-12`) para que o texto nunca encoste nas bordas da tela.
+4. **Arquivos de Configuração:** Crie `package.json`, `astro.config.mjs` e `tailwind.config.mjs` (com suporte ao plugin `@astrojs/tailwind`).
+5. **Layout e Home:** 
+   - O `Layout.astro` deve ter a fonte **Inter** configurada (Acessibilidade).
+   - O `index.astro` deve ter um H1 com `leading-tight` (altura de linha correta) e espaçamento inferior (`mb-10`) antes de qualquer outro elemento.
+
+Mantenha o código limpo, mas com espaçamentos largos (py-32) e organizados desde o início."

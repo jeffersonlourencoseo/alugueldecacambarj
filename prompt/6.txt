@@ -1,0 +1,35 @@
+**PROMPT:**
+
+"Aja como um Especialista em SEO Técnico e Performance. Nossa missão agora é a **Etapa 6: Infraestrutura e SEO Local**. 
+
+O objetivo é centralizar os dados da empresa e ativar os recursos que garantem o ranqueamento no Google Maps. 
+
+Siga estes passos obrigatórios:
+
+### 1. CENTRAL DE DADOS (CÉREBRO DO SITE)
+Crie (ou atualize) o arquivo `src/data/config.ts`. 
+- **AÇÃO:** Antes de gerar o código, pergunte ao usuário: 'Qual é o domínio final do site? (ex: https://andaimespro.com.br)'. 
+- Com essa resposta, preencha o objeto `SITE_CONFIG` com o domínio real, o Nome da Empresa (NAP), Endereço, Telefone e WhatsApp. Todo o site deve ler os dados deste arquivo a partir de agora.
+
+### 2. ATIVAÇÃO DO SITEMAP
+Configure o arquivo `astro.config.mjs` para:
+- Importar a integração `@astrojs/sitemap`.
+- Definir a propriedade `site` dinamicamente a partir do seu `config.ts`.
+- Ativar o sitemap na lista de `integrations`.
+
+### 3. COMPONENTE SEO E SCHEMA (GOOGLE)
+- Garanta que exista um componente `SEO.astro` que gerencia Meta Tags e Open Graph (Social Cards para WhatsApp/Facebook).
+- Crie o componente `SchemaLocalBusiness.astro` contendo o código JSON-LD de `LocalBusiness`. Use os dados do `config.ts` para preencher Nome, Endereço e Telefone.
+
+### 4. CONVERSÃO ATIVA (WHATSAPP PREMIUM)
+Crie um componente `WhatsAppBtn.astro` flutuante no canto inferior direito.
+- **DESIGN:** Deve ter um fundo verde oficial (#25D366), sombra vibrante e um efeito de pulsação suave (`animate-ping`). Ao passar o mouse, deve exibir uma label 'Fale Conosco'.
+
+### 5. INTEGRAÇÃO NO LAYOUT
+- Injete todos esses componentes no `Layout.astro`. O site deve estar 100% configurado tecnicamente ao final desta etapa.
+
+Entregue o código limpo, modular e focado em performance máxima (Nota 100 no PageSpeed)."
+
+
+
+

@@ -11,7 +11,7 @@ const schema = {
   telephone: SITE_CONFIG.phoneRaw,
   email: SITE_CONFIG.email,
   priceRange: '$$',
-  image: `${SITE_CONFIG.domain}/og-image.jpg`,
+  image: `${SITE_CONFIG.domain}${SITE_CONFIG.ogImage}`,
 
   address: {
     '@type': 'PostalAddress',
@@ -42,8 +42,10 @@ const schema = {
   },
 
   serviceType: [
+    'Aluguel de Caçamba de Entulho',
+    'Locação de Caçamba de Entulho',
+    'Retirada e Descarte de Entulho',
     'Aluguel de Caçambas Estacionárias',
-    'Retirada de Entulho',
     'Locação de Equipamentos para Construção Civil',
   ],
 
@@ -55,24 +57,24 @@ const schema = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Caçamba 3m³',
-          description: 'Caçamba estacionária de 3m³ para pequenas reformas.',
+          name: 'Caçamba de Entulho 3m³',
+          description: 'Aluguel de caçamba de entulho de 3m³ para pequenas reformas e limpezas.',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Caçamba 5m³',
-          description: 'Caçamba estacionária de 5m³ para obras médias.',
+          name: 'Caçamba de Entulho 5m³',
+          description: 'Aluguel de caçamba de entulho de 5m³ para obras médias e reformas comerciais.',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Caçamba 7m³',
-          description: 'Caçamba estacionária de 7m³ para grandes obras.',
+          name: 'Caçamba de Entulho 7m³',
+          description: 'Aluguel de caçamba de entulho de 7m³ para grandes demolições e construções.',
         },
       },
       {
@@ -80,7 +82,7 @@ const schema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Retirada de Entulho',
-          description: 'Remoção e descarte correto de entulho com documentação.',
+          description: 'Remoção, coleta e descarte correto de entulho com documentação ambiental.',
         },
       },
     ],
@@ -94,7 +96,7 @@ const schema = {
     worstRating: '1',
   },
 
-  sameAs: [],
+  sameAs: [SITE_CONFIG.social.whatsapp].filter(Boolean),
 };
 ---
 

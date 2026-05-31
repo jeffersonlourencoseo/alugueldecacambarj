@@ -1,0 +1,50 @@
+---
+import { SITE_CONFIG } from '../data/config';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  modDate?: Date;
+  author?: string;
+  authorType?: 'Organization' | 'Person';
+  authorJobTitle?: string;
+  image?: string;
+  url: string;
+  tags?: string[];
+}
+
+const { title, description, pubDate, modDate, author = SITE_CONFIG.name, authorType = 'Organization', authorJobTitle, image = SITE_CONFIG.ogImage, url, tags = [] } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  image: `${SITE_CONFIG.domain}${image}`,
+  datePublished: pubDate.toISOString(),
+  dateModified: (modDate || pubDate).toISOString(),
+  author: {
+    '@type': authorType,
+    name: author,
+    url: authorType === 'Person' ? `${SITE_CONFIG.domain}/sobre/` : SITE_CONFIG.domain,
+    ...(authorType === 'Person' && authorJobTitle ? { jobTitle: authorJobTitle } : {}),
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE_CONFIG.name,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_CONFIG.domain}${SITE_CONFIG.ogImage}`,
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': url,
+  },
+  keywords: tags.join(', '),
+  inLanguage: 'pt-BR',
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

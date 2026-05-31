@@ -6,7 +6,7 @@ Site institucional de alta conversão e performance, desenvolvido com foco em **
 
 ## Sobre o Projeto
 
-A CaçambaRápido é uma empresa fictícia de locação de caçambas estacionárias e retirada de entulho na Região Metropolitana de São Paulo. Este projeto foi construído como um case completo de desenvolvimento web moderno, cobrindo desde a arquitetura técnica até a copy de vendas e a infraestrutura de deploy.
+A CaçambaRápido é uma empresa fictícia de locação de caçambas estacionárias e retirada de entulho na Rio de Janeiro — RJ. Este projeto foi construído como um case completo de desenvolvimento web moderno, cobrindo desde a arquitetura técnica até a copy de vendas e a infraestrutura de deploy.
 
 ---
 

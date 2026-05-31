@@ -1,0 +1,46 @@
+---
+import { SITE_CONFIG } from '../data/config';
+
+interface Props {
+  title: string;
+  description: string;
+  url: string;
+  image?: string;
+  price?: string;
+  areaServed?: string;
+}
+
+const { title, description, url, image = SITE_CONFIG.ogImage, price, areaServed = 'Rio de Janeiro' } = Astro.props;
+
+const schema: any = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: `Aluguel de ${title} para Entulho`,
+  description: description,
+  url: url,
+  image: `${SITE_CONFIG.domain}${image}`,
+  provider: {
+    '@type': 'LocalBusiness',
+    name: SITE_CONFIG.name,
+    '@id': `${SITE_CONFIG.domain}/#business`,
+  },
+  areaServed: {
+    '@type': 'City',
+    name: areaServed,
+    '@id': 'https://www.wikidata.org/wiki/Q8678',
+  },
+  serviceType: 'Aluguel de Caçamba de Entulho',
+};
+
+if (price) {
+  schema.offers = {
+    '@type': 'Offer',
+    price: price.replace(/[^\d,]/g, '').replace(',', '.'),
+    priceCurrency: 'BRL',
+    availability: 'https://schema.org/InStock',
+    url: url,
+  };
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

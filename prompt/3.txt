@@ -1,0 +1,14 @@
+**PROMPT:**
+
+"Preciso expandir o site de **Aluguel de Caçamba** (Phase 3) criando a arquitetura completa de páginas, mantendo a consistência de design.
+
+Especificações do Sistema:
+1. **Hierarquia de Títulos:** Todas as novas páginas interna (`sobre`, `contato`, `servicos`, `blog`) devem ter um título `h1` grande, com margem inferior generosa (`mb-16`) para dar destaque.
+2. **Páginas Dinâmicas:** Configure as Content Collections para `blog` e `servicos`. Nas páginas individuais (`[slug].astro`), use o componente `<article>` com a classe `prose prose-lg` do Tailwind, mas adicione um container que garanta margens laterais de respiro (`max-w-5xl mx-auto`).
+3. **Páginas Legais:** Formate as páginas de 'Privacidade' e 'Termos' com tipografia legível e espaçamento entre parágrafos (`space-y-6`), evitando blocos de texto cansativos.
+4. **UX de Conversão:** O botão de WhatsApp e o formulário de contato devem ter `paddings` internos grandes (`p-6` a `p-10`) para serem fáceis de clicar no celular.
+5. **Navegação:** Garanta que os links do Header e Footer reflitam todas as novas rotas.
+
+Foque em manter o 'respiro' (py-32) do site em cada nova página criada."
+
+

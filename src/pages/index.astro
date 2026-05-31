@@ -9,11 +9,36 @@ import Depoimentos from '../components/Depoimentos.astro';
 import BlogHome from '../components/BlogHome.astro';
 import CTAFinal from '../components/CTAFinal.astro';
 import Footer from '../components/Footer.astro';
+import SchemaFAQ from '../components/SchemaFAQ.astro';
+import SchemaLocalBusiness from '../components/SchemaLocalBusiness.astro';
 import { SITE_CONFIG } from '../data/config';
+
+const faqItems = [
+  {
+    question: 'Quanto custa o aluguel de caçamba de entulho no Rio de Janeiro?',
+    answer: 'O valor do aluguel de caçamba de entulho varia conforme o tamanho. A caçamba de 3m³ sai a partir de R$ 350, a de 5m³ a partir de R$ 450 e a de 7m³ a partir de R$ 600. Todos os valores incluem entrega, retirada e documentação ambiental. Solicite um orçamento grátis via WhatsApp em até 30 minutos.',
+  },
+  {
+    question: 'Qual o prazo de entrega da caçamba de entulho?',
+    answer: 'Entregamos caçambas de entulho no mesmo dia ou, no máximo, em até 24 horas úteis após a confirmação do pedido. Atendemos todas as regiões do Rio de Janeiro — RJ.',
+  },
+  {
+    question: 'A caçamba de entulho inclui nota fiscal e licença ambiental?',
+    answer: 'Sim. Todo aluguel de caçamba de entulho inclui nota fiscal, certificado de destinação de resíduos e comprovante de descarte em aterro licenciado. Você não tem dor de cabeça com fiscalização.',
+  },
+  {
+    question: 'Como escolher o tamanho ideal de caçamba de entulho para minha obra?',
+    answer: 'A caçamba de entulho de 3m³ é ideal para pequenas reformas e limpeza de terreno. A de 5m³ atende a maioria das obras médias e reformas comerciais. A de 7m³ é indicada para grandes demolições e construções. Tem dúvida? Fale conosco que orientamos.',
+  },
+  {
+    question: 'Posso descartar qualquer tipo de entulho na caçamba?',
+    answer: 'Aceitamos entulho de construção civil, madeira, metal, plástico, cerâmica e concreto na caçamba de entulho. Não são permitidos líquidos, produtos químicos, pilhas, baterias e materiais inflamáveis. Em caso de dúvida, consulte nossa equipe.',
+  },
+];
 ---
 
 <Layout
-  title={`Aluguel de Caçamba | ${SITE_CONFIG.name}`}
+  title={`Aluguel de Caçamba de Entulho no Rio de Janeiro | ${SITE_CONFIG.name} — RJ`}
   description={SITE_CONFIG.description}
 >
   <Header />
@@ -25,6 +50,85 @@ import { SITE_CONFIG } from '../data/config';
     <ServicosHome />
     <Depoimentos />
     <BlogHome />
+
+    <!-- Áreas de Atendimento — Local SEO -->
+    <section class="py-24 md:py-32 bg-white" id="bairros">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto mb-16 text-center">
+          <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+            Atendimento em Todo o Rio
+          </span>
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            Caçamba para Toda a Cidade
+          </h2>
+          <p class="text-lg text-gray-600">
+            Entregamos caçambas em todas as regiões do Rio de Janeiro. De norte a sul, atendemos obras residenciais, comerciais e industriais.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          {[
+            'Centro', 'Tijuca', 'Vila Isabel', 'Grajaú', 'Méier',
+            'Madureira', 'Bangu', 'Campo Grande', 'Barra da Tijuca',
+            'Recreio', 'Jacarepaguá', 'Taquara', 'Freguesia',
+            'Ipanema', 'Copacabana', 'Botafogo', 'Flamengo',
+            'São Cristóvão', 'Penha', 'Olaria', 'Ramos',
+            'Ilha do Governador', 'Niterói', 'São Gonçalo',
+          ].map((bairro) => (
+            <div class="rounded-xl bg-gray-50 px-4 py-3 text-center border border-gray-100">
+              <span class="text-sm font-medium text-gray-700">{bairro}</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="text-center mt-12">
+          <p class="text-gray-500 text-sm mb-4">
+            Não encontrou seu bairro? Fale conosco — provavelmente atendemos aí também.
+          </p>
+          <a href="/contato/" class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-base font-bold text-white hover:bg-blue-900 transition-colors">
+            Verificar Disponibilidade
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {/* FAQ — otimizado para AI Overviews e featured snippets */}
+    <section class="py-24 md:py-32 bg-gray-50" id="faq">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto mb-16 text-center">
+          <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+            Dúvidas Frequentes
+          </span>
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            Perguntas e Respostas
+          </h2>
+          <p class="text-lg text-gray-600">
+            Tudo o que você precisa saber antes de alugar sua caçamba.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+          {faqItems.map((faq) => (
+            <details class="group rounded-2xl bg-white border border-gray-100 open:shadow-lg transition-all">
+              <summary class="flex items-center justify-between cursor-pointer p-6 md:p-8 text-left hover:text-secondary transition-colors list-none">
+                <h3 class="font-bold text-gray-900 text-lg">
+                  {faq.question}
+                </h3>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </summary>
+              <div class="px-6 md:px-8 pb-6 md:pb-8 text-gray-600 leading-relaxed">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+    <SchemaFAQ items={faqItems} />
+    <SchemaLocalBusiness />
+
     <CTAFinal />
   </main>
 

@@ -4,18 +4,26 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormularioContato from '../components/FormularioContato.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 
 const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
 ---
 
 <Layout
-  title={`Contato | Solicite um Orçamento - ${SITE_CONFIG.name}`}
-  description="Fale com a CaçambaRápido. Orçamento grátis em 30 minutos. Atendimento por WhatsApp, telefone ou formulário."
+  title={`Orçamento de Aluguel de Caçamba de Entulho | ${SITE_CONFIG.name} RJ`}
+  description="Solicite orçamento grátis de aluguel de caçamba de entulho no Rio de Janeiro. Atendimento em 30 minutos por WhatsApp, telefone ou formulário."
 >
   <Header />
 
   <main>
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Contato', href: '/contato' },
+      ]} />
+    </div>
+
     <!-- Hero de Contato -->
     <section class="py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
@@ -25,7 +33,7 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
           </span>
 
           <h1 class="text-4xl md:text-6xl font-black leading-tight text-gray-900 mb-6">
-            Solicite Seu Orçamento
+            Orçamento de Aluguel de Caçamba de Entulho no Rio
           </h1>
 
           <p class="text-lg text-gray-600">

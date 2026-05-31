@@ -4,6 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import SchemaService from '../../components/SchemaService.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 import { SITE_CONFIG } from '../../data/config';
 
 export const prerender = true;
@@ -27,15 +29,30 @@ const waMensagem = `Olá! Vi no site o serviço ${servico.data.title} e gostaria
 const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
 ---
 
-<Layout title={`${servico.data.title} | ${SITE_CONFIG.name}`} description={servico.data.description}>
+<Layout title={`Aluguel de Caçamba de Entulho — ${servico.data.title} | ${SITE_CONFIG.name} RJ`} description={servico.data.description}>
   <Header />
 
   <main>
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Serviços', href: '/servicos' },
+        { label: servico.data.title, href: `/servicos/${servico.slug}` },
+      ]} />
+    </div>
+
+    <SchemaService
+      title={servico.data.title}
+      description={servico.data.description}
+      url={`${SITE_CONFIG.domain}/servicos/${servico.slug}`}
+      price={servico.data.preco}
+    />
+
     <!-- Hero do Serviço -->
     <section class="py-24 md:py-32 bg-gray-50">
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-5xl mx-auto">
-          <a href="/servicos" class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-secondary transition-colors mb-8">
+          <a href="/servicos/" class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-secondary transition-colors mb-8">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
@@ -48,10 +65,10 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
             </span>
 
             <h1 class="text-4xl md:text-6xl font-black leading-tight text-gray-900 mb-6">
-              {servico.data.title}
+              Aluguel de {servico.data.title} para Entulho
             </h1>
 
-            <p class="text-xl text-gray-600 max-w-3xl">{servico.data.description}</p>
+            <p class="text-xl text-gray-600 max-w-3xl">{servico.data.description} Locação com entrega rápida e documentação.</p>
           </div>
         </div>
       </div>
@@ -132,6 +149,39 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outros Serviços -->
+    <section class="py-24 md:py-32 bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Outros Serviços de Locação
+          </h2>
+          <p class="text-lg text-gray-600">
+            Encontre a caçamba ideal para o tamanho da sua obra.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="/servicos/cacamba-3m3/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'cacamba-3m3' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
+            <h3 class="font-bold text-gray-900 mb-1">Caçamba 3m³</h3>
+            <p class="text-sm text-gray-600">Pequenas reformas</p>
+          </a>
+          <a href="/servicos/cacamba-5m3/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'cacamba-5m3' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
+            <h3 class="font-bold text-gray-900 mb-1">Caçamba 5m³</h3>
+            <p class="text-sm text-gray-600">Obras médias</p>
+          </a>
+          <a href="/servicos/cacamba-7m3/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'cacamba-7m3' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
+            <h3 class="font-bold text-gray-900 mb-1">Caçamba 7m³</h3>
+            <p class="text-sm text-gray-600">Grandes demolições</p>
+          </a>
+          <a href="/servicos/retirada-entulho/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'retirada-entulho' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
+            <h3 class="font-bold text-gray-900 mb-1">Retirada de Entulho</h3>
+            <p class="text-sm text-gray-600">Remoção completa</p>
+          </a>
         </div>
       </div>
     </section>

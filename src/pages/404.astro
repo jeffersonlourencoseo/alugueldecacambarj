@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { SITE_CONFIG } from '../data/config';
+---
+
+<Layout
+  title={`Página Não Encontrada | ${SITE_CONFIG.name}`}
+  description="A página que você procurou não existe. Volte para o início ou fale conosco pelo WhatsApp."
+  noindex={true}
+>
+  <Header />
+
+  <main class="flex-grow">
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-6xl mb-6">🔍</div>
+
+          <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6">
+            Página Não Encontrada
+          </h1>
+
+          <p class="text-lg text-gray-600 mb-10">
+            Parece que a página que você procurou foi removida ou o endereço está incorreto.
+            Não se preocupe — estamos aqui para ajudar.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <a
+              href="/"
+              class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-base font-bold text-white hover:bg-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 min-h-[56px]"
+            >
+              Voltar para o Início
+            </a>
+
+            <WhatsAppButton posicao="inline" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+            <a href="/servicos/" class="rounded-2xl bg-gray-50 p-6 border border-gray-100 hover:shadow-lg transition-all">
+              <h3 class="font-bold text-gray-900 mb-2">🚛 Nossos Serviços</h3>
+              <p class="text-sm text-gray-600">Caçambas de 3m³, 5m³ e 7m³ para obras no Rio.</p>
+            </a>
+
+            <a href="/blog/" class="rounded-2xl bg-gray-50 p-6 border border-gray-100 hover:shadow-lg transition-all">
+              <h3 class="font-bold text-gray-900 mb-2">📚 Blog de Dicas</h3>
+              <p class="text-sm text-gray-600">Guias práticos sobre obras, reformas e entulho.</p>
+            </a>
+
+            <a href="/contato/" class="rounded-2xl bg-gray-50 p-6 border border-gray-100 hover:shadow-lg transition-all">
+              <h3 class="font-bold text-gray-900 mb-2">📞 Fale Conosco</h3>
+              <p class="text-sm text-gray-600">Orçamento grátis em 30 minutos pelo WhatsApp.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

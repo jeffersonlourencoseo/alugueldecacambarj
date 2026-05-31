@@ -1,0 +1,34 @@
+**PROMPT:**
+
+"Aja como um Engenheiro de DevOps e Desenvolvedor Full-stack. Chegamos à **Etapa 7: Finalização e Deploy**. 
+
+Sua missão é preparar o site para o mundo real e realizar os primeiros passos de versionamento e infraestrutura.
+
+**EXECUTE AS SEGUINTES TAREFAS AGORA:**
+
+### 1. INSTALAÇÃO E CONFIGURAÇÃO TÉCNICA
+- **TERMINAL:** Execute o comando `npm install @astrojs/vercel` para garantir que o adaptador de deploy esteja presente.
+- **CONFIGURAÇÃO:** Atualize o `astro.config.mjs` para usar o adaptador da Vercel (`output: 'server' / adapter: vercel()`).
+
+### 2. HIGIENE E PORTFÓLIO (README)
+- **ARQUIVOS:** Crie um `.gitignore` rigoroso (ignorando node_modules, .astro, dist, .env).
+- **DOCUMENTAÇÃO:** Crie um `README.md` em Português de alto nível, descrevendo o projeto, as tecnologias usadas e o status 'Pronto para Produção'. Este arquivo é o marketing do aluno.
+
+### 3. VERSIONAMENTO (GIT)
+- **TERMINAL:** Você deve inicializar o repositório agora. Execute em sequência:
+    1. `git init`
+    2. `git add .`
+    3. `git commit -m 'feat: projeto finalizado e pronto para deploy'`
+
+### 4. CHECKLIST DE CONVERSÃO
+- Verifique se o `WhatsAppBtn.astro` está integrado no `Layout.astro`.
+- Verifique se todos os placeholders no `src/data/config.ts` foram removidos.
+
+**IMPORTANTE:** Se qualquer comando de terminal falhar por permissão, você deve tentar contornar usando o caminho absoluto ou informar ao usuário exatamente o que aconteceu, mas a prioridade é a **EXECUÇÃO AUTOMÁTICA**.
+
+Ao final, informe ao usuário que o projeto está versionado localmente e pronto para ser conectado ao repositório remoto do Github."
+
+
+
+
+

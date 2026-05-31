@@ -1,0 +1,16 @@
+**PROMPT:**
+
+"Como um designer UI/UX especialista em sites de alta conversão, preciso aplicar o design (Phase 2) no projeto de **Aluguel de Caçamba**.
+
+Diretrizes Críticas de Layout (Design de Agência):
+1. **Regra do Padding Interno:** Todos os cards (Serviços, Depoimentos, etc) devem ter um preenchimento interno (`padding`) generoso de no mínimo `p-10` ou `p-12`. Nada deve encostar na borda do card.
+2. **Sistema de Cores (Editável):** Configure as cores no `tailwind.config.mjs` usando os nomes `primary` (#FACC15), `secondary` (#1E3A8A) e `accent` (#000000).
+3. **Padrão de Grids:** Use `gap-10` ou `gap-12` entre os elementos de um grid. Espaço é sinônimo de profissionalismo.
+4. **Acessibilidade:** Garanta contraste alto entre o texto e o fundo. Use `text-gray-900` para títulos e `text-gray-600` para parágrafos.
+5. **Componentes:**
+   - **Header:** Deve ser `sticky` (fixo) com um leve desfoque de fundo (`backdrop-blur`) para um toque moderno.
+   - **Hero:** Use uma tipografia 'Black' ou 'Extra Bold'. O espaçamento entre o título e o botão de ação deve ser de pelo menos `mt-10`.
+   - **Footer:** Deve ter um padding superior (`pt-24`) para separar bem do resto do site.
+
+Entregue um código com design de agência, focado em autoridade e segurança."
+

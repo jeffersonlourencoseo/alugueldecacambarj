@@ -2,16 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 ---
 
 <Layout
-  title={`Sobre Nós | ${SITE_CONFIG.name} - Locação de Caçambas`}
-  description="Conheça a CaçambaRápido. Mais de 15 anos de experiência em locação de caçambas e retirada de entulho no Rio de Janeiro - RJ."
+  title={`Aluguel de Caçamba de Entulho — Quem Somos | ${SITE_CONFIG.name}`}
+  description="Conheça a CaçambaRápido. Especialistas em aluguel de caçamba de entulho no Rio de Janeiro — RJ. Mais de 15 anos de experiência em locação e retirada de entulho."
 >
   <Header />
 
   <main>
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Quem Somos', href: '/sobre' },
+      ]} />
+    </div>
+
     <!-- Nossa História -->
     <section class="py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
@@ -21,7 +29,7 @@ import { SITE_CONFIG } from '../data/config';
           </span>
 
           <h1 class="text-4xl md:text-6xl font-black leading-tight text-gray-900 mb-16">
-            De uma ideia simples a referência em locação
+            Aluguel de Caçamba de Entulho no Rio — Quem Somos
           </h1>
 
           <div class="space-y-8 text-lg text-gray-600 leading-relaxed">
@@ -99,11 +107,11 @@ import { SITE_CONFIG } from '../data/config';
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
-              Compromisso Ambiental
+              Compromisso Ambiental e Segurança
             </span>
 
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Descarte correto, sem comprometer o futuro
+              Descarte correto e segurança em primeiro lugar
             </h2>
 
             <div class="space-y-4 text-gray-600 leading-relaxed">
@@ -117,8 +125,10 @@ import { SITE_CONFIG } from '../data/config';
                 para operar com segurança, respeitando normas de trânsito e logística urbana.
               </p>
               <p>
-                Trabalhamos com licença ambiental válida, autorização da prefeitura e
-                seguro de responsabilidade civil. Você contrata um serviço completo e dentro da lei.
+                Em todas as nossas operações, respeitamos a <strong class="text-gray-900"><a href="https://www.gov.br/trabalho-e-emprego/pt-br/composicao/orgaos-especiais/secretaria-de-seguranca-e-saude-no-trabalho/normas-regulamentadoras/nr-18-condicoes-e-meio-ambiente-de-trabalho-na-industria-da-construcao" target="_blank" rel="noopener noreferrer">NR-18</a> (Norma Regulamentadora de Segurança na Construção Civil)</strong>, que estabelece as diretrizes para prevenção de acidentes, organização do canteiro e proteção dos trabalhadores. Garantimos que a entrega e retirada da caçamba sejam feitas sem riscos à sua equipe ou ao público.
+              </p>
+              <p>
+                Trabalhamos com licença ambiental válida, autorização da prefeitura, seguro de responsabilidade civil e equipe treinada em <strong class="text-gray-900">CIPA</strong>. Você contrata um serviço completo, seguro e dentro da lei.
               </p>
             </div>
           </div>
