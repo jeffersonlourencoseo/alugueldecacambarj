@@ -12,6 +12,12 @@ Grandes eventos no Rio de Janeiro — sejam eles festas de rua, shows em estádi
 
 Neste guia especializado, vamos detalhar como funciona o **aluguel de caçambas para eventos** no Rio de Janeiro, desde o planejamento pré-evento até a retirada imediata após o encerramento. Seja você um produtor cultural, uma empresa de eventos, um síndico organizando festa de fim de ano ou um promoter de shows, este conteúdo foi desenvolvido para resolver seus desafios de gestão de resíduos em grande escala.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## Por que eventos precisam de caçambas especializadas?
 
 Eventos diferem de obras em quatro aspectos críticos que exigem uma abordagem diferente de **aluguel de caçamba**:
@@ -169,6 +175,12 @@ A **coleta e descarte de resíduos** em grandes festivais, como os realizados na
 Eventos que adotam essa abordagem também se preparam melhor para a Lei nº 12.305/2010 (Política Nacional de Resíduos Sólidos). A PNRS exige que grandes geradores — incluindo eventos com público massivo — apresentem planos de gerenciamento com destinação adequada. Ter um parceiro de **locação de caçambas para eventos** que emite Certificado de Destinação Final (CDF) e fornece relatório de destinação simplifica a conformidade legal e encanta patrocinadores com ESG. Documentar cada etapa da destinação também facilita futuras licenças da prefeitura e melhora o relacionamento com órgãos ambientais em novas edições do evento.
 
 Para produtores que também organizam reformas de stands e montagens em galpões, vale a pena conhecer opções de [aluguel de caçambas para condomínios, comércios e indústria](/blog/aluguel-cacambas-condominios-comercios-industria/), pois a logística de entrega em horários restritos é muito similar. E para evitar problemas com fiscalização da prefeitura ou do INEA durante eventos ao ar livre, leia nosso guia sobre como [ficar legal e evitar multas com caçamba no RJ](/blog/cacamba-legal-evitar-multas-rj/).
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: evento bem-sucedido é evento limpo
 

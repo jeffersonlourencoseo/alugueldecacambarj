@@ -12,6 +12,12 @@ Quando você digita **"caçamba de entulho perto de mim"** no Google, espera enc
 
 Neste guia completo, vamos ensinar exatamente como encontrar o **melhor aluguel de caçamba de entulho** na sua região do Rio, o que observar antes de contratar, como avaliar empresas locais e quais são as particularidades de cada zona da cidade. Seja você morador da Zona Sul, comerciante no Centro ou síndico na Barra da Tijuca, este conteúdo foi feito para resolver sua busca de forma definitiva.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## Por que a proximidade importa tanto no aluguel de caçamba?
 
 O Rio de Janeiro é uma cidade de dimensões continentais, com desafios logísticos únicos. A distância entre o pátio da empresa locadora e o local da obra afeta diretamente três fatores críticos:
@@ -189,6 +195,12 @@ Copie o nome exato da empresa no Google Maps e pesquise no Reclame Aqui. Reclama
 Usar o Google Maps com critério transforma a busca por **caçamba de entulho rio de janeiro** em decisão informada. A proximidade importa, mas a estrutura e reputação importam ainda mais.
 
 Para entender como os preços são formados antes de fechar qualquer orçamento, leia nossa análise completa sobre [quanto custa alugar uma caçamba](/blog/quanto-custa-alugar-cacamba/).
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: perto de você existe uma caçamba confiável
 

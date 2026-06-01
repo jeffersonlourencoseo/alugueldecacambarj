@@ -14,6 +14,12 @@ Usar uma **caçamba legal** não é apenas uma questão de ética empresarial �
 
 Neste guia completo e atualizado, vamos detalhar o que caracteriza uma **caçamba legal** no Rio de Janeiro, como identificar empresas clandestinas, como consultar **aterros licenciados** no INEA, quais são as multas por descarte irregular, como denunciar infrações e como garantir que sua obra esteja 100% dentro da lei.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## O que é uma caçamba legal? Os 5 pilares
 
 Uma **caçamba legal** é o resultado de uma cadeia de cinco pilares que começa na empresa locadora e termina no **aterro licenciado**:
@@ -188,6 +194,12 @@ Para quem contrata o serviço, distinguir uma caçamba legal de uma clandestina 
 Usar esse checklist leva menos de dois minutos e pode evitar dores de cabeça posteriores. Lembre-se de que a contratação de uma caçamba legal também passa pela análise do comportamento da empresa: quem opera dentro da lei não se ofende quando o cliente pede documentos.
 
 Ainda tem dúvidas sobre como fazer o descarte correto de resíduos sólidos ou quais permissões sua obra precisa? Confira nossos guias completos sobre [permissões para entulho na construção civil](/blog/permissoes-entulho-construcao-civil/) e as [melhores práticas de descarte correto de entulho](/blog/descarte-correto-entulho/). Ambos trazem orientações detalhadas para obras residenciais e comerciais no Rio de Janeiro.
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: legalidade é proteção
 

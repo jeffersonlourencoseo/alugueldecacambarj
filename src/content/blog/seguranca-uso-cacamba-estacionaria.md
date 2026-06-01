@@ -12,6 +12,12 @@ A **caçamba estacionária** é um equipamento indispensável em obras e reforma
 
 Neste guia completo, apresentamos **10 regras essenciais de segurança** no uso de **caçambas de entulho**, baseadas na **NR-18** (Norma Regulamentadora de Segurança na Construção Civil), na legislação municipal do Rio de Janeiro e em mais de 15 anos de experiência prática da CaçambaRápido em obras na região.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## 1. Escolha o local correto para instalação da caçamba
 
 A instalação da **caçamba estacionária** começa muito antes da entrega. O local escolhido precisa atender a critérios técnicos de estabilidade, acesso e segurança:
@@ -184,6 +190,12 @@ Em caso de acidente com a **caçamba de entulho**, a responsabilidade depende da
 - **Dano a terceiros por descarte de material perigoso**: responsabilidade criminal do gestor
 
 Por isso, contratar uma empresa de **locação de caçambas estacionárias** com seguro de RC e documentação completa não é luxo — é proteção jurídica.
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: segurança é investimento, não custo
 

@@ -10,6 +10,12 @@ A limpeza de terreno e a **remoção de resíduos pós-obra** são etapas freque
 
 Neste guia completo, vamos detalhar como usar **caçambas para limpeza** de terrenos, como calcular o volume de resíduos pós-obra, quais materiais são gerados nessa fase, como separar recicláveis, como contratar o serviço correto de **remoção de entulho** e quais são as obrigações legais do responsável pela obra no Rio de Janeiro.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## Por que a limpeza pós-obra exige planejamento específico?
 
 Diferente da fase de produção, onde o entulho é gerado continuamente, a limpeza pós-obra é um evento concentrado que gera um volume grande e diversificado de resíduos em poucos dias. As equipes de acabamento, pintura, instalações hidráulicas e elétricas finalizam suas tarefas quase simultaneamente, deixando para trás:
@@ -176,6 +182,12 @@ Na prática, a separação já na **caçamba para limpeza** facilita o destino c
 - **Mistura de terra com entulho**: quando a terra está misturada a cimento, tijolos ou cerâmica, o volume deve ir para aterro de construção civil. Nesse caso, combine com a empresa de **remoção de entulho** a separação no momento da retirada.
 
 A **remoção de resíduos pós obra** em terrenos com vegetação densa costuma gerar 20% a 30% a mais de volume do que o estimado apenas para entulho. Por isso, ao calcular a **caçamba para limpeza** de terreno bruto, adicione essa margem vegetal à conta. A CaçambaRápido orienta clientes sobre como separar esses materiais ainda no canteiro, evitando multas ambientais e custos extras de triagem no aterro.
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: a limpeza é o último capítulo da obra
 

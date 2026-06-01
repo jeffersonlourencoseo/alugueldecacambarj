@@ -12,6 +12,12 @@ A construção civil é uma das maiores geradoras de resíduos no Brasil.
 
 Neste guia completo sobre **reciclagem de entulho**, vamos explorar quais materiais podem ser reciclados, como implementar um programa de reciclagem na prática, os benefícios financeiros e ambientais, o papel da **caçamba de entulho** no processo e como a legislação brasileira incentiva — e, em alguns casos, exige — a reciclagem na construção civil.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## O problema do entulho no Brasil e no Rio de Janeiro
 
 O Brasil gera aproximadamente 70 milhões de toneladas de resíduos sólidos urbanos por ano. Deste total, cerca de 35 milhões de toneladas vêm da construção civil. No Rio de Janeiro, o cenário é particularmente desafiador: a combinação de obras de infraestrutura (como o Arco Metropolitano, reformas de estádios e obras de saneamento), reformas residenciais constantes e demolições de áreas degradadas gera um fluxo contínuo de entulho que precisa de destinação adequada.
@@ -156,6 +162,12 @@ ROI = (Economias + Receitas - Custos de Implementação) / Custos de Implementa�
 Em muitos casos, o ROI da **reciclagem de entulho** ultrapassa 50% no primeiro ano, especialmente em obras com grande volume de concreto e metal. A **coleta e descarte de resíduos** de forma organizada também reduz paradas inesperadas causadas por falta de espaço no canteiro ou problemas com fiscalização ambiental.
 
 Se você ainda tem dúvidas sobre como separar corretamente os materiais ou sobre a legislação que rege o descarte na construção civil, confira nossos guias sobre [descarte correto de entulho](/blog/descarte-correto-entulho/) e [permissões para descarte na construção civil](/blog/permissoes-entulho-construcao-civil/). Ambos trazem detalhes essenciais para quem quer manter a obra dentro da lei e da sustentabilidade.
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: reciclagem é lucro, não custo
 

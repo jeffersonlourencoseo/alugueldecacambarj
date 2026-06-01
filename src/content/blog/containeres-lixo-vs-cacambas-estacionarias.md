@@ -12,6 +12,12 @@ Escolher o equipamento errado pode custar caro. Um contêiner de 15m³ para uma 
 
 ![Contêiner roll-on versus caçamba estacionária](/images/Caçamba-de-entulho-caçamba-Roll-on-foto-Cal-Leve.webp)
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## O que é um contêiner de lixo (roll-off)?
 
 O **contêiner de lixo** é uma caixa metálica de grande porte, geralmente com capacidade de 10m³ a 30m³, transportada por um caminhão roll-off equipado com mecanismo hidráulico de içamento. O caminhão posiciona o contêiner no local, abaixa-o no chão e retira quando estiver cheio, transportando o contêiner inteiro até o aterro.
@@ -151,6 +157,12 @@ A CaçambaRápido entrega toda a documentação completa tanto para **locação 
 A escolha entre contêiner e caçamba também impacta as metas de sustentabilidade da obra. O contêiner, por ter porta traseira e piso nivelado, facilita a retirada seletiva de materiais recicláveis — madeira, metal, plástico e tijolo limpo — para beneficiamento em usinas parceiras. Empreiteiras que trabalham com certificações como LEED ou CBCS (Certificação Brasileira de Construção Sustentável) preferem o contêiner justamente pela possibilidade de segregação interna.
 
 As **caçambas estacionárias**, por outro lado, são ideais para entulho misto de pequena escala que seguirá direto para triagem mecânica em aterros de classe 2A. Como a caçamba é aberta e descarregada por basculamento, não existe o mesmo controle de separação. Para obras que priorizam reciclagem, a recomendação é usar contêineres específicos para cada classe de resíduo e reservar a **locação de caçambas** apenas para o rejeito final.
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: a escolha certa depende do projeto
 

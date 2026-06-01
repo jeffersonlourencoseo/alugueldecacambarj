@@ -12,6 +12,12 @@ O **descarte irregular de entulho** é uma infração ambiental grave no Brasil.
 
 Neste guia completo, vamos detalhar o que diz a lei, como funciona a cadeia de descarte, o que acontece com seu entulho depois da retirada, como evitar multas e como implementar boas práticas de gestão de resíduos na sua obra, condomínio ou empresa.
 
+<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
+  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+
 ## Por que usar uma caçamba de entulho licenciada?
 
 Empresas regulares de **aluguel de caçamba de entulho** possuem autorização da prefeitura e do órgão ambiental para transportar e destinar o resíduo da construção civil em **aterros licenciados**. Isso significa que todo o processo — da coleta ao descarte final — é rastreável, auditável e dentro da lei.
@@ -173,6 +179,12 @@ Quando a denúncia é comprovada, o infrator pode ser autuado administrativament
 A melhor forma de evitar que seu entulho vire estatística de descarte irregular é contratar uma **caçamba legal** desde o início da obra. Empresas regulares realizam **coleta de entulho** com documentação completa, rastreabilidade da carga e entrega garantida em **aterros licenciados**.
 
 Se você quer entender melhor todas as obrigações legais antes de iniciar uma reforma ou construção, leia nosso guia sobre [permissões para descarte de entulho em obras](/blog/permissoes-entulho-construcao-civil/). E para descobrir como o material descartado pode voltar à cadeia produtiva, confira nosso artigo sobre [reciclagem de entulho na construção civil](/blog/reciclagem-entulho-construcao/).
+
+<div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
+  <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
+  <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+</div>
 
 ## Conclusão: descarte correto é obrigação e vantagem
 
