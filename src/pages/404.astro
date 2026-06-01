@@ -13,17 +13,17 @@ import { SITE_CONFIG } from '../data/config';
 >
   <Header />
 
-  <main class="flex-grow">
+  <main class="bg-concrete">
     <section class="py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12 text-center">
         <div class="max-w-2xl mx-auto">
-          <div class="text-6xl mb-6">🔍</div>
+          <div class="font-display text-6xl text-safety mb-6">🔍</div>
 
-          <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6">
+          <h1 class="font-display text-4xl md:text-6xl text-pale uppercase mb-6">
             Página Não Encontrada
           </h1>
 
-          <p class="text-lg text-gray-600 mb-10">
+          <p class="text-lg text-pale/50 mb-10">
             Parece que a página que você procurou foi removida ou o endereço está incorreto.
             Não se preocupe — estamos aqui para ajudar.
           </p>
@@ -31,7 +31,7 @@ import { SITE_CONFIG } from '../data/config';
           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
               href="/"
-              class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-base font-bold text-white hover:bg-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 min-h-[56px]"
+              class="inline-flex items-center justify-center bg-safety px-8 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]"
             >
               Voltar para o Início
             </a>
@@ -40,19 +40,19 @@ import { SITE_CONFIG } from '../data/config';
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
-            <a href="/servicos/" class="rounded-2xl bg-gray-50 p-6 border border-gray-100 hover:shadow-lg transition-all">
-              <h3 class="font-bold text-gray-900 mb-2">🚛 Nossos Serviços</h3>
-              <p class="text-sm text-gray-600">Caçambas de 3m³, 5m³ e 7m³ para obras no Rio.</p>
+            <a href="/servicos/" class="bg-concrete-light border border-steel p-6 hover:border-safety transition-all">
+              <h3 class="font-display text-lg text-pale uppercase mb-2">🚛 Nossos Serviços</h3>
+              <p class="text-sm text-pale/50">Caçambas de 3m³, 5m³ e 7m³ para obras no Rio.</p>
             </a>
 
-            <a href="/blog/" class="rounded-2xl bg-gray-50 p-6 border border-gray-100 hover:shadow-lg transition-all">
-              <h3 class="font-bold text-gray-900 mb-2">📚 Blog de Dicas</h3>
-              <p class="text-sm text-gray-600">Guias práticos sobre obras, reformas e entulho.</p>
+            <a href="/blog/" class="bg-concrete-light border border-steel p-6 hover:border-safety transition-all">
+              <h3 class="font-display text-lg text-pale uppercase mb-2">📚 Blog de Dicas</h3>
+              <p class="text-sm text-pale/50">Guias práticos sobre obras, reformas e entulho.</p>
             </a>
 
-            <a href="/contato/" class="rounded-2xl bg-gray-50 p-6 border border-gray-100 hover:shadow-lg transition-all">
-              <h3 class="font-bold text-gray-900 mb-2">📞 Fale Conosco</h3>
-              <p class="text-sm text-gray-600">Orçamento grátis em 30 minutos pelo WhatsApp.</p>
+            <a href="/contato/" class="bg-concrete-light border border-steel p-6 hover:border-safety transition-all">
+              <h3 class="font-display text-lg text-pale uppercase mb-2">📞 Fale Conosco</h3>
+              <p class="text-sm text-pale/50">Orçamento grátis em 30 minutos pelo WhatsApp.</p>
             </a>
           </div>
         </div>

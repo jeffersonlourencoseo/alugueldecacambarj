@@ -16,7 +16,7 @@ const postsOrdenados = posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pu
 >
   <Header />
 
-  <main>
+  <main class="bg-concrete">
     <div class="container mx-auto px-6 md:px-12 pt-8">
       <Breadcrumb items={[
         { label: 'Início', href: '/' },
@@ -27,47 +27,50 @@ const postsOrdenados = posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pu
     <section class="py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-3xl mb-16">
-          <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
-            Blog
-          </span>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-px w-12 bg-safety"></div>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Blog</span>
+          </div>
 
-          <h1 class="text-4xl md:text-6xl font-black leading-tight text-gray-900 mb-6">
-            Dicas sobre Aluguel de Caçamba de Entulho no Rio
+          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-6">
+            Dicas sobre
+            <br />
+            <span class="text-safety">Caçamba</span>
+            no Rio
           </h1>
 
-          <p class="text-lg text-gray-600">
+          <p class="text-lg text-pale/50">
             Conteúdo exclusivo para ajudar você a escolher, usar e descartar corretamente o entulho da sua obra.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {postsOrdenados.map((post) => (
             <a
               href={`/blog/${post.slug}/`}
-              class="group rounded-2xl bg-white p-10 md:p-12 border border-gray-100 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col"
+              class="group bg-concrete-light border border-steel p-10 md:p-12 hover:border-safety transition-all duration-500 hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] flex flex-col"
             >
               <div class="flex items-start justify-between mb-6">
-                <span class="inline-block rounded-lg bg-primary/10 px-3 py-1 text-xs font-bold text-secondary">
+                <span class="text-xs font-bold text-safety uppercase tracking-wider">
                   {post.data.pubDate.toLocaleDateString('pt-BR', {
                     day: 'numeric',
                     month: 'short',
                     year: 'numeric',
                   })}
                 </span>
-
-                <svg class="w-6 h-6 text-gray-400 group-hover:text-secondary transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6 text-steel group-hover:text-safety transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
               </div>
 
-              <h2 class="text-2xl font-bold text-gray-900 group-hover:text-secondary transition-colors mb-4">
+              <h2 class="font-display text-2xl md:text-3xl text-pale group-hover:text-safety transition-colors uppercase mb-4">
                 {post.data.title}
               </h2>
 
-              <p class="text-gray-600 flex-grow">{post.data.description}</p>
+              <p class="text-pale/50 flex-grow">{post.data.description}</p>
 
-              <div class="pt-6 border-t border-gray-100 mt-6">
-                <span class="text-sm font-medium text-gray-500">Por {post.data.author}</span>
+              <div class="pt-6 border-t border-steel mt-6">
+                <span class="text-xs text-pale/40 uppercase tracking-wider">Por {post.data.author}</span>
               </div>
             </a>
           ))}

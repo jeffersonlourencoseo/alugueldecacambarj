@@ -3,7 +3,6 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import SchemaArticle from '../../components/SchemaArticle.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import { SITE_CONFIG } from '../../data/config';
@@ -40,21 +39,21 @@ const autores: Record<string, { nome: string; bio: string; emoji: string; tipo: 
   },
   'João Silva': {
     nome: 'João Silva',
-    bio: 'Fundador e Diretor da CaçambaRápido. Mais de 15 anos no setor de locação. Acredita que honestidade e agilidade são a base de qualquer negócio.',
+    bio: 'Fundador e Diretor da CaçambaRápido. Mais de 15 anos no setor de locação.',
     emoji: '👨‍💼',
     tipo: 'Person',
     cargo: 'Fundador e Diretor',
   },
   'Ana Paula Costa': {
     nome: 'Ana Paula Costa',
-    bio: 'Atendimento e Vendas na CaçambaRápido. Responde orçamentos em até 30 minutos. Conhece cada cliente pelo nome e pela necessidade.',
+    bio: 'Atendimento e Vendas na CaçambaRápido. Responde orçamentos em até 30 minutos.',
     emoji: '👩‍💼',
     tipo: 'Person',
     cargo: 'Atendimento e Vendas',
   },
   'Marcos Oliveira': {
     nome: 'Marcos Oliveira',
-    bio: 'Logística e Operações na CaçambaRápido. Responsável por garantir que cada caçamba chegue no prazo certo, no lugar certo.',
+    bio: 'Logística e Operações na CaçambaRápido. Responsável por garantir que cada caçamba chegue no prazo certo.',
     emoji: '👨‍🔧',
     tipo: 'Person',
     cargo: 'Logística e Operações',
@@ -67,7 +66,7 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
 <Layout title={`${post.data.title} | Blog Aluguel de Caçamba de Entulho — ${SITE_CONFIG.name}`} description={post.data.description}>
   <Header />
 
-  <main>
+  <main class="bg-concrete">
     <div class="container mx-auto px-6 md:px-12 pt-8">
       <Breadcrumb items={[
         { label: 'Início', href: '/' },
@@ -91,9 +90,9 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-12">
-            <!-- Conteúdo Principal -->
+            <!-- Conteúdo -->
             <div class="lg:col-span-3">
-              <a href="/blog/" class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-secondary transition-colors mb-8">
+              <a href="/blog/" class="inline-flex items-center gap-2 text-sm text-pale/40 hover:text-safety transition-colors mb-8">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                 </svg>
@@ -103,50 +102,53 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
               <header class="mb-12">
                 <div class="flex flex-wrap items-center gap-3 mb-6">
                   {post.data.tags?.map((tag) => (
-                    <span class="inline-block rounded-full bg-primary/10 px-4 py-1 text-xs font-bold text-secondary">
+                    <span class="inline-block bg-safety/10 border border-safety/20 px-4 py-1 text-xs font-bold text-safety uppercase tracking-wider">
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h1 class="text-4xl md:text-5xl font-black leading-tight text-gray-900 mb-6">
+                <h1 class="font-display text-4xl md:text-5xl text-pale uppercase leading-tight mb-6">
                   {post.data.title}
                 </h1>
 
-                <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500">
-                  <span>Por <strong class="text-gray-900">{autorInfo.nome}</strong>{autorInfo.cargo ? ` — ${autorInfo.cargo}` : ''}</span>
+                <div class="flex flex-wrap items-center gap-4 text-sm text-pale/40">
+                  <span>Por <strong class="text-pale">{autorInfo.nome}</strong>{autorInfo.cargo ? ` — ${autorInfo.cargo}` : ''}</span>
                   <span>•</span>
-                  <span>Publicado em {post.data.pubDate.toLocaleDateString('pt-BR', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric',
-                  })}</span>
+                  <span>{post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 </div>
               </header>
 
-              <article class="prose prose-lg max-w-none">
+              <article class="prose prose-lg prose-invert max-w-none text-pale/70">
                 <Content />
               </article>
 
-              <!-- CTA no final do post -->
-              <div class="mt-16 rounded-2xl bg-secondary p-8 md:p-10 text-white">
-                <h3 class="text-xl font-bold mb-4">Precisa de aluguel de caçamba de entulho?</h3>
-                <p class="text-blue-100 mb-6">
+              <!-- CTA final -->
+              <div class="mt-16 bg-safety p-8 md:p-10 text-concrete">
+                <h3 class="font-display text-xl uppercase mb-4">Precisa de aluguel de caçamba de entulho?</h3>
+                <p class="text-concrete/70 mb-6">
                   Tire suas dúvidas e solicite um orçamento sem compromisso. Atendemos em até 24h no Rio de Janeiro.
                 </p>
-                <WhatsAppButton posicao="inline" />
+                <a
+                  href={SITE_CONFIG.social.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-3 bg-concrete px-6 py-3 text-sm font-display uppercase tracking-wider text-safety hover:bg-concrete-light transition-colors"
+                >
+                  WhatsApp — Orçamento Rápido
+                </a>
               </div>
 
-              <!-- Bio do Autor -->
-              <div class="mt-12 rounded-2xl bg-gray-50 p-8 border border-gray-100">
+              <!-- Bio -->
+              <div class="mt-12 bg-concrete-light border border-steel p-8">
                 <div class="flex items-start gap-4">
-                  <span class="text-4xl">{autorInfo.emoji}</span>
+                  <span class="font-display text-4xl text-safety">{autorInfo.emoji}</span>
                   <div>
-                    <p class="font-bold text-gray-900">
+                    <p class="font-bold text-pale">
                       Sobre {autorInfo.nome}
-                      {autorInfo.cargo && <span class="text-sm font-normal text-gray-500 ml-2">{autorInfo.cargo}</span>}
+                      {autorInfo.cargo && <span class="text-sm font-normal text-pale/40 ml-2">{autorInfo.cargo}</span>}
                     </p>
-                    <p class="text-gray-600 text-sm mt-1 leading-relaxed">{autorInfo.bio}</p>
+                    <p class="text-pale/50 text-sm mt-1 leading-relaxed">{autorInfo.bio}</p>
                   </div>
                 </div>
               </div>
@@ -154,31 +156,30 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
 
             <!-- Sidebar -->
             <div class="lg:col-span-1">
-              <div class="sticky top-28 space-y-8">
-                <!-- CTA Sidebar -->
-                <div class="rounded-2xl bg-primary p-8 text-center">
-                  <h3 class="text-lg font-bold text-accent mb-3">Orçamento Grátis</h3>
-                  <p class="text-accent/80 text-sm mb-6">
-                    Resposta em 30 minutos pelo WhatsApp.
-                  </p>
-                  <WhatsAppButton posicao="inline" />
+              <div class="sticky top-28 space-y-6">
+                <div class="bg-concrete-light border border-steel p-8">
+                  <h3 class="font-display text-lg text-pale uppercase mb-3">Orçamento Grátis</h3>
+                  <p class="text-pale/50 text-sm mb-6">Resposta em 30 minutos pelo WhatsApp.</p>
+                  <a
+                    href={SITE_CONFIG.social.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 w-full bg-safety px-4 py-3 text-sm font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors"
+                  >
+                    WhatsApp
+                  </a>
                 </div>
 
-                <!-- Posts Relacionados -->
                 {postsRelacionados.length > 0 && (
-                  <div class="rounded-2xl bg-gray-50 p-8 border border-gray-100">
-                    <h3 class="text-lg font-bold text-gray-900 mb-6">Outras Dicas de Obra</h3>
+                  <div class="bg-concrete-light border border-steel p-8">
+                    <h3 class="font-display text-lg text-pale uppercase mb-6">Outras Dicas</h3>
                     <div class="space-y-6">
                       {postsRelacionados.map((rel) => (
                         <a href={`/blog/${rel.slug}/`} class="group block">
-                          <p class="text-xs text-gray-500 mb-1">
-                            {rel.data.pubDate.toLocaleDateString('pt-BR', {
-                              day: 'numeric',
-                              month: 'short',
-                              year: 'numeric',
-                            })}
+                          <p class="text-xs text-pale/40 mb-1">
+                            {rel.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' })}
                           </p>
-                          <h4 class="font-bold text-gray-900 group-hover:text-secondary transition-colors leading-snug">
+                          <h4 class="font-display text-sm text-pale group-hover:text-safety transition-colors uppercase leading-snug">
                             {rel.data.title}
                           </h4>
                         </a>
@@ -187,38 +188,15 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
                   </div>
                 )}
 
-                <!-- Info rápida -->
-                <div class="rounded-2xl bg-white p-8 border border-gray-100">
-                  <h3 class="text-lg font-bold text-gray-900 mb-4">Serviços</h3>
-                  <ul class="space-y-3 text-sm text-gray-600">
-                    <li class="flex items-center gap-2">
-                      <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                      </svg>
-                      Caçamba 3m³
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                      </svg>
-                      Caçamba 5m³
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                      </svg>
-                      Caçamba 7m³
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                      </svg>
-                      Retirada de Entulho
-                    </li>
+                <div class="bg-concrete-light border border-steel p-8">
+                  <h3 class="font-display text-lg text-pale uppercase mb-4">Serviços</h3>
+                  <ul class="space-y-3 text-sm text-pale/50">
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Caçamba 3m³</li>
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Caçamba 5m³</li>
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Caçamba 7m³</li>
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Retirada de Entulho</li>
                   </ul>
-                  <a href="/servicos/" class="inline-block mt-4 text-sm font-bold text-secondary hover:underline">
-                    Ver todos os serviços →
-                  </a>
+                  <a href="/servicos/" class="inline-block mt-4 text-sm font-display uppercase tracking-wider text-safety hover:text-pale transition-colors">Ver todos →</a>
                 </div>
               </div>
             </div>

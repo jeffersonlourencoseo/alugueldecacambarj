@@ -3,7 +3,6 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import SchemaService from '../../components/SchemaService.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import { SITE_CONFIG } from '../../data/config';
@@ -26,13 +25,14 @@ const { servico } = Astro.props;
 const { Content } = await servico.render();
 
 const waMensagem = `Olá! Vi no site o serviço ${servico.data.title} e gostaria de um orçamento.`;
+const waUrl = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(waMensagem)}`;
 const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
 ---
 
 <Layout title={`Aluguel de Caçamba de Entulho — ${servico.data.title} | ${SITE_CONFIG.name} RJ`} description={servico.data.description}>
   <Header />
 
-  <main>
+  <main class="bg-concrete">
     <div class="container mx-auto px-6 md:px-12 pt-8">
       <Breadcrumb items={[
         { label: 'Início', href: '/' },
@@ -44,15 +44,15 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
     <SchemaService
       title={servico.data.title}
       description={servico.data.description}
-      url={`${SITE_CONFIG.domain}/servicos/${servico.slug}`}
+      url={`${SITE_CONFIG.domain}/servicos/${servico.slug}/`}
       price={servico.data.preco}
     />
 
-    <!-- Hero do Serviço -->
-    <section class="py-24 md:py-32 bg-gray-50">
+    <!-- Hero -->
+    <section class="py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-5xl mx-auto">
-          <a href="/servicos/" class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-secondary transition-colors mb-8">
+          <a href="/servicos/" class="inline-flex items-center gap-2 text-sm text-pale/40 hover:text-safety transition-colors mb-8">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
@@ -60,42 +60,41 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
           </a>
 
           <div class="mb-12">
-            <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+            <span class="inline-block bg-safety/10 border border-safety/20 px-4 py-2 text-xs font-bold text-safety uppercase tracking-wider mb-6">
               Serviço de Locação
             </span>
 
-            <h1 class="text-4xl md:text-6xl font-black leading-tight text-gray-900 mb-6">
+            <h1 class="font-display text-4xl md:text-6xl text-pale uppercase leading-tight mb-6">
               Aluguel de {servico.data.title} para Entulho
             </h1>
 
-            <p class="text-xl text-gray-600 max-w-3xl">{servico.data.description} Locação com entrega rápida e documentação.</p>
+            <p class="text-xl text-pale/50 max-w-3xl">{servico.data.description} Locação com entrega rápida e documentação.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Conteúdo Principal: Especificações + Benefícios -->
-    <section class="py-24 md:py-32">
+    <!-- Conteúdo -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
-            <!-- Coluna principal com conteúdo -->
             <div class="lg:col-span-2">
-              <article class="prose prose-lg max-w-none">
+              <article class="prose prose-lg prose-invert max-w-none text-pale/70">
                 <Content />
               </article>
 
-              <!-- Benefícios / Aplicações -->
               {servico.data.idealPara && (
-                <div class="mt-12 pt-12 border-t border-gray-200">
-                  <h3 class="text-2xl font-bold text-gray-900 mb-6">Ideal para</h3>
+                <div class="mt-12 pt-12 border-t border-steel">
+                  <h3 class="font-display text-2xl text-pale uppercase mb-6">Ideal para</h3>
                   <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {servico.data.idealPara.map((item) => (
-                      <li class="flex items-center gap-3 rounded-xl bg-gray-50 px-5 py-4 border border-gray-100">
-                        <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <li class="flex items-center gap-3 bg-concrete border border-steel px-5 py-4">
+                        <svg class="w-5 h-5 text-safety flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span class="text-gray-700">{item}</span>
+                        <span class="text-pale/70">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -103,41 +102,45 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
               )}
             </div>
 
-            <!-- Sidebar com Especificações e CTA -->
+            <!-- Sidebar -->
             <div class="lg:col-span-1">
-              <div class="rounded-2xl bg-white p-8 md:p-10 border border-gray-100 shadow-sm sticky top-28">
-                <h3 class="text-xl font-bold text-gray-900 mb-6">Especificações</h3>
+              <div class="bg-concrete border border-steel p-8 md:p-10 sticky top-28">
+                <h3 class="font-display text-xl text-pale uppercase mb-6">Especificações</h3>
 
                 <ul class="space-y-4 mb-8">
                   {servico.data.capacidade && (
-                    <li class="flex justify-between text-sm py-2 border-b border-gray-100">
-                      <span class="text-gray-500">Capacidade</span>
-                      <span class="font-semibold text-gray-900">{servico.data.capacidade}</span>
+                    <li class="flex justify-between text-sm py-2 border-b border-steel">
+                      <span class="text-pale/40">Capacidade</span>
+                      <span class="font-semibold text-pale">{servico.data.capacidade}</span>
                     </li>
                   )}
-                  <li class="flex justify-between text-sm py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Documentação</span>
-                    <span class="font-semibold text-gray-900">Inclusa</span>
+                  <li class="flex justify-between text-sm py-2 border-b border-steel">
+                    <span class="text-pale/40">Documentação</span>
+                    <span class="font-semibold text-pale">Inclusa</span>
                   </li>
-                  <li class="flex justify-between text-sm py-2 border-b border-gray-100">
-                    <span class="text-gray-500">Prazo de Entrega</span>
-                    <span class="font-semibold text-gray-900">Até 24h</span>
+                  <li class="flex justify-between text-sm py-2 border-b border-steel">
+                    <span class="text-pale/40">Prazo de Entrega</span>
+                    <span class="font-semibold text-pale">Até 24h</span>
                   </li>
                   <li class="flex justify-between text-sm py-2">
-                    <span class="text-gray-500">Atendimento</span>
-                    <span class="font-semibold text-gray-900">Seg a Sáb</span>
+                    <span class="text-pale/40">Atendimento</span>
+                    <span class="font-semibold text-pale">Seg a Sáb</span>
                   </li>
                 </ul>
 
                 <div class="space-y-4">
-                  <WhatsAppButton
-                    posicao="inline"
-                    mensagem={waMensagem}
-                  />
+                  <a
+                    href={waUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 w-full bg-green-500 px-6 py-4 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors min-h-[56px]"
+                  >
+                    WhatsApp
+                  </a>
 
                   <a
                     href={telUrl}
-                    class="inline-flex items-center justify-center gap-2 rounded-xl bg-secondary px-6 py-4 text-base font-bold text-white hover:bg-blue-900 transition-colors w-full focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 min-h-[56px]"
+                    class="inline-flex items-center justify-center gap-2 w-full bg-safety px-6 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]"
                     aria-label={`Ligar agora para ${SITE_CONFIG.phone}`}
                   >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,54 +157,58 @@ const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
     </section>
 
     <!-- Outros Serviços -->
-    <section class="py-24 md:py-32 bg-gray-50">
+    <section class="py-24 md:py-32 relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-4xl mx-auto text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Outros Serviços de Locação
-          </h2>
-          <p class="text-lg text-gray-600">
-            Encontre a caçamba ideal para o tamanho da sua obra.
-          </p>
+          <h2 class="font-display text-3xl md:text-4xl text-pale uppercase mb-4">Outros Serviços</h2>
+          <p class="text-lg text-pale/50">Encontre a caçamba ideal para o tamanho da sua obra.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <a href="/servicos/cacamba-3m3/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'cacamba-3m3' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
-            <h3 class="font-bold text-gray-900 mb-1">Caçamba 3m³</h3>
-            <p class="text-sm text-gray-600">Pequenas reformas</p>
+          <a href="/servicos/cacamba-3m3/" class={`border p-6 transition-all hover:border-safety hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] ${servico.slug === 'cacamba-3m3' ? 'bg-safety border-safety text-concrete' : 'bg-concrete-light border-steel'}`}>
+            <h3 class={`font-display text-lg uppercase mb-1 ${servico.slug === 'cacamba-3m3' ? 'text-concrete' : 'text-pale'}`}>Caçamba 3m³</h3>
+            <p class={`text-sm ${servico.slug === 'cacamba-3m3' ? 'text-concrete/70' : 'text-pale/50'}`}>Pequenas reformas</p>
           </a>
-          <a href="/servicos/cacamba-5m3/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'cacamba-5m3' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
-            <h3 class="font-bold text-gray-900 mb-1">Caçamba 5m³</h3>
-            <p class="text-sm text-gray-600">Obras médias</p>
+          <a href="/servicos/cacamba-5m3/" class={`border p-6 transition-all hover:border-safety hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] ${servico.slug === 'cacamba-5m3' ? 'bg-safety border-safety text-concrete' : 'bg-concrete-light border-steel'}`}>
+            <h3 class={`font-display text-lg uppercase mb-1 ${servico.slug === 'cacamba-5m3' ? 'text-concrete' : 'text-pale'}`}>Caçamba 5m³</h3>
+            <p class={`text-sm ${servico.slug === 'cacamba-5m3' ? 'text-concrete/70' : 'text-pale/50'}`}>Obras médias</p>
           </a>
-          <a href="/servicos/cacamba-7m3/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'cacamba-7m3' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
-            <h3 class="font-bold text-gray-900 mb-1">Caçamba 7m³</h3>
-            <p class="text-sm text-gray-600">Grandes demolições</p>
+          <a href="/servicos/cacamba-7m3/" class={`border p-6 transition-all hover:border-safety hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] ${servico.slug === 'cacamba-7m3' ? 'bg-safety border-safety text-concrete' : 'bg-concrete-light border-steel'}`}>
+            <h3 class={`font-display text-lg uppercase mb-1 ${servico.slug === 'cacamba-7m3' ? 'text-concrete' : 'text-pale'}`}>Caçamba 7m³</h3>
+            <p class={`text-sm ${servico.slug === 'cacamba-7m3' ? 'text-concrete/70' : 'text-pale/50'}`}>Grandes demolições</p>
           </a>
-          <a href="/servicos/retirada-entulho/" class={`rounded-2xl p-6 border transition-all hover:shadow-lg ${servico.slug === 'retirada-entulho' ? 'bg-primary border-primary' : 'bg-white border-gray-100'}`}>
-            <h3 class="font-bold text-gray-900 mb-1">Retirada de Entulho</h3>
-            <p class="text-sm text-gray-600">Remoção completa</p>
+          <a href="/servicos/retirada-entulho/" class={`border p-6 transition-all hover:border-safety hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] ${servico.slug === 'retirada-entulho' ? 'bg-safety border-safety text-concrete' : 'bg-concrete-light border-steel'}`}>
+            <h3 class={`font-display text-lg uppercase mb-1 ${servico.slug === 'retirada-entulho' ? 'text-concrete' : 'text-pale'}`}>Retirada</h3>
+            <p class={`text-sm ${servico.slug === 'retirada-entulho' ? 'text-concrete/70' : 'text-pale/50'}`}>Remoção completa</p>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- CTA de Fechamento -->
-    <section class="py-24 md:py-32 bg-primary">
+    <!-- CTA -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-black text-accent mb-4">
+          <h2 class="font-display text-3xl md:text-4xl text-pale uppercase mb-4">
             Pronto para locar sua {servico.data.title}?
           </h2>
-          <p class="text-lg text-accent/80 mb-10 max-w-2xl mx-auto">
+          <p class="text-lg text-pale/50 mb-10 max-w-2xl mx-auto">
             Orçamento grátis em 30 minutos. Entrega rápida e documentação completa.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <WhatsAppButton posicao="inline" mensagem={waMensagem} />
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-5 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-xl shadow-green-500/20 min-h-[56px]"
+            >
+              WhatsApp
+            </a>
             <a
               href={telUrl}
-              class="inline-flex items-center justify-center gap-3 rounded-xl bg-accent px-8 py-5 text-base font-bold text-white hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 min-h-[56px]"
-              aria-label={`Ligar agora para ${SITE_CONFIG.phone}`}
+              class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-5 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]"
             >
               Ligar Agora
             </a>

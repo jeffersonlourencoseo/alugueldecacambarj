@@ -12,10 +12,10 @@ Escolher a **caçamba de entulho** certa pode economizar tempo, dinheiro e dor d
 
 Seja uma pequena reforma de banheiro, uma demolição completa ou a construção de uma casa do zero, a escolha errada da caçamba pode gerar custos extras, atrasos e até problemas com vizinhos ou fiscalização. Por isso, investir alguns minutos no planejamento faz toda a diferença.
 
-<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+<div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
-  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
-  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+  <p class="text-concrete/70 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-pale px-5 py-3 text-sm font-bold text-concrete hover:bg-concrete-light transition-colors">📱 Pedir Orçamento no WhatsApp</a>
 </div>
 
 ## Como calcular o volume de entulho da sua obra

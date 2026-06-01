@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import { SITE_CONFIG } from '../data/config';
 ---
 
@@ -12,33 +13,41 @@ import { SITE_CONFIG } from '../data/config';
 >
   <Header />
 
-  <main>
+  <main class="bg-concrete">
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Política de Privacidade', href: '/privacidade/' },
+      ]} />
+    </div>
+
     <section class="py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-4xl mx-auto">
-          <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
-            Legal
-          </span>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-px w-12 bg-safety"></div>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Legal</span>
+          </div>
 
-          <h1 class="text-4xl md:text-5xl font-black leading-tight text-gray-900 mb-16">
+          <h1 class="font-display text-4xl md:text-5xl text-pale uppercase leading-tight mb-16">
             Política de Privacidade
           </h1>
 
-          <div class="space-y-6 text-gray-600 leading-relaxed">
+          <div class="space-y-6 text-pale/60 leading-relaxed">
             <p>
               A {SITE_CONFIG.name} valoriza a privacidade de seus usuários e se compromete a proteger
               as informações pessoais coletadas durante a navegação e uso de nossos serviços.
               Esta política descreve como coletamos, usamos e protegemos seus dados.
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">1. Informações Coletadas</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">1. Informações Coletadas</h2>
             <p>
               Coletamos informações fornecidas voluntariamente pelo usuário, como nome, telefone,
               e-mail e endereço, exclusivamente para fins de orçamento, agendamento de entrega
               e comunicação sobre os serviços contratados.
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">2. Uso das Informações</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">2. Uso das Informações</h2>
             <p>
               As informações coletadas são utilizadas para:
             </p>
@@ -49,38 +58,38 @@ import { SITE_CONFIG } from '../data/config';
               <li>Melhorar nossos serviços e experiência do usuário.</li>
             </ul>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">3. Compartilhamento de Dados</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">3. Compartilhamento de Dados</h2>
             <p>
               Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros,
               exceto quando necessário para a execução dos serviços (transporte, descarte de entulho
               em aterros licenciados) ou por obrigação legal.
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">4. Segurança</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">4. Segurança</h2>
             <p>
               Adotamos medidas de segurança técnicas e administrativas para proteger seus dados
               contra acesso não autorizado, alteração, divulgação ou destruição.
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">5. Cookies</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">5. Cookies</h2>
             <p>
               Nosso site pode utilizar cookies para melhorar a experiência de navegação.
               O usuário pode configurar seu navegador para recusar cookies, caso prefira.
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">6. Seus Direitos</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">6. Seus Direitos</h2>
             <p>
               Você tem o direito de acessar, corrigir ou solicitar a exclusão de seus dados pessoais.
               Para isso, entre em contato conosco pelo e-mail {SITE_CONFIG.email}.
             </p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">7. Alterações</h2>
+            <h2 class="font-display text-2xl text-pale uppercase mt-12 mb-4">7. Alterações</h2>
             <p>
               Esta política pode ser atualizada periodicamente. Recomendamos revisar esta página
               regularmente para se manter informado sobre nossas práticas de privacidade.
             </p>
 
-            <p class="text-sm text-gray-500 pt-8 border-t border-gray-200 mt-12">
+            <p class="text-sm text-pale/40 pt-8 border-t border-steel mt-12">
               Última atualização: maio de 2025.
             </p>
           </div>

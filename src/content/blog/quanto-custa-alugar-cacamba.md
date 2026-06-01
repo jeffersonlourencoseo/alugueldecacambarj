@@ -12,10 +12,10 @@ O valor do **aluguel de caçamba de entulho** varia de acordo com o tamanho do e
 
 Neste guia completo de preços para 2026, vamos detalhar quanto custa **alugar caçamba de entulho** em cada região do Rio, o que está incluso no valor, como negociar melhores condições e quais são os custos ocultos que muitas empresas não revelam de cara. Seja você um profissional da construção civil, um síndico de condomínio ou um dono de comércio, essa informação vai economizar dinheiro na sua próxima obra.
 
-<div class="my-8 rounded-2xl bg-blue-600 p-6 text-white shadow-lg">
+<div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
-  <p class="text-blue-100 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
-  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-blue-600 hover:bg-blue-50 transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+  <p class="text-concrete/70 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
+  <a href="https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-pale px-5 py-3 text-sm font-bold text-concrete hover:bg-concrete-light transition-colors">📱 Pedir Orçamento no WhatsApp</a>
 </div>
 
 ## Tabela comparativa de preços por tamanho de caçamba
