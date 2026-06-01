@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config';
 
+export const prerender = true;
+
 export const GET: APIRoute = async () => {
   const site = SITE_CONFIG.domain;
 
