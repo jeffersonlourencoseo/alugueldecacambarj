@@ -16,6 +16,14 @@ const { title, description, ogImage, noindex } = Astro.props;
 <html lang="pt-BR">
   <head>
     <SEO title={title} description={description} ogImage={ogImage} noindex={noindex} />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4K0HJKMNWB"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4K0HJKMNWB');
+    </script>
   </head>
   <body class="font-sans antialiased text-pale bg-concrete">
     <WhatsAppBtn />
