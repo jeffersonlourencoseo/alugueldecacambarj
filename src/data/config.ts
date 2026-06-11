@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   name: 'CaçambaRápido',
   fullName: 'CaçambaRápido - Aluguel de Caçambas e Retirada de Entulho',
-  domain: 'https://alugueldecacambario.com.br',
+  domain: 'https://www.alugueldecacambario.com.br',
   lang: 'pt-BR',
   locale: 'pt_BR',
 
