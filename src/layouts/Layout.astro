@@ -1,6 +1,7 @@
 ---
 import SEO from '../components/SEO.astro';
 import WhatsAppBtn from '../components/WhatsAppBtn.astro';
+import '../styles/fonts.css';
 
 interface Props {
   title: string;
@@ -16,13 +17,36 @@ const { title, description, ogImage, noindex } = Astro.props;
 <html lang="pt-BR">
   <head>
     <SEO title={title} description={description} ogImage={ogImage} noindex={noindex} />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4K0HJKMNWB"></script>
+
+    <!-- Preconnect para recursos de terceiros carregados após a renderização -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <!-- Google tag (gtag.js) — carregamento adiado para não bloquear a thread principal -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-4K0HJKMNWB');
+      gtag('config', 'G-4K0HJKMNWB', {
+        send_page_view: false,
+        transport_type: 'beacon'
+      });
+
+      function loadGtag() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4K0HJKMNWB';
+        document.head.appendChild(s);
+        gtag('event', 'page_view', {
+          send_to: 'G-4K0HJKMNWB'
+        });
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGtag, { timeout: 2000 });
+      } else {
+        window.addEventListener('load', loadGtag);
+      }
     </script>
   </head>
   <body class="font-sans antialiased text-pale bg-concrete">

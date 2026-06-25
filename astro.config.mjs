@@ -9,6 +9,9 @@ export default defineConfig({
   adapter: vercel(),
   trailingSlash: 'always',
   integrations: [tailwind()],
+  build: {
+    inlineStylesheets: 'always',
+  },
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],

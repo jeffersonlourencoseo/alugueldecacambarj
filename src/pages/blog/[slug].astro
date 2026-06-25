@@ -92,7 +92,7 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
           <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-12">
             <!-- Conteúdo -->
             <div class="lg:col-span-3">
-              <a href="/blog/" class="inline-flex items-center gap-2 text-sm text-pale/40 hover:text-safety transition-colors mb-8">
+              <a href="/blog/" class="inline-flex items-center gap-2 text-sm text-pale/70 hover:text-safety transition-colors mb-8">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                 </svg>
@@ -112,7 +112,7 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
                   {post.data.title}
                 </h1>
 
-                <div class="flex flex-wrap items-center gap-4 text-sm text-pale/40">
+                <div class="flex flex-wrap items-center gap-4 text-sm text-pale/70">
                   <span>Por <strong class="text-pale">{autorInfo.nome}</strong>{autorInfo.cargo ? ` — ${autorInfo.cargo}` : ''}</span>
                   <span>•</span>
                   <span>{post.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
@@ -146,7 +146,7 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
                   <div>
                     <p class="font-bold text-pale">
                       Sobre {autorInfo.nome}
-                      {autorInfo.cargo && <span class="text-sm font-normal text-pale/40 ml-2">{autorInfo.cargo}</span>}
+                      {autorInfo.cargo && <span class="text-sm font-normal text-pale/70 ml-2">{autorInfo.cargo}</span>}
                     </p>
                     <p class="text-pale/50 text-sm mt-1 leading-relaxed">{autorInfo.bio}</p>
                   </div>
@@ -176,7 +176,7 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
                     <div class="space-y-6">
                       {postsRelacionados.map((rel) => (
                         <a href={`/blog/${rel.slug}/`} class="group block">
-                          <p class="text-xs text-pale/40 mb-1">
+                          <p class="text-xs text-pale/70 mb-1">
                             {rel.data.pubDate.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' })}
                           </p>
                           <h4 class="font-display text-sm text-pale group-hover:text-safety transition-colors uppercase leading-snug">

@@ -63,7 +63,7 @@ const servicos = await getCollection('servicos');
 
               {servico.data.idealPara && (
                 <div class="pt-6 border-t border-steel">
-                  <p class="text-xs font-bold text-pale/40 uppercase tracking-wider mb-3">Ideal para:</p>
+                  <p class="text-xs font-bold text-pale/70 uppercase tracking-wider mb-3">Ideal para:</p>
                   <div class="flex flex-wrap gap-2">
                     {servico.data.idealPara.map((item) => (
                       <span class="inline-block border border-steel px-3 py-1 text-sm text-pale/60">{item}</span>
