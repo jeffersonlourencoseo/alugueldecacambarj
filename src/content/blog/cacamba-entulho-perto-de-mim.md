@@ -10,7 +10,7 @@ Quando você digita **"caçamba de entulho perto de mim"** no Google, espera enc
 
 ![Caçamba de entulho perto de mim no Rio de Janeiro](/images/cacamba-de-entulho.webp) Mas a realidade muitas vezes é frustrante: orçamentos que demoram dias, empresas que não atendem seu bairro, preços abusivos ou — pior — empresas clandestinas que somem com seu dinheiro e com o entulho.
 
-Neste guia completo, vamos ensinar exatamente como encontrar o **melhor aluguel de caçamba de entulho** na sua região do Rio, o que observar antes de contratar, como avaliar empresas locais e quais são as particularidades de cada zona da cidade. Seja você morador da Zona Sul, comerciante no Centro ou síndico na Barra da Tijuca, este conteúdo foi feito para resolver sua busca de forma definitiva.
+Vou te mostrar como encontrar o **melhor aluguel de caçamba de entulho** na sua região do Rio, o que observar antes de contratar e como avaliar empresas locais sem cair em furada. Se você mora na Zona Norte, Zona Sul ou Zona Sudoeste, dá para resolver isso de forma tranquila — desde que você saiba o que perguntar.
 
 <div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
@@ -26,7 +26,7 @@ O Rio de Janeiro é uma cidade de dimensões continentais, com desafios logísti
 Empresas com pátios próximos entregam mais rápido. Uma locadora de Madureira entregando em Penha leva 2-3 horas. A mesma empresa entregando em Copacabana pode levar 4-6 horas dependendo do trânsito. Para obras com cronograma apertado, essa diferença é decisiva.
 
 ### 2. Custo de frete
-O frete é calculado por quilômetro rodado + tempo de deslocamento. Regiões distantes dos pátios das empresas pagam naturalmente mais. Na Zona Oeste (Barra, Recreio), o frete pode ser 30% a 50% maior que na Zona Norte.
+O frete é calculado por quilômetro rodado + tempo de deslocamento. Regiões distantes dos pátios das empresas pagam naturalmente mais. Na Zona Sudoeste (Barra, Recreio, Jacarepaguá), o frete pode ser 30% a 50% maior que na Zona Norte.
 
 ### 3. Atendimento de emergência
 Se a caçamba tombar, transbordar ou precisar de troca urgente, uma empresa próxima resolve em horas. Uma empresa distante pode demorar um dia inteiro.
@@ -52,7 +52,7 @@ Não confie apenas no site da empresa. Verifique Google Reviews, Reclame Aqui, F
 ### Ligue antes de fechar
 Uma ligação rápida revela muito: a pessoa atende profissionalmente? Sabe responder sobre licença ambiental? Passa confiança? Empresas que atendem mal pelo telefone geralmente atendem pior na obra.
 
-Se você ainda tem dúvidas sobre qual tamanho contratar, leia nosso guia completo sobre [como escolher a caçamba ideal](/blog/como-escolher-cacamba-ideal/).
+Se você ainda tem dúvidas sobre qual tamanho contratar, leia nosso guia sobre [como escolher a caçamba ideal](/blog/como-escolher-cacamba-ideal/).
 
 ## Caçamba de entulho por região do Rio de Janeiro
 
@@ -81,40 +81,17 @@ Cada região do Rio tem características específicas que afetam o **aluguel de 
 
 **Preço médio**: o mais competitivo do Rio. É onde você encontra o melhor custo-benefício.
 
-### Zona Oeste (Barra da Tijuca, Recreio, Jacarepaguá, Taquara)
+### Zona Sudoeste (Barra da Tijuca, Recreio, Jacarepaguá, Taquara, Freguesia, Curicica, Pechincha)
 
-**Desafios**: distância dos pátios centrais, obras grandes e constantes, trânsito pesado na Avenida das Américas, condomínios fechados com controle de acesso rigoroso.
+**Desafios**: distância dos pátios centrais, obras grandes e constantes, trânsito pesado na Avenida das Américas e em algumas vias de Jacarepaguá, condomínios fechados com controle de acesso rigoroso.
 
 **Soluções**:
-- Contrate empresas que tenham pátio na própria Zona Oeste (algumas existem em Campo Grande e Jacarepaguá)
+- Contrate empresas que atuam com frota própria na Zona Sudoeste
 - Para condomínios, agende entrega com antecedência e libere acesso na portaria
 - Obras grandes podem negociar pacotes de múltiplas caçambas com desconto
 - **Caçambas de 7m³** são comuns devido ao porte das obras na região
 
-**Preço médio**: frete elevado, mas alta concorrência compensa parcialmente.
-
-### Centro e Zona Portuária (Centro, Saara, Gamboa, Santo Cristóvão)
-
-**Desafios**: trânsito caótico durante o dia, restrições de carga e descarga em horários comerciais, ruas de mão única, obras de infraestrutura constantes que fecham vias.
-
-**Soluções**:
-- Agende entrega entre 6h e 8h ou após 18h
-- Empresas experientes em logística urbana do Centro são preferenciais
-- **Caçambas de 3m³** predominam por causa do espaço limitado
-- Empresas com autorização para circular na zona de carga e descarga têm vantagem
-
-**Preço médio**: na média da cidade, mas requer planejamento rigoroso de horários.
-
-### Baixada Fluminense e Niterói (Niterói, São Gonçalo, Itaboraí)
-
-**Desafios**: nem todas as empresas do Rio atendem essas cidades. Algumas cobram frete adicional para cruzar pontes ou rodovias.
-
-**Soluções**:
-- Busque empresas com CNPJ no próprio município — geralmente têm melhor preço
-- Confirme atendimento antes de fechar (muitas empresas do Rio param em Niterói, mas não vão a São Gonçalo)
-- Obras em Niterói têm oferta crescente de locadoras locais
-
-**Preço médio**: varia conforme a cidade. Niterói está na média; cidades mais distantes podem pagar 20% a 30% a mais.
+**Preço médio**: frete um pouco mais elevado que na Zona Norte, mas alta concorrência compensa parcialmente.
 
 ## Disk entulho: o que é e como funciona
 
@@ -206,6 +183,6 @@ Para entender como os preços são formados antes de fechar qualquer orçamento,
 
 Encontrar **"caçamba de entulho perto de mim"** no Rio de Janeiro é possível e seguro quando você sabe o que procurar. A proximidade da empresa reduz frete, acelera entrega e facilita atendimento de emergência. Mas a proximidade sozinha não basta: a empresa precisa ter CNPJ ativo, licença ambiental válida, CDF comprobatório e reputação comprovada em avaliações.
 
-Na **CaçambaRápido**, atendemos todas as regiões do Rio de Janeiro com pátios estrategicamente posicionados para minimizar frete e maximizar velocidade. Entregamos em até 24h em qualquer bairro — da Zona Sul à Zona Norte, do Centro à Barra da Tijuca. Nosso atendimento humano orienta você sobre o tamanho ideal, o melhor horário de entrega para sua região e como preparar o local.
+Na **CaçambaRápido**, atendemos Zona Norte, Zona Sul e Zona Sudoeste do Rio de Janeiro com pátios posicionados para minimizar frete e maximizar velocidade. Entregamos em até 24h nos bairros que atendemos. Nosso atendimento humano orienta você sobre o tamanho ideal, o melhor horário de entrega para sua região e como preparar o local.
 
 Está procurando **aluguel de caçamba de entulho perto de você**? Fale conosco pelo WhatsApp, informe seu bairro e receba em até 30 minutos um orçamento detalhado com prazo de entrega, preço final e documentação inclusa.

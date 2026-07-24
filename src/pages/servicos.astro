@@ -4,15 +4,116 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import SchemaFAQ from '../components/SchemaFAQ.astro';
 import { SITE_CONFIG } from '../data/config';
 
 const servicos = await getCollection('servicos');
+const waUrl = SITE_CONFIG.social.whatsapp;
+const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
+
+const title = `Aluguel de Caçamba de Entulho no Rio de Janeiro — 3m³, 5m³, 7m³ | ${SITE_CONFIG.name}`;
+const description = 'Aluguel de caçamba de entulho de 3m³, 5m³ e 7m³ no Rio de Janeiro. Locação com entrega em até 24h, retirada, nota fiscal e certificado de destinação. Solicite orçamento grátis.';
+
+const diferenciais = [
+  {
+    titulo: 'Entrega em até 24h',
+    texto: 'Agendamos a entrega no melhor horário para sua obra e para o trânsito da sua região no Rio.',
+  },
+  {
+    titulo: 'Documentação completa',
+    texto: 'Toda locação inclui nota fiscal, certificado de destinação final (CDF) e licença ambiental da transportadora.',
+  },
+  {
+    titulo: 'Preço fechado por WhatsApp',
+    texto: 'Orçamento grátis em até 30 minutos, sem taxas escondidas. Você sabe o valor total antes de decidir.',
+  },
+  {
+    titulo: 'Atendemos todo o Rio',
+    texto: 'Zona Norte, Zona Sul, Zona Sudoeste, Centro e região metropolitana com frota própria e equipe treinada.',
+  },
+];
+
+const etapas = [
+  {
+    numero: '01',
+    titulo: 'Você pede o orçamento',
+    texto: 'Envia pelo WhatsApp o bairro, o tipo de obra, o tamanho da caçamba e o prazo que precisa.',
+  },
+  {
+    numero: '02',
+    titulo: 'Recebe o valor fechado',
+    texto: 'Em até 30 minutos você tem o preço final com entrega, retirada e documentação inclusos.',
+  },
+  {
+    numero: '03',
+    titulo: 'Agendamos a entrega',
+    texto: 'Escolhemos o melhor dia e horário considerando frota, trânsito e restrições do seu bairro.',
+  },
+  {
+    numero: '04',
+    titulo: 'Posicionamos a caçamba',
+    texto: 'A caçamba é instalada no local combinado, de forma segura, sem danificar a via ou o imóvel.',
+  },
+  {
+    numero: '05',
+    titulo: 'Você usa no prazo',
+    texto: 'Prazo padrão de 7 dias para encher a caçamba com entulho da obra. Diárias extras sob consulta.',
+  },
+  {
+    numero: '06',
+    titulo: 'Retirada e documentos',
+    texto: 'Buscamos a caçamba cheia e entregamos nota fiscal e CDF comprovando descarte em aterro licenciado.',
+  },
+];
+
+const documentacao = [
+  {
+    titulo: 'Nota fiscal de serviço',
+    texto: 'Essencial para contabilidade de condomínios, empresas e obras com financiamento.',
+  },
+  {
+    titulo: 'Certificado de Destinação Final (CDF)',
+    texto: 'Comprova que o entulho foi descartado em aterro licenciado, protegendo você de multas ambientais.',
+  },
+  {
+    titulo: 'Licença ambiental',
+    texto: 'A empresa transportadora precisa estar regularizada para transportar resíduos no estado do Rio.',
+  },
+  {
+    titulo: 'Contrato de locação',
+    texto: 'Define prazo, responsabilidades, peso máximo e o que pode ou não ser descartado.',
+  },
+];
+
+const faqItems = [
+  {
+    question: 'Quanto custa o aluguel de caçamba de entulho no Rio de Janeiro?',
+    answer: 'Os preços partem de R$ 350 para caçamba de 3m³, R$ 450 para 5m³ e R$ 600 para 7m³, considerando locação padrão de 7 dias com entrega, retirada e documentação inclusas. O valor final varia conforme bairro, prazo, urgência e acesso do local.',
+  },
+  {
+    question: 'Qual o prazo de entrega da caçamba?',
+    answer: 'Entregamos em até 24 horas úteis após a confirmação. Dependendo da disponibilidade e do bairro, conseguimos entrega no mesmo dia.',
+  },
+  {
+    question: 'O que pode ser descartado na caçamba de entulho?',
+    answer: 'Pode descartar entulho de construção civil como concreto, alvenaria, cerâmica, madeira, metal, plástico, gesso e telhas. Não são permitidos líquidos, produtos químicos, pilhas, baterias, tintas sem tratamento, solventes, materiais inflamáveis ou resíduos hospitalares.',
+  },
+  {
+    question: 'Qual o tamanho ideal de caçamba para a minha obra?',
+    answer: 'Caçamba de 3m³ para reformas pequenas e apartamentos. Caçamba de 5m³ para reformas médias, comércios e demolições parciais. Caçamba de 7m³ para grandes obras, construção de casas e demolições completas. Se tiver dúvida, nossa equipe orienta pelo WhatsApp.',
+  },
+  {
+    question: 'Vocês atendem condomínios e empresas?',
+    answer: 'Sim. Atendemos condomínios residenciais, comércios, shoppings, indústrias, escolas, hospitais e obras públicas. Em condomínios, ajudamos com autorização da portaria, seguro de responsabilidade civil e horários específicos.',
+  },
+  {
+    question: 'A locação inclui nota fiscal e CDF?',
+    answer: 'Sim. Toda locação inclui nota fiscal de serviço e certificado de destinação final (CDF), além da licença ambiental da empresa transportadora.',
+  },
+];
 ---
 
-<Layout
-  title={`Aluguel de Caçamba de Entulho — 3m³, 5m³, 7m³ | ${SITE_CONFIG.name} RJ`}
-  description="Aluguel de caçamba de entulho de 3m³, 5m³ e 7m³ no Rio de Janeiro. Locação com entrega rápida, retirada e documentação ambiental. Solicite orçamento grátis."
->
+<Layout title={title} description={description}>
   <Header />
 
   <main class="bg-concrete">
@@ -23,24 +124,140 @@ const servicos = await getCollection('servicos');
       ]} />
     </div>
 
+    <!-- Hero -->
+    <section class="py-24 md:py-32 relative overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-1/4 -right-1/4 w-[80vw] h-[120vh] bg-safety/5 rotate-12 rounded-3xl"></div>
+      </div>
+
+      <div class="container mx-auto px-6 md:px-12 relative">
+        <div class="max-w-4xl">
+          <span class="inline-block rounded-full bg-safety/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+            Locação de caçambas estacionárias no RJ
+          </span>
+
+          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-8">
+            Aluguel de<br />
+            <span class="text-safety">Caçamba</span> de Entulho
+          </h1>
+
+          <p class="text-xl md:text-2xl text-pale/60 max-w-3xl mb-10 leading-relaxed">
+            Caçambas de 3m³, 5m³ e 7m³ para obras e reformas em todo o Rio de Janeiro. Entrega rápida, retirada no prazo e documentação ambiental completa.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-4 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 min-h-[56px]">
+              Pedir Orçamento no WhatsApp
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="py-16 md:py-24 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {diferenciais.map((item) => (
+            <div class="bg-concrete border border-steel p-8">
+              <h3 class="font-display text-xl text-pale uppercase mb-3">{item.titulo}</h3>
+              <p class="text-pale/50 text-sm leading-relaxed">{item.texto}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre o serviço -->
     <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="h-px w-12 bg-safety"></div>
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">O que fazemos</span>
+              </div>
+              <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-6">
+                Caçamba de entulho com entrega e retirada no Rio
+              </h2>
+              <div class="space-y-4 text-pale/60 text-lg leading-relaxed">
+                <p>
+                  A CaçambaRápido aluga caçambas estacionárias para obras residenciais, comerciais e industriais no Rio de Janeiro. A ideia é simples: a gente leva a caçamba até o local da obra, você preenche com o entulho no prazo combinado e a gente retira, leva para o aterro licenciado e entrega toda a documentação.
+                </p>
+                <p>
+                  Atuamos com frota própria, o que significa controle total do prazo de entrega e da qualidade do atendimento. Não dependemos de terceiros para cumprir o que prometemos.
+                </p>
+                <p>
+                  Nosso foco é o cliente que precisa resolver o entulho sem complicação: reformas de apartamento em Copacabana, demolição de casa na Tijuca, construção de muro no Méier, reforma de loja no Centro ou limpeza de terreno na Barra.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-concrete-light border border-steel p-8 md:p-10">
+              <h3 class="font-display text-2xl text-pale uppercase mb-6">Por que alugar conosco?</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3 text-pale/60">
+                  <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Frota própria e equipe treinada no Rio de Janeiro</span>
+                </li>
+                <li class="flex items-start gap-3 text-pale/60">
+                  <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Orçamento por WhatsApp em até 30 minutos</span>
+                </li>
+                <li class="flex items-start gap-3 text-pale/60">
+                  <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Entrega em até 24h em qualquer região do Rio</span>
+                </li>
+                <li class="flex items-start gap-3 text-pale/60">
+                  <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Nota fiscal, CDF e licença ambiental inclusos</span>
+                </li>
+                <li class="flex items-start gap-3 text-pale/60">
+                  <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Atendimento a condomínios, comércios e indústrias</span>
+                </li>
+                <li class="flex items-start gap-3 text-pale/60">
+                  <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Preço fechado, sem taxas escondidas</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="py-24 md:py-32 bg-concrete-light relative" id="servicos">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-3xl mb-16">
           <div class="flex items-center gap-4 mb-6">
             <div class="h-px w-12 bg-safety"></div>
-            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Nossos Serviços</span>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Nossos serviços</span>
           </div>
-
-          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-6">
-            Aluguel de
-            <br />
-            <span class="text-safety">Caçamba</span>
-            <br />
-            no Rio de Janeiro
-          </h1>
-
-          <p class="text-lg text-pale/50">
-            Escolha o tamanho ideal de caçamba de entulho para sua obra. Todos incluem entrega, retirada e documentação ambiental.
+          <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-4">
+            Tamanhos de caçamba para cada tipo de obra
+          </h2>
+          <p class="text-pale/60 text-lg leading-relaxed">
+            Escolha o tamanho ideal para o volume de entulho da sua obra. Todos incluem entrega, retirada e documentação ambiental.
           </p>
         </div>
 
@@ -48,18 +265,22 @@ const servicos = await getCollection('servicos');
           {servicos.map((servico) => (
             <a
               href={`/servicos/${servico.slug}/`}
-              class="group bg-concrete-light border border-steel p-10 md:p-12 hover:border-safety transition-all duration-500 hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] flex flex-col"
+              class="group bg-concrete border border-steel p-10 md:p-12 hover:border-safety transition-all duration-500 hover:shadow-[0_0_40px_-10px_rgba(245,197,24,0.15)] flex flex-col"
             >
               <div class="flex items-start justify-between mb-6">
-                <h2 class="font-display text-3xl md:text-4xl text-pale group-hover:text-safety transition-colors uppercase">
+                <h3 class="font-display text-3xl md:text-4xl text-pale group-hover:text-safety transition-colors uppercase">
                   {servico.data.title}
-                </h2>
+                </h3>
                 <svg class="w-6 h-6 text-steel group-hover:text-safety transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
                 </svg>
               </div>
 
               <p class="text-pale/50 mb-6 flex-grow">{servico.data.description}</p>
+
+              {servico.data.preco && (
+                <p class="text-safety font-display text-xl uppercase mb-6">{servico.data.preco}</p>
+              )}
 
               {servico.data.idealPara && (
                 <div class="pt-6 border-t border-steel">
@@ -73,6 +294,177 @@ const servicos = await getCollection('servicos');
               )}
             </a>
           ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-px w-12 bg-safety"></div>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Processo</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-4">
+            Como funciona o aluguel de caçamba
+          </h2>
+          <p class="text-pale/60 text-lg leading-relaxed">
+            Seis passos simples, do orçamento à retirada. Sem burocracia e sem surpresa na conta.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {etapas.map((etapa) => (
+            <div class="bg-concrete-light border border-steel p-8 md:p-10">
+              <div class="font-display text-4xl text-safety/30 mb-4">{etapa.numero}</div>
+              <h3 class="font-display text-xl text-pale uppercase mb-3">{etapa.titulo}</h3>
+              <p class="text-pale/50 text-sm leading-relaxed">{etapa.texto}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentação -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="h-px w-12 bg-safety"></div>
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Segurança</span>
+              </div>
+              <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-6">
+                Documentação que protege você e sua obra
+              </h2>
+              <p class="text-pale/60 text-lg leading-relaxed mb-8">
+                Alugar caçamba não é só receber um equipamento. O descarte do entulho precisa ser legal. Sem a documentação correta, quem gerou o resíduo pode ser multado mesmo que tenha contratado uma empresa para retirar.
+              </p>
+              <a href="/blog/cacamba-legal-evitar-multas-rj/" class="inline-flex items-center gap-2 text-safety font-display uppercase tracking-wider text-lg hover:text-pale transition-colors group">
+                Entenda os riscos do descarte irregular
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {documentacao.map((item) => (
+                <div class="bg-concrete border border-steel p-6">
+                  <h3 class="font-display text-lg text-pale uppercase mb-3">{item.titulo}</h3>
+                  <p class="text-pale/50 text-sm leading-relaxed">{item.texto}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Área de atendimento -->
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="h-px w-12 bg-safety"></div>
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Cobertura</span>
+              </div>
+              <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-6">
+                Atendemos todo o Rio e região metropolitana
+              </h2>
+              <p class="text-pale/60 text-lg leading-relaxed mb-8">
+                De norte a sul, passando pelo Centro, Zona Sudoeste e região metropolitana. Temos bairros com entrega prioritária e orçamento específico para cada região.
+              </p>
+              <a href="/area-de-atendimento/" class="inline-flex items-center gap-2 text-safety font-display uppercase tracking-wider text-lg hover:text-pale transition-colors group">
+                Ver área de atendimento completa
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-concrete-light border border-steel p-6">
+                <h3 class="font-display text-lg text-pale uppercase mb-2">Zona Norte</h3>
+                <p class="text-pale/50 text-sm">Tijuca, Méier, Madureira, Penha, Vila Isabel e mais 80 bairros com preços competitivos.</p>
+              </div>
+              <div class="bg-concrete-light border border-steel p-6">
+                <h3 class="font-display text-lg text-pale uppercase mb-2">Zona Sul</h3>
+                <p class="text-pale/50 text-sm">Copacabana, Ipanema, Leblon, Botafogo e bairros com logística especializada.</p>
+              </div>
+              <div class="bg-concrete-light border border-steel p-6">
+                <h3 class="font-display text-lg text-pale uppercase mb-2">Zona Sudoeste</h3>
+                <p class="text-pale/50 text-sm">Barra da Tijuca, Recreio, Jacarepaguá, Taquara e região com frota dedicada.</p>
+              </div>
+              <div class="bg-concrete-light border border-steel p-6">
+                <h3 class="font-display text-lg text-pale uppercase mb-2">Centro e RM</h3>
+                <p class="text-pale/50 text-sm">Centro, São Cristóvão, Niterói, São Gonçalo e outras cidades sob consulta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="flex items-center justify-center gap-4 mb-6">
+              <div class="h-px w-12 bg-safety"></div>
+              <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Dúvidas</span>
+              <div class="h-px w-12 bg-safety"></div>
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95]">
+              Perguntas sobre aluguel de caçamba
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            {faqItems.map((faq) => (
+              <details class="group rounded-2xl bg-concrete border border-steel open:border-safety transition-all">
+                <summary class="flex items-center justify-between cursor-pointer p-6 text-left list-none">
+                  <h3 class="font-bold text-pale text-lg pr-4">{faq.question}</h3>
+                  <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </summary>
+                <div class="px-6 pb-6 text-pale/60 leading-relaxed">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+    <SchemaFAQ items={faqItems} />
+
+    <!-- CTA final -->
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="font-display text-3xl md:text-5xl text-pale uppercase mb-6">
+            Solicite orçamento grátis para caçamba de entulho
+          </h2>
+          <p class="text-lg text-pale/50 mb-10 max-w-2xl mx-auto">
+            Informe seu bairro, o tipo de obra e o tamanho da caçamba. Respondemos em até 30 minutos com preço fechado e prazo de entrega.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-5 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-xl shadow-green-500/20 min-h-[56px]">
+              WhatsApp — Orçamento Rápido
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-5 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
         </div>
       </div>
     </section>

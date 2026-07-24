@@ -8,7 +8,7 @@ tags: ["contêiner", "caçamba", "comparação", "equipamentos"]
 
 Quando você precisa remover entulho de uma obra, reforma ou demolição no Rio de Janeiro, duas opções dominam o mercado: os **contêineres de lixo** (também chamados de roll-on roll-off ou caçambas roll-off) e as **caçambas estacionárias** tradicionais (também conhecidas como caçambas basculantes ou caçambas fixas). Embora ambos sirvam para o mesmo propósito — transportar resíduos de construção civil — eles têm diferenças fundamentais de capacidade, mecanismo de transporte, preço, uso ideal e logística.
 
-Escolher o equipamento errado pode custar caro. Um contêiner de 15m³ para uma reforma de banheiro é desperdício de dinheiro. Uma caçamba de 3m³ para uma demolição completa de galpão é insuficiente. Neste guia comparativo completo, vamos analisar **aluguel de contêineres de lixo** versus **aluguel de caçambas estacionárias**, ajudando você a tomar a decisão correta para cada tipo de projeto.
+Escolher o equipamento errado pode custar caro. Um contêiner de 15m³ para uma reforma de banheiro é desperdício de dinheiro. Uma caçamba de 3m³ para uma demolição completa de galpão é insuficiente. Vou comparar **aluguel de contêineres de lixo** e **aluguel de caçambas estacionárias** para você tomar a decisão certa para cada tipo de projeto no Rio de Janeiro.
 
 ![Contêiner roll-on versus caçamba estacionária](/images/Caçamba-de-entulho-caçamba-Roll-on-foto-Cal-Leve.webp)
 
@@ -134,7 +134,7 @@ Empresas que oferecem contêiner sem documentação são tão clandestinas quant
 
 Grandes obras com múltiplas frentes às vezes beneficiam-se de usar os dois equipamentos simultaneamente. Imagine um condomínio residencial em reforma no Rio de Janeiro: a demolição das áreas comuns gera 30m³ de entulho pesado, enquanto os apartamentos individualmente produzem pequenos volumes de resíduos diversos. Nesse cenário, o **aluguel de contêineres de lixo** de 20m³ no pátio central atende a **remoção de entulho** em grande escala, enquanto a **locação de caçambas** de 5m³ rotativa atende cada torre sem gerar fila ou espera.
 
-A combinação é comum também em construtoras que trabalham com cronograma apertado. A obra de um galpão industrial em Duque de Caxias, por exemplo, pode usar um contêiner roll-off permanente para sobras de concreto e aço, e **caçambas estacionárias** esporádicas para limpeza de área administrativa e vestiários. Isso evita que resíduos leves e volumosos — como papelão, plástico e madeira — ocupem espaço precioso no contêiner, reservado para materiais pesados.
+A combinação é comum também em construtoras que trabalham com cronograma apertado. A obra de um galpão industrial na Zona Sudoeste do Rio, por exemplo, pode usar um contêiner roll-off permanente para sobras de concreto e aço, e **caçambas estacionárias** esporádicas para limpeza de área administrativa e vestiários. Isso evita que resíduos leves e volumosos — como papelão, plástico e madeira — ocupem espaço precioso no contêiner, reservado para materiais pesados.
 
 Outro caso é a demolição de prédios antigos em áreas como Tijuca ou Méier. A frente de demolição precisa de **remoção de entulho** contínua, mas a rua pode não comportar mais de um contêiner grande ao mesmo tempo. A solução é manter um contêiner de 15m³ na área principal e programar a **locação de caçambas** menores para retiradas rápidas nos fundos ou laterais do terreno. A logística integrada reduz paralisação e mantém o canteiro limpo, cumprindo normas de segurança do trabalho.
 

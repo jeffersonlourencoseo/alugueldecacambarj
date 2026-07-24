@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { SITE_CONFIG } from '../../data/config';
+import { bairrosPorZona, zonas } from '../../data/bairros';
+
+const zona = zonas.find((z) => z.slug === 'zona-sudoeste')!;
+const bairros = bairrosPorZona('zona-sudoeste');
+const waUrl = SITE_CONFIG.social.whatsapp;
+const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
+
+const title = `Aluguel de Caçamba na Zona Sudoeste do Rio | CaçambaRápido — RJ`;
+const description = `Aluguel de caçamba de entulho na Zona Sudoeste do Rio de Janeiro: Barra da Tijuca, Recreio, Jacarepaguá, Taquara, Freguesia, Anil, Camorim, Curicica, Gardênia Azul, Grumari, Itanhangá, Joá, Pechincha, Praça Seca, Rio das Pedras, Tanque, Vargem Grande, Vargem Pequena e Vila Valqueire. Caçambas de 5m³ e 7m³ para grandes obras.`;
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="bg-concrete">
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Área de Atendimento', href: '/area-de-atendimento/' },
+        { label: 'Zona Sudoeste', href: '/area-de-atendimento/zona-sudoeste/' },
+      ]} />
+    </div>
+
+    <section class="py-24 md:py-32 relative overflow-hidden">
+      <div class="container mx-auto px-6 md:px-12 relative">
+        <div class="max-w-4xl">
+          <span class="inline-block rounded-full bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-400 mb-6">
+            Região de atuação
+          </span>
+          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-8">
+            Caçamba de Entulho<br />
+            na <span class="text-safety">Zona Sudoeste</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-pale/60 max-w-3xl mb-10 leading-relaxed">
+            {zona.resumo}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-4 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 min-h-[56px]">
+              Orçamento para Zona Sudoeste
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-px w-12 bg-safety"></div>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Zona Sudoeste</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-6">
+            Grande volume e obras em expansão
+          </h2>
+          <p class="text-pale/60 text-lg leading-relaxed">
+            A Zona Sudoeste é a nova região estabelecida pela Lei 2025, formada por bairros da antiga Zona Oeste como Barra da Tijuca, Recreio, Jacarepaguá e região. Obras grandes, condomínios fechados e muitas reformas fazem da caçamba de 5m³ e 7m³ as mais solicitadas por aqui.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {zona.caracteristicas.map((item) => (
+            <div class="flex items-start gap-4 bg-concrete border border-steel p-6">
+              <svg class="w-6 h-6 text-safety flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-pale/70">{item}</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="max-w-3xl mb-10">
+          <h3 class="font-display text-3xl text-pale uppercase mb-6">Bairros atendidos na Zona Sudoeste</h3>
+          <p class="text-pale/60 text-lg leading-relaxed mb-8">
+            Clique no bairro para ver detalhes de entrega, preços e recomendações para obras na região.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {bairros.map((bairro) => (
+            <a href={`/area-de-atendimento/${bairro.slug}/`} class="group bg-concrete border border-steel p-6 text-center hover:border-safety transition-all">
+              <span class="text-pale font-medium group-hover:text-safety transition-colors">{bairro.nome}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="font-display text-3xl md:text-5xl text-pale uppercase mb-6">
+            Caçamba na Zona Sudoeste do Rio
+          </h2>
+          <p class="text-lg text-pale/50 mb-10 max-w-2xl mx-auto">
+            Atendemos todos os bairros da Zona Sudoeste: Anil, Barra da Tijuca, Barra Olímpica, Camorim, Cidade de Deus, Curicica, Freguesia, Gardênia Azul, Grumari, Itanhangá, Jacarepaguá, Joá, Pechincha, Praça Seca, Recreio, Rio das Pedras, Tanque, Taquara, Vargem Grande, Vargem Pequena e Vila Valqueire. Solicite orçamento com frota dedicada.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-5 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-xl shadow-green-500/20 min-h-[56px]">
+              WhatsApp
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-5 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

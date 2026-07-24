@@ -8,7 +8,7 @@ tags: ["limpeza", "terreno", "resíduos pós-obra", "remoção"]
 
 A limpeza de terreno e a **remoção de resíduos pós-obra** são etapas frequentemente negligenciadas no planejamento de construção civil. Muitos gestores focam exclusivamente na fase de produção da obra e esquecem que, ao final, toneladas de **entulho**, sobras de materiais, resíduos vegetais e detritos precisam ser removidos para entregar o imóvel limpo, seguro e dentro das normas técnicas. Sem o planejamento correto, essa fase final pode se transformar em um pesadelo logístico e financeiro.
 
-Neste guia completo, vamos detalhar como usar **caçambas para limpeza** de terrenos, como calcular o volume de resíduos pós-obra, quais materiais são gerados nessa fase, como separar recicláveis, como contratar o serviço correto de **remoção de entulho** e quais são as obrigações legais do responsável pela obra no Rio de Janeiro.
+Vou detalhar como usar **caçambas para limpeza** de terrenos, como calcular o volume de resíduos pós-obra, quais materiais aparecem nessa fase, como separar recicláveis, como contratar o serviço correto de **remoção de entulho** e quais são as obrigações legais do responsável pela obra no Rio de Janeiro.
 
 <div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>

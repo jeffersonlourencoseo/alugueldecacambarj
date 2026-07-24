@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '../data/config';
+import { bairros, zonas } from '../data/bairros';
 
 export const prerender = true;
 
@@ -14,11 +15,15 @@ export const GET: APIRoute = async () => {
     '',
     'sobre/',
     'servicos/',
+    'area-de-atendimento/',
     'blog/',
     'contato/',
     'privacidade/',
     'termos/',
   ];
+
+  const zoneRoutes = zonas.map((z) => `area-de-atendimento/${z.slug}/`);
+  const bairroRoutes = bairros.map((b) => `area-de-atendimento/${b.slug}/`);
 
   const buildDate = new Date().toISOString().split('T')[0];
 
@@ -27,6 +32,18 @@ export const GET: APIRoute = async () => {
       loc: `${site}/${route}`,
       changefreq: route === '' ? 'daily' : 'weekly',
       priority: route === '' ? '1.0' : '0.7',
+    })),
+    ...zoneRoutes.map((route) => ({
+      loc: `${site}/${route}`,
+      lastmod: buildDate,
+      changefreq: 'weekly',
+      priority: '0.8',
+    })),
+    ...bairroRoutes.map((route) => ({
+      loc: `${site}/${route}`,
+      lastmod: buildDate,
+      changefreq: 'weekly',
+      priority: '0.7',
     })),
     ...servicos.map((s) => ({
       loc: `${site}/servicos/${s.slug}/`,

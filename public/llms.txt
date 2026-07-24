@@ -1,38 +1,79 @@
 # CaçambaRápido — Aluguel de Caçamba de Entulho no Rio de Janeiro
 
-> Serviço de aluguel de caçamba de entulho com entrega em até 24h no Rio de Janeiro — RJ. Locação de caçambas estacionárias de 3m³, 5m³ e 7m³. Documentação ambiental inclusa. Orçamento grátis via WhatsApp.
+> Serviço de aluguel de caçamba de entulho com entrega em até 24h no Rio de Janeiro — RJ. Locação de caçambas estacionárias de 3m³, 5m³ e 7m³. Retirada e descarte de entulho com documentação ambiental. Orçamento grátis via WhatsApp em até 30 minutos.
+
+## Quem somos
+
+A CaçambaRápido é uma empresa especializada em locação de caçambas estacionárias e retirada de entulho no Rio de Janeiro. Atuamos com frota própria, equipe treinada e licença ambiental válida. Nosso foco é simplificar o descarte correto de resíduos de construção civil com agilidade, transparência e preço justo.
+
+**Dados cadastrais:**
+- CNPJ: [número real a confirmar]
+- Licença ambiental: [número real a confirmar]
+- Inscrição municipal: [número real a confirmar, se houver]
 
 ## O que fazemos
 
-- **Aluguel de caçamba de entulho** (3m³, 5m³, 7m³) para obras e reformas
-- **Retirada e descarte de entulho** com destinação correta e certificado
-- **Locação de caçambas estacionárias** com entrega rápida — same day ou até 24h úteis
-- **Documentação completa** — nota fiscal, licença ambiental e certificado de destinação
-- **Remoção de entulho** residencial, comercial e industrial
+- **Aluguel de caçamba de entulho 3m³** — a partir de R$ 350 por locação (período padrão de 7 dias)
+- **Aluguel de caçamba de entulho 5m³** — a partir de R$ 450 por locação (período padrão de 7 dias)
+- **Aluguel de caçamba de entulho 7m³** — a partir de R$ 600 por locação (período padrão de 7 dias)
+- **Retirada de entulho completa** — valor sob consulta, inclui remoção, transporte e descarte em aterro licenciado
+
+Todos os valores incluem:
+- Entrega da caçamba no local da obra
+- Retirada do entulho ao final do prazo
+- Nota fiscal de serviço
+- Certificado de Destinação Final (CDF)
+- Licença ambiental da empresa transportadora
+
+**Formas de pagamento:** PIX, boleto ou transferência bancária.
 
 ## Área de atendimento
 
-Rio de Janeiro — RJ (todas as regiões e bairros).
+Atendemos as seguintes regiões do Rio de Janeiro — RJ:
+
+- **Zona Sul:** Botafogo, Catete, Copacabana, Cosme Velho, Flamengo, Gávea, Humaitá, Ipanema, Jardim Botânico, Lagoa, Laranjeiras, Leblon, Leme, Rocinha, São Conrado, Urca, Vidigal
+- **Zona Norte:** Abolição, Acari, Água Santa, Alto da Boa Vista, Anchieta, Andaraí, Argentino, Bancários, Barros Filho, Bento Ribeiro, Bonsucesso, Brás de Pina, Cacuia, Cachambi, Campinho, Cascadura, Cavalcanti, Cidade Universitária, Cocotá, Coelho Neto, Colégio, Complexo do Alemão, Cordovil, Costa Barros, Del Castilho, Encantado, Engenheiro Leal, Engenho da Rainha, Engenho de Dentro, Engenho Novo, Freguesia (Ilha do Governador), Galeão, Grajaú, Guadalupe, Higienópolis, Honório Gurgel, Inhaúma, Irajá, Jacaré, Jacarezinho, Jardim América, Jardim Carioca, Jardim Guanabara, Lins de Vasconcelos, Madureira, Manguinhos, Maracanã, Maré, Marechal Hermes, Maria da Graça, Méier, Moneró, Olaria, Oswaldo Cruz, Parada de Lucas, Parque Anchieta, Parque Colúmbia, Pavuna, Penha, Penha Circular, Piedade, Pilares, Pitangueiras, Portuguesa, Praça da Bandeira, Praia da Bandeira, Quintino Bocaiuva, Ramos, Riachuelo, Ricardo de Albuquerque, Ribeira, Rocha, Rocha Miranda, Sampaio, São Cristóvão, São Francisco Xavier, Tauá, Tijuca, Todos os Santos, Tomás Coelho, Turiaçu, Vaz Lobo, Vicente de Carvalho, Vigário Geral, Vila da Penha, Vila Isabel, Vila Kosmos, Vista Alegre, Zumbi
+- **Zona Sudoeste (Lei 2025):** Anil, Barra da Tijuca, Barra Olímpica, Camorim, Cidade de Deus, Curicica, Freguesia, Gardênia Azul, Grumari, Itanhangá, Jacarepaguá, Joá, Pechincha, Praça Seca, Recreio dos Bandeirantes, Rio das Pedras, Tanque, Taquara, Vargem Grande, Vargem Pequena, Vila Valqueire
+
+Não encontrou seu bairro? Fale conosco — provavelmente atendemos aí também.
 
 ## Como solicitar
 
-- WhatsApp: [(21) 99775-1577](https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21)
-- Telefone: [(21) 99775-1577](tel:+5521997751577)
-- E-mail: contato@alugueldecacambario.com.br
-- Endereço: Av. Brasil, 11201 — Penha Circular, Rio de Janeiro — RJ, 21012-351
+- **WhatsApp:** [(21) 99775-1577](https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21)
+- **Telefone:** [(21) 99775-1577](tel:+5521997751577)
+- **E-mail:** contato@alugueldecacambario.com.br
+- **Endereço:** Av. Brasil, 11201 — Penha Circular, Rio de Janeiro — RJ, 21012-351
 
 ## Horário de atendimento
 
 - Segunda a Sexta: 7h às 18h
 - Sábado: 8h às 12h
+- Emergências: atendimento sob consulta
+
+## Perguntas frequentes
+
+**Quanto custa alugar uma caçamba de entulho no Rio de Janeiro?**
+A partir de R$ 350 para caçamba de 3m³, R$ 450 para 5m³ e R$ 600 para 7m³, com período padrão de 7 dias. O valor final depende do bairro, prazo e acesso do local.
+
+**Qual o prazo de entrega da caçamba?**
+Entrega no mesmo dia ou, no máximo, em até 24 horas úteis após a confirmação do pedido.
+
+**A locação inclui nota fiscal e licença ambiental?**
+Sim. Toda locação inclui nota fiscal, certificado de destinação de resíduos (CDF) e comprovante de descarte em aterro licenciado.
+
+**Quais materiais não podem ser descartados na caçamba?**
+Não são permitidos líquidos, produtos químicos, pilhas, baterias, materiais inflamáveis, tintas e solventes sem tratamento prévio.
+
+**Como escolher o tamanho ideal da caçamba?**
+A caçamba de 3m³ é ideal para pequenas reformas e limpeza de terreno. A de 5m³ atende a maioria das obras médias. A de 7m³ é indicada para grandes demolições e construções.
 
 ## Páginas principais
 
-- [Início](https://alugueldecacambario.com.br/)
-- [Serviços de aluguel de caçamba de entulho](https://alugueldecacambario.com.br/servicos)
-- [Blog — dicas sobre caçamba de entulho](https://alugueldecacambario.com.br/blog)
-- [Sobre nós](https://alugueldecacambario.com.br/sobre)
-- [Contato / Orçamento](https://alugueldecacambario.com.br/contato)
+- [Início](https://www.alugueldecacambario.com.br/)
+- [Serviços de aluguel de caçamba de entulho](https://www.alugueldecacambario.com.br/servicos/)
+- [Blog — dicas sobre caçamba de entulho](https://www.alugueldecacambario.com.br/blog/)
+- [Sobre nós](https://www.alugueldecacambario.com.br/sobre/)
+- [Contato / Orçamento](https://www.alugueldecacambario.com.br/contato/)
 
 ## Diferenciais
 
@@ -40,5 +81,10 @@ Rio de Janeiro — RJ (todas as regiões e bairros).
 - Licença ambiental válida
 - Preço transparente, sem taxas escondidas
 - Atendimento humano e próximo
-- +15 anos de experiência
-- +500 obras atendidas
+- +15 anos de experiência no setor
+- +500 obras atendidas no Rio de Janeiro
+- Orçamento grátis em até 30 minutos via WhatsApp
+
+## Solicite seu orçamento
+
+Fale pelo WhatsApp ou ligue. Respondemos em até 30 minutos com orçamento detalhado, prazo de entrega e disponibilidade para o seu bairro.

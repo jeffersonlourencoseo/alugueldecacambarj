@@ -16,4 +16,9 @@ export default defineConfig({
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
   },
+  redirects: {
+    // Evita duplicação de conteúdo entre /sitemap.xml e /sitemap.xml/
+    '/sitemap.xml/': '/sitemap.xml',
+    '/robots.txt/': '/robots.txt',
+  },
 });

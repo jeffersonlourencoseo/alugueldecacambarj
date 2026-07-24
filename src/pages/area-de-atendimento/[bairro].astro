@@ -1,0 +1,428 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { SITE_CONFIG } from '../../data/config';
+import { bairros, bairrosPorZona, type Bairro } from '../../data/bairros';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return bairros.map((bairro) => ({
+    params: { bairro: bairro.slug },
+    props: { bairro },
+  }));
+}
+
+interface Props {
+  bairro: Bairro;
+}
+
+const { bairro } = Astro.props;
+const prep = bairro.preposicao;
+const Prep = prep.charAt(0).toUpperCase() + prep.slice(1);
+
+const outrosBairrosMesmaZona = bairrosPorZona(bairro.zonaSlug)
+  .filter((b) => b.slug !== bairro.slug)
+  .slice(0, 6);
+
+const outrosBairrosOutrasZonas = bairros
+  .filter((b) => b.zonaSlug !== bairro.zonaSlug)
+  .slice(0, 6);
+
+const servicos = await getCollection('servicos');
+const waMensagem = `Olá! Vi no site que vocês atendem ${prep} ${bairro.nome}. Gostaria de um orçamento para caçamba de entulho.`;
+const waUrl = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(waMensagem)}`;
+const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
+
+const precoTexto = {
+  'padrão': 'preços dentro da média da região',
+  '5-10% abaixo': 'preços 5% a 10% abaixo da média da cidade',
+  '10-15% acima': 'preços 10% a 15% acima da média da cidade',
+  '20-30% acima': 'preços 20% a 30% acima da média da cidade',
+};
+
+const faqItems = [
+  {
+    question: `Quanto custa alugar uma caçamba de entulho ${prep} ${bairro.nome}?`,
+    answer: `${Prep} ${bairro.nome}, o aluguel de caçamba de entulho tem ${precoTexto[bairro.precoRelativo]}. Os valores partem de R$ 350 para caçamba de 3m³, R$ 450 para 5m³ e R$ 600 para 7m³, incluindo entrega, retirada, nota fiscal e certificado de destinação. Solicite orçamento grátis pelo WhatsApp em até 30 minutos.`,
+  },
+  {
+    question: `Qual o prazo de entrega da caçamba ${prep} ${bairro.nome}?`,
+    answer: `Entregamos caçambas ${prep} ${bairro.nome} no mesmo dia ou, no máximo, em até 24 horas úteis após a confirmação. ${bairro.observacoesEspecificas}`,
+  },
+  {
+    question: `Qual o tamanho ideal de caçamba para obras ${prep} ${bairro.nome}?`,
+    answer: `${Prep} ${bairro.nome}, os tamanhos mais solicitados são: ${bairro.servicosPopulares.join(', ')}. Para pequenas reformas e apartamentos, a caçamba de 3m³ é ideal. Para obras médias e comerciais, a de 5m³. Para grandes demolições e construções, a de 7m³.`,
+  },
+  {
+    question: `A caçamba ${prep} ${bairro.nome} inclui documentação ambiental?`,
+    answer: `Sim. Toda locação ${prep} ${bairro.nome} inclui nota fiscal, certificado de destinação final (CDF) e licença ambiental da empresa transportadora. Você descarta o entulho de forma legal e sem risco de multa.`,
+  },
+];
+
+const title = `Aluguel de Caçamba de Entulho ${prep} ${bairro.nome} | CaçambaRápido — ${bairro.zona}`;
+const description = `Aluguel de caçamba de entulho ${prep} ${bairro.nome}, ${bairro.zona} do Rio de Janeiro. Entrega em até 24h, preço justo e documentação ambiental. Caçambas de 3m³, 5m³ e 7m³. Solicite orçamento grátis.`;
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="bg-concrete">
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Área de Atendimento', href: '/area-de-atendimento/' },
+        { label: bairro.nome, href: `/area-de-atendimento/${bairro.slug}/` },
+      ]} />
+    </div>
+
+    <!-- Hero -->
+    <section class="py-24 md:py-32 relative overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-1/4 -right-1/4 w-[80vw] h-[120vh] bg-safety/5 rotate-12 rounded-3xl"></div>
+      </div>
+
+      <div class="container mx-auto px-6 md:px-12 relative">
+        <div class="max-w-4xl">
+          <span class="inline-block rounded-full bg-safety/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+            {bairro.zona} do Rio de Janeiro
+          </span>
+
+          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-8">
+            Caçamba de Entulho<br />
+            {prep} <span class="text-safety">{bairro.nome}</span>
+          </h1>
+
+          <p class="text-xl md:text-2xl text-pale/60 max-w-3xl mb-10 leading-relaxed">
+            {bairro.descricao}
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-4 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 min-h-[56px]"
+            >
+              WhatsApp — Orçamento para {bairro.nome}
+            </a>
+            <a
+              href={telUrl}
+              class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]"
+            >
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="py-16 md:py-24 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-concrete border border-steel p-8 md:p-10 text-center">
+            <div class="font-display text-4xl text-safety mb-4">🚛</div>
+            <h3 class="font-display text-xl text-pale uppercase mb-2">Entrega Rápida</h3>
+            <p class="text-pale/50 text-sm">Até 24h em {bairro.nome}. Mesmo dia quando há disponibilidade.</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 md:p-10 text-center">
+            <div class="font-display text-4xl text-safety mb-4">📋</div>
+            <h3 class="font-display text-xl text-pale uppercase mb-2">Documentação Inclusa</h3>
+            <p class="text-pale/50 text-sm">Nota fiscal, CDF e licença ambiental. Sem dor de cabeça.</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 md:p-10 text-center">
+            <div class="font-display text-4xl text-safety mb-4">💰</div>
+            <h3 class="font-display text-xl text-pale uppercase mb-2">Preço Justo</h3>
+            <p class="text-pale/50 text-sm">{precoTexto[bairro.precoRelativo]}. Orçamento sem taxas escondidas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
+            <!-- Coluna de conteúdo -->
+            <div class="lg:col-span-2 space-y-16">
+              <!-- Desafios locais -->
+              <div>
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="h-px w-12 bg-safety"></div>
+                  <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Logística local</span>
+                </div>
+                <h2 class="font-display text-3xl md:text-4xl text-pale uppercase leading-tight mb-6">
+                  Como funciona o aluguel de caçamba em {bairro.nome}
+                </h2>
+                <p class="text-pale/60 text-lg leading-relaxed mb-8">
+                  {bairro.descricao} Cada bairro do Rio tem particularidades que afetam prazo, preço e tamanho ideal da caçamba. Em {bairro.nome}, a experiência acumulada nos permite entregar com agilidade e segurança.
+                </p>
+
+                <h3 class="font-display text-xl text-pale uppercase mb-4">Desafios específicos do bairro</h3>
+                <ul class="space-y-3 mb-8">
+                  {bairro.desafios.map((item) => (
+                    <li class="flex items-start gap-3 text-pale/60">
+                      <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 class="font-display text-xl text-pale uppercase mb-4">Dicas para entrega em {bairro.nome}</h3>
+                <ul class="space-y-3">
+                  {bairro.dicasEntrega.map((item) => (
+                    <li class="flex items-start gap-3 text-pale/60">
+                      <svg class="w-5 h-5 text-safety flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <!-- Serviços -->
+              <div>
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="h-px w-12 bg-safety"></div>
+                  <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Serviços</span>
+                </div>
+                <h2 class="font-display text-3xl md:text-4xl text-pale uppercase leading-tight mb-6">
+                  Serviços de caçamba em {bairro.nome}
+                </h2>
+                <p class="text-pale/60 text-lg leading-relaxed mb-8">
+                  Atendemos {bairro.nome} com todos os tamanhos de caçamba e retirada de entulho. Os serviços mais procurados no bairro são:
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                  {bairro.servicosPopulares.map((servicoNome) => {
+                    const servico = servicos.find((s) => servicoNome.includes(s.data.title));
+                    return (
+                      <a
+                        href={servico ? `/servicos/${servico.slug}/` : '/servicos/'}
+                        class="group bg-concrete-light border border-steel p-6 hover:border-safety transition-all"
+                      >
+                        <div class="flex items-start justify-between mb-4">
+                          <h3 class="font-display text-lg text-pale uppercase group-hover:text-safety transition-colors">{servicoNome}</h3>
+                          <svg class="w-5 h-5 text-steel group-hover:text-safety transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                          </svg>
+                        </div>
+                        <p class="text-pale/50 text-sm">
+                          {servico ? servico.data.description : 'Solicite orçamento para mais detalhes.'}
+                        </p>
+                      </a>
+                    );
+                  })}
+                </div>
+
+                <h3 class="font-display text-xl text-pale uppercase mb-4">Tipos de obra comuns em {bairro.nome}</h3>
+                <div class="flex flex-wrap gap-2">
+                  {bairro.tiposObraComuns.map((obra) => (
+                    <span class="inline-block border border-steel px-4 py-2 text-sm text-pale/60">{obra}</span>
+                  ))}
+                </div>
+              </div>
+
+              <!-- Preços -->
+              <div>
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="h-px w-12 bg-safety"></div>
+                  <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Investimento</span>
+                </div>
+                <h2 class="font-display text-3xl md:text-4xl text-pale uppercase leading-tight mb-6">
+                  Preço do aluguel de caçamba em {bairro.nome}
+                </h2>
+                <p class="text-pale/60 text-lg leading-relaxed mb-8">
+                  Em {bairro.nome}, os valores praticados são {precoTexto[bairro.precoRelativo]}. A tabela abaixo mostra os preços de referência para locação padrão de 7 dias:
+                </p>
+
+                <div class="overflow-x-auto mb-8">
+                  <table class="w-full text-left border border-steel">
+                    <thead>
+                      <tr class="bg-concrete-light">
+                        <th class="px-6 py-4 text-pale font-display uppercase text-sm border-b border-steel">Tamanho</th>
+                        <th class="px-6 py-4 text-pale font-display uppercase text-sm border-b border-steel">Preço a partir de</th>
+                        <th class="px-6 py-4 text-pale font-display uppercase text-sm border-b border-steel">Indicado para</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-steel">
+                        <td class="px-6 py-4 text-pale/70">Caçamba 3m³</td>
+                        <td class="px-6 py-4 text-safety font-bold">R$ 350</td>
+                        <td class="px-6 py-4 text-pale/70">Pequenas reformas e apartamentos</td>
+                      </tr>
+                      <tr class="border-b border-steel">
+                        <td class="px-6 py-4 text-pale/70">Caçamba 5m³</td>
+                        <td class="px-6 py-4 text-safety font-bold">R$ 450</td>
+                        <td class="px-6 py-4 text-pale/70">Obras médias e comerciais</td>
+                      </tr>
+                      <tr>
+                        <td class="px-6 py-4 text-pale/70">Caçamba 7m³</td>
+                        <td class="px-6 py-4 text-safety font-bold">R$ 600</td>
+                        <td class="px-6 py-4 text-pale/70">Grandes demolições e construções</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p class="text-pale/50 text-sm">
+                  {bairro.precoJustificativa} O valor final pode variar conforme prazo, urgência, tipo de resíduo e acesso do local. Solicite um orçamento personalizado pelo WhatsApp.
+                </p>
+              </div>
+
+              <!-- Referências locais -->
+              <div>
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="h-px w-12 bg-safety"></div>
+                  <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Referências locais</span>
+                </div>
+                <h2 class="font-display text-3xl md:text-4xl text-pale uppercase leading-tight mb-6">
+                  Atendemos próximo a pontos de referência de {bairro.nome}
+                </h2>
+                <p class="text-pale/60 text-lg leading-relaxed mb-6">
+                  Nossa frota conhece bem a região e atende obras próximas a:
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                  {bairro.landmarks.map((landmark) => (
+                    <span class="inline-block bg-safety/10 border border-safety/20 px-4 py-2 text-sm text-safety">{landmark}</span>
+                  ))}
+                </div>
+                <p class="text-pale/60 text-lg leading-relaxed">
+                  {bairro.observacoesEspecificas}
+                </p>
+              </div>
+
+              <!-- FAQ -->
+              <div>
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="h-px w-12 bg-safety"></div>
+                  <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Dúvidas</span>
+                </div>
+                <h2 class="font-display text-3xl md:text-4xl text-pale uppercase leading-tight mb-8">
+                  Perguntas frequentes sobre {bairro.nome}
+                </h2>
+                <div class="space-y-4">
+                  {faqItems.map((faq) => (
+                    <details class="group rounded-2xl bg-concrete-light border border-steel open:border-safety transition-all">
+                      <summary class="flex items-center justify-between cursor-pointer p-6 text-left list-none">
+                        <h3 class="font-bold text-pale text-lg pr-4">{faq.question}</h3>
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                      </summary>
+                      <div class="px-6 pb-6 text-pale/60 leading-relaxed">
+                        {faq.answer}
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+              <div class="sticky top-28 space-y-6">
+                <div class="bg-concrete-light border border-steel p-8">
+                  <h3 class="font-display text-xl text-pale uppercase mb-4">Orçamento para {bairro.nome}</h3>
+                  <p class="text-pale/50 text-sm mb-6">
+                    Resposta em até 30 minutos. Atendemos {bairro.nome} e toda a {bairro.zona}.
+                  </p>
+                  <a
+                    href={waUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 w-full bg-green-500 px-4 py-3 text-sm font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors mb-3"
+                  >
+                    WhatsApp
+                  </a>
+                  <a
+                    href={telUrl}
+                    class="inline-flex items-center justify-center gap-2 w-full bg-safety px-4 py-3 text-sm font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors"
+                  >
+                    Ligar Agora
+                  </a>
+                </div>
+
+                <div class="bg-concrete-light border border-steel p-8">
+                  <h3 class="font-display text-lg text-pale uppercase mb-4">Outros bairros da {bairro.zona}</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {outrosBairrosMesmaZona.map((b) => (
+                      <a href={`/area-de-atendimento/${b.slug}/`} class="inline-block border border-steel px-3 py-1 text-xs text-pale/60 hover:border-safety hover:text-safety transition-colors">
+                        {b.nome}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                <div class="bg-concrete-light border border-steel p-8">
+                  <h3 class="font-display text-lg text-pale uppercase mb-4">Outras regiões</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {outrosBairrosOutrasZonas.map((b) => (
+                      <a href={`/area-de-atendimento/${b.slug}/`} class="inline-block border border-steel px-3 py-1 text-xs text-pale/60 hover:border-safety hover:text-safety transition-colors">
+                        {b.nome}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                <div class="bg-concrete-light border border-steel p-8">
+                  <h3 class="font-display text-lg text-pale uppercase mb-4">Nossos serviços</h3>
+                  <ul class="space-y-3 text-sm text-pale/50">
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Caçamba 3m³</li>
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Caçamba 5m³</li>
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Caçamba 7m³</li>
+                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-safety" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Retirada de Entulho</li>
+                  </ul>
+                  <a href="/servicos/" class="inline-block mt-4 text-sm font-display uppercase tracking-wider text-safety hover:text-pale transition-colors">Ver todos →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="font-display text-3xl md:text-5xl text-pale uppercase mb-6">
+            Caçamba em {bairro.nome}?<br />
+            <span class="text-safety">Solicite orçamento grátis</span>
+          </h2>
+          <p class="text-lg text-pale/50 mb-10 max-w-2xl mx-auto">
+            Atendemos {bairro.nome} e toda a {bairro.zona} com entrega em até 24h, documentação completa e preço justo.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-5 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-xl shadow-green-500/20 min-h-[56px]"
+            >
+              WhatsApp para {bairro.nome}
+            </a>
+            <a
+              href={telUrl}
+              class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-5 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]"
+            >
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

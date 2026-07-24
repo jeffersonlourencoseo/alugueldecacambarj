@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { SITE_CONFIG } from '../../data/config';
+import { bairrosPorZona, zonas } from '../../data/bairros';
+
+const zona = zonas.find((z) => z.slug === 'zona-sul')!;
+const bairros = bairrosPorZona('zona-sul');
+const waUrl = SITE_CONFIG.social.whatsapp;
+const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
+
+const title = `Aluguel de Caçamba na Zona Sul do Rio | CaçambaRápido — RJ`;
+const description = `Aluguel de caçamba de entulho na Zona Sul do Rio de Janeiro: Copacabana, Ipanema, Leblon, Botafogo e mais. Caçambas compactas, entrega rápida e documentação completa.`;
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="bg-concrete">
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Área de Atendimento', href: '/area-de-atendimento/' },
+        { label: 'Zona Sul', href: '/area-de-atendimento/zona-sul/' },
+      ]} />
+    </div>
+
+    <section class="py-24 md:py-32 relative overflow-hidden">
+      <div class="container mx-auto px-6 md:px-12 relative">
+        <div class="max-w-4xl">
+          <span class="inline-block rounded-full bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-400 mb-6">
+            Região de atuação
+          </span>
+          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-8">
+            Caçamba de Entulho<br />
+            na <span class="text-safety">Zona Sul</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-pale/60 max-w-3xl mb-10 leading-relaxed">
+            {zona.resumo}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-4 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 min-h-[56px]">
+              Orçamento para Zona Sul
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-px w-12 bg-safety"></div>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Desafios da Zona Sul</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-6">
+            Logística especializada para cada bairro
+          </h2>
+          <p class="text-pale/60 text-lg leading-relaxed">
+            A Zona Sul exige planejamento. Ruas estreitas, condomínios rigorosos e restrições de carga exigem caçambas compactas, horários estratégicos e uma equipe experiente em logística urbana.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {zona.caracteristicas.map((item) => (
+            <div class="flex items-start gap-4 bg-concrete border border-steel p-6">
+              <svg class="w-6 h-6 text-safety flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-pale/70">{item}</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="max-w-3xl mb-10">
+          <h3 class="font-display text-3xl text-pale uppercase mb-6">Bairros atendidos na Zona Sul</h3>
+          <p class="text-pale/60 text-lg leading-relaxed mb-8">
+            Clique no bairro para ver preços específicos, dicas de entrega e recomendações de tamanho de caçamba.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {bairros.map((bairro) => (
+            <a href={`/area-de-atendimento/${bairro.slug}/`} class="group bg-concrete border border-steel p-6 text-center hover:border-safety transition-all">
+              <span class="text-pale font-medium group-hover:text-safety transition-colors">{bairro.nome}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="font-display text-3xl md:text-5xl text-pale uppercase mb-6">
+            Caçamba na Zona Sul do Rio
+          </h2>
+          <p class="text-lg text-pale/50 mb-10 max-w-2xl mx-auto">
+            Atendemos Copacabana, Ipanema, Leblon, Botafogo, Flamengo e Laranjeiras. Entrega em até 24h com documentação completa.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-5 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-xl shadow-green-500/20 min-h-[56px]">
+              WhatsApp
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-5 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

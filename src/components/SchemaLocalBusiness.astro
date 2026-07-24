@@ -88,13 +88,10 @@ const schema = {
     ],
   },
 
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '127',
-    bestRating: '5',
-    worstRating: '1',
-  },
+  // aggregateRating removido intencionalmente até que existam reviews reais
+  // e verificáveis no Google Business Profile. Avaliações fictícias no schema
+  // podem gerar penalidade manual do Google por dados estruturados enganosos.
+  // Reativar quando houver no mínimo 10 reviews verificadas.
 
   sameAs: [SITE_CONFIG.social.whatsapp].filter(Boolean),
 };

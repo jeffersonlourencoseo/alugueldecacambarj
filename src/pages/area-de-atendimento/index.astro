@@ -1,0 +1,266 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import SchemaLocalBusiness from '../../components/SchemaLocalBusiness.astro';
+import { SITE_CONFIG } from '../../data/config';
+import { bairros, bairrosPorZona } from '../../data/bairros';
+
+const waUrl = SITE_CONFIG.social.whatsapp;
+const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
+
+const title = `Área de Atendimento | Aluguel de Caçamba no Rio de Janeiro | CaçambaRápido`;
+const description = `Atendemos a Zona Norte, Zona Sul e Zona Sudoeste do Rio de Janeiro com aluguel de caçamba de entulho. Veja os bairros atendidos e solicite orçamento grátis.`;
+
+const bairrosNorte = bairrosPorZona('zona-norte');
+const bairrosSul = bairrosPorZona('zona-sul');
+const bairrosSudoeste = bairrosPorZona('zona-sudoeste');
+
+const totalBairros = bairros.length;
+
+const regioes = [
+  {
+    nome: 'Zona Norte',
+    slug: 'zona-norte',
+    quantidade: bairrosNorte.length,
+    resumo: 'Melhor custo-benefício, ruas amplas e entrega rápida.',
+    cor: 'bg-green-500',
+    bairros: bairrosNorte,
+  },
+  {
+    nome: 'Zona Sul',
+    slug: 'zona-sul',
+    quantidade: bairrosSul.length,
+    resumo: 'Logística especializada para ruas estreitas e condomínios.',
+    cor: 'bg-blue-500',
+    bairros: bairrosSul,
+  },
+  {
+    nome: 'Zona Sudoeste',
+    slug: 'zona-sudoeste',
+    quantidade: bairrosSudoeste.length,
+    resumo: 'Frota dedicada para grandes obras e condomínios fechados.',
+    cor: 'bg-amber-500',
+    bairros: bairrosSudoeste,
+  },
+];
+
+const faqItems = [
+  {
+    question: 'Quais regiões do Rio de Janeiro a CaçambaRápido atende?',
+    answer: 'Atendemos a Zona Norte, Zona Sul e Zona Sudoeste do Rio de Janeiro, cobrindo mais de 100 bairros com entrega em até 24 horas.',
+  },
+  {
+    question: 'Como saber se a CaçambaRápido atende meu bairro?',
+    answer: 'Consulte a lista de bairros nesta página ou entre em contato pelo WhatsApp. Mesmo que seu bairro não esteja listado, provavelmente conseguimos atender.',
+  },
+  {
+    question: 'O preço do aluguel de caçamba varia por bairro?',
+    answer: 'Sim. O valor pode variar conforme a distância do bairro, dificuldade de acesso, urgência da entrega e tamanho da caçamba. Zonas com acesso mais difícil ou distantes costumam ter frete maior.',
+  },
+  {
+    question: 'Qual o prazo de entrega da caçamba no Rio de Janeiro?',
+    answer: 'Entregamos caçambas em até 24 horas úteis na maioria dos bairros atendidos. Dependendo da disponibilidade, conseguimos entrega no mesmo dia.',
+  },
+];
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="bg-concrete">
+    <div class="container mx-auto px-6 md:px-12 pt-8">
+      <Breadcrumb items={[
+        { label: 'Início', href: '/' },
+        { label: 'Área de Atendimento', href: '/area-de-atendimento/' },
+      ]} />
+    </div>
+
+    <!-- Hero -->
+    <section class="py-24 md:py-32 relative overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-1/4 -right-1/4 w-[80vw] h-[120vh] bg-safety/5 rotate-12 rounded-3xl"></div>
+      </div>
+
+      <div class="container mx-auto px-6 md:px-12 relative">
+        <div class="max-w-4xl">
+          <span class="inline-block rounded-full bg-safety/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+            Cobertura completa no Rio de Janeiro
+          </span>
+
+          <h1 class="font-display text-5xl md:text-7xl text-pale uppercase leading-[0.95] mb-8">
+            Área de<br />
+            <span class="text-safety">Atendimento</span>
+          </h1>
+
+          <p class="text-xl md:text-2xl text-pale/60 max-w-3xl mb-10 leading-relaxed">
+            A CaçambaRápido atende a Zona Norte, Zona Sul e Zona Sudoeste do Rio de Janeiro com aluguel de caçamba de entulho, entrega em até 24h e documentação ambiental completa.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-4 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 min-h-[56px]">
+              Verificar meu bairro no WhatsApp
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-4 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="py-16 md:py-24 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-concrete border border-steel p-8 text-center">
+            <div class="font-display text-4xl md:text-5xl text-safety mb-2">{totalBairros}</div>
+            <p class="text-pale/50 text-sm uppercase tracking-wider">Bairros atendidos</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 text-center">
+            <div class="font-display text-4xl md:text-5xl text-safety mb-2">3</div>
+            <p class="text-pale/50 text-sm uppercase tracking-wider">Regiões do Rio</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 text-center">
+            <div class="font-display text-4xl md:text-5xl text-safety mb-2">24h</div>
+            <p class="text-pale/50 text-sm uppercase tracking-wider">Prazo máximo de entrega</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 text-center">
+            <div class="font-display text-4xl md:text-5xl text-safety mb-2">30min</div>
+            <p class="text-pale/50 text-sm uppercase tracking-wider">Orçamento grátis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regiões -->
+    {
+      regioes.map((regiao) => (
+        <section class="py-24 md:py-32 relative" id={regiao.slug}>
+          <div class="container mx-auto px-6 md:px-12">
+            <div class="max-w-3xl mb-16">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="h-px w-12 bg-safety"></div>
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">{regiao.nome}</span>
+              </div>
+              <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-4">
+                Caçamba de entulho na {regiao.nome}
+              </h2>
+              <p class="text-pale/60 text-lg leading-relaxed">
+                {regiao.resumo}
+              </p>
+            </div>
+
+            <div class="text-left">
+              <a href={`/area-de-atendimento/${regiao.slug}/`} class="inline-flex items-center gap-2 text-safety font-display uppercase tracking-wider text-lg hover:text-pale transition-colors group">
+                Ver bairros atendidos na {regiao.nome}
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+      ))
+    }
+
+    <!-- Mapa conceitual -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mb-16">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="h-px w-12 bg-safety"></div>
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Como atuamos</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95] mb-6">
+            Cobertura estratégica no Rio
+          </h2>
+          <p class="text-pale/60 text-lg leading-relaxed">
+            Nossa operação foi pensada para minimizar frete e maximizar velocidade. A base localiza-se na Zona Norte, o que garante entregas rápidas para toda a cidade e região metropolitana.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-concrete border border-steel p-8 md:p-10">
+            <div class="font-display text-3xl text-safety mb-4">1</div>
+            <h3 class="font-display text-xl text-pale uppercase mb-3">Solicitação</h3>
+            <p class="text-pale/50 text-sm">Você nos informa o bairro, tipo de obra e tamanho da caçamba pelo WhatsApp ou telefone.</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 md:p-10">
+            <div class="font-display text-3xl text-safety mb-4">2</div>
+            <h3 class="font-display text-xl text-pale uppercase mb-3">Orçamento regional</h3>
+            <p class="text-pale/50 text-sm">Calculamos o valor considerando a distância do bairro, acesso do local e tamanho da caçamba. Resposta em até 30 minutos.</p>
+          </div>
+          <div class="bg-concrete border border-steel p-8 md:p-10">
+            <div class="font-display text-3xl text-safety mb-4">3</div>
+            <h3 class="font-display text-xl text-pale uppercase mb-3">Entrega no bairro</h3>
+            <p class="text-pale/50 text-sm">Entregamos em até 24h, respeitando as particularidades de cada região do Rio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 md:py-32">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="flex items-center justify-center gap-4 mb-6">
+              <div class="h-px w-12 bg-safety"></div>
+              <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Dúvidas</span>
+              <div class="h-px w-12 bg-safety"></div>
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl text-pale uppercase leading-[0.95]">
+              Perguntas sobre atendimento
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            {faqItems.map((faq) => (
+              <details class="group rounded-2xl bg-concrete-light border border-steel open:border-safety transition-all">
+                <summary class="flex items-center justify-between cursor-pointer p-6 text-left list-none">
+                  <h3 class="font-bold text-pale text-lg pr-4">{faq.question}</h3>
+                  <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </summary>
+                <div class="px-6 pb-6 text-pale/60 leading-relaxed">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 md:py-32 bg-concrete-light relative">
+      <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="font-display text-3xl md:text-5xl text-pale uppercase mb-6">
+            Não encontrou seu bairro?
+          </h2>
+          <p class="text-lg text-pale/50 mb-10 max-w-2xl mx-auto">
+            Fale conosco pelo WhatsApp. Provavelmente atendemos sua região. Solicite orçamento grátis e receba em até 30 minutos.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-green-500 px-8 py-5 text-base font-display uppercase tracking-wider text-white hover:bg-green-600 transition-colors shadow-xl shadow-green-500/20 min-h-[56px]">
+              WhatsApp — Verificar bairro
+            </a>
+            <a href={telUrl} class="inline-flex items-center justify-center gap-3 bg-safety px-8 py-5 text-base font-display uppercase tracking-wider text-concrete hover:bg-safety-dark transition-colors min-h-[56px]">
+              Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <SchemaLocalBusiness />
+</Layout>

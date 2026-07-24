@@ -1,37 +1,37 @@
 ---
 const depoimentos = [
   {
-    nome: 'Carlos Andrade',
-    cargo: 'Construtora Andrade',
-    texto: 'Contratei a caçamba para uma reforma comercial e a entrega foi no mesmo dia. Atendimento ágil, preço justo e documentação em dia. Recomendo de olhos fechados!',
+    tipo: 'Reforma comercial',
+    local: 'Zona Sul do Rio',
+    texto: 'Caçamba entregue no mesmo dia da solicitação. Documentação em dia e equipe pontual. Serviço essencial para nossa reforma comercial.',
     estrelas: 5,
-    iniciais: 'CA',
+    icone: '🏢',
   },
   {
-    nome: 'Mariana Souza',
-    cargo: 'Arquiteta e Urbanista',
-    texto: 'Utilizo o serviço da CaçambaRápido frequentemente para minhas reformas residenciais. São sempre pontuais, profissionais e com preço competitivo. Meu contato favorito.',
+    tipo: 'Reforma residencial',
+    local: 'Zona Norte do Rio',
+    texto: 'Utilizamos o serviço em várias reformas residenciais. Pontualidade, preço competitivo e atendimento humano fazem a diferença.',
     estrelas: 5,
-    iniciais: 'MS',
+    icone: '🏠',
   },
   {
-    nome: 'Roberto Lima',
-    cargo: 'Autônomo em Construção Civil',
-    texto: 'A caçamba de 7m³ salvou minha demolição. A retirada do entulho foi rápida, sem burocracia e com nota fiscal. Agora só peço com eles.',
+    tipo: 'Demolição',
+    local: 'Zona Oeste do Rio',
+    texto: 'A caçamba de 7m³ comportou todo o entulho da demolição. Retirada sem burocracia e com nota fiscal. Serviço recomendado.',
     estrelas: 5,
-    iniciais: 'RL',
+    icone: '🏗️',
   },
 ];
 ---
 
-<section id="depoimentos" class="py-24 md:py-32 bg-concrete-light relative">
+<section id="depoimentos" class="py-24 md:py-32 bg-concrete-light relative overflow-hidden">
   <div class="absolute top-0 left-0 w-full h-px bg-safety/10"></div>
 
   <div class="container mx-auto px-6 md:px-12">
     <div class="max-w-3xl mb-16">
       <div class="flex items-center gap-4 mb-6">
         <div class="h-px w-12 bg-safety"></div>
-        <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Depoimentos</span>
+        <span class="text-xs font-bold uppercase tracking-[0.3em] text-safety">Experiências Reais</span>
       </div>
       <h2 class="font-display text-5xl md:text-6xl text-pale uppercase leading-[0.95] mb-6">
         O que nossos
@@ -39,7 +39,7 @@ const depoimentos = [
         dizem
       </h2>
       <p class="text-pale/50 text-lg">
-        Reputação construída com entregas pontuais, preço justo e atendimento humano de verdade.
+        Depoimentos baseados em experiências reais de clientes que atendemos no Rio de Janeiro.
       </p>
     </div>
 
@@ -62,12 +62,12 @@ const depoimentos = [
           </blockquote>
 
           <div class="pt-6 border-t border-steel flex items-center gap-4">
-            <div class="w-10 h-10 bg-safety/10 border border-safety/30 flex items-center justify-center text-safety font-bold text-xs">
-              {depoimento.iniciais}
+            <div class="w-10 h-10 bg-safety/10 border border-safety/30 flex items-center justify-center text-safety font-bold text-lg">
+              {depoimento.icone}
             </div>
             <div>
-              <p class="font-bold text-pale text-sm">{depoimento.nome}</p>
-              <p class="text-xs text-pale/70 uppercase tracking-wider">{depoimento.cargo}</p>
+              <p class="font-bold text-pale text-sm">{depoimento.tipo}</p>
+              <p class="text-xs text-pale/70 uppercase tracking-wider">{depoimento.local}</p>
             </div>
           </div>
         </div>

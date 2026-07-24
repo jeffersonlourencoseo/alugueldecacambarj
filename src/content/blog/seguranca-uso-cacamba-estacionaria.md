@@ -10,7 +10,7 @@ A **caçamba estacionária** é um equipamento indispensável em obras e reforma
 
 ![Segurança no uso de caçamba estacionária](/images/cacamba-de-entulho.webp) Seguir regras técnicas de segurança não é apenas uma questão de bom senso — é uma exigência legal que protege vidas, evita multas e garante a continuidade da obra sem intercorrências.
 
-Neste guia completo, apresentamos **10 regras essenciais de segurança** no uso de **caçambas de entulho**, baseadas na **NR-18** (Norma Regulamentadora de Segurança na Construção Civil), na legislação municipal do Rio de Janeiro e em mais de 15 anos de experiência prática da CaçambaRápido em obras na região.
+Vou apresentar **10 regras essenciais de segurança** no uso de **caçambas de entulho**, baseadas na **NR-18** (Norma Regulamentadora de Segurança na Construção Civil), na legislação municipal do Rio de Janeiro e na experiência prática da CaçambaRápido em obras na cidade.
 
 <div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>

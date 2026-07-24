@@ -12,7 +12,7 @@ O termo **"caçamba legal"** ganhou força nos últimos anos no Rio de Janeiro.
 
 Usar uma **caçamba legal** não é apenas uma questão de ética empresarial — é uma necessidade jurídica que protege o gestor da obra, o proprietário do imóvel e a própria empresa contratante de multas que podem destruir o orçamento, interromper a obra e, em casos extremos, resultar em processo criminal.
 
-Neste guia completo e atualizado, vamos detalhar o que caracteriza uma **caçamba legal** no Rio de Janeiro, como identificar empresas clandestinas, como consultar **aterros licenciados** no INEA, quais são as multas por descarte irregular, como denunciar infrações e como garantir que sua obra esteja 100% dentro da lei.
+Vou explicar o que caracteriza uma **caçamba legal** no Rio de Janeiro, como identificar empresas clandestinas, como consultar **aterros licenciados** no INEA, quais são as multas por descarte irregular, como denunciar infrações e como garantir que sua obra esteja dentro da lei.
 
 <div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
@@ -140,13 +140,13 @@ Aterros clandestinos são simplesmente áreas onde entulho é despeclado sem con
 
 ## O cenário real do Rio de Janeiro: dados preocupantes
 
-Segundo relatórios do INEA e da Comlurb, estima-se que **cerca de 40% do entulho gerado no Rio de Janeiro vai para destinação irregular**. Isso representa milhares de toneladas por dia despecladas em áreas inadequadas. Os principais pontos críticos são:
+Segundo relatórios do INEA e da Comlurb, estima-se que **cerca de 40% do entulho gerado no Rio de Janeiro vai para destinação irregular**. Isso representa milhares de toneladas por dia despejadas em áreas inadequadas. Os principais pontos críticos na cidade são:
 
-- **Baixada Fluminense**: áreas de preservação e terrenos baldios recebem entulho de obras do Rio e de outras cidades
-- **Zona Oeste**: crescimento acelerado da construção civil sem acompanhamento de infraestrutura de aterros
-- **Áreas de preservação**: manguezais de Guanabara e lagoas da Barra são frequentemente alvos de descarte clandestino
+- **Áreas de preservação**: manguezais da Baía de Guanabara, lagoas da Barra da Tijuca e áreas verdes da Zona Norte recebem descarte clandestino com frequência
+- **Morros e terrenos baldios**: locais de difícil acesso fiscalização acumulam entulho de pequenas reformas e demolições irregulares
+- **Canteiros abandonados**: obras paradas viram depósitos de entulho sem controle
 
-Cada obra que escolhe uma **caçamba legal** contribui para reduzir esses números, proteger o meio ambiente do estado e evitar multas severas que podem comprometer todo o orçamento da construção.
+Cada obra que escolhe uma **caçamba legal** contribui para reduzir esses números, proteger o meio ambiente do Rio e evitar multas severas que podem comprometer todo o orçamento da construção.
 
 ## Como denunciar descarte irregular de entulho no RJ
 
