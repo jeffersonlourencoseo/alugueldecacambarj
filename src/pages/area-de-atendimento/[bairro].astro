@@ -33,7 +33,7 @@ const outrosBairrosOutrasZonas = bairros
   .slice(0, 6);
 
 const servicos = await getCollection('servicos');
-const waMensagem = `Olá! Vi no site que vocês atendem ${prep} ${bairro.nome}. Gostaria de um orçamento para caçamba de entulho.`;
+const waMensagem = SITE_CONFIG.whatsappMessage;
 const waUrl = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(waMensagem)}`;
 const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
 

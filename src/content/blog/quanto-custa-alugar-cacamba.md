@@ -15,7 +15,7 @@ Neste artigo a gente vai abrir o jogo sobre o **preço de aluguel de caçamba** 
 <div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Quer saber o preço exato para sua obra?</h3>
   <p class="text-concrete/70 text-sm mb-4">Orçamento grátis em 30 minutos pelo WhatsApp. Atendemos Zona Norte, Zona Sul e Zona Sudoeste do Rio.</p>
-  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-pale px-5 py-3 text-sm font-bold text-concrete hover:bg-concrete-light transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20alugueldecacambario.com.br%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-pale px-5 py-3 text-sm font-bold text-concrete hover:bg-concrete-light transition-colors">📱 Pedir Orçamento no WhatsApp</a>
 </div>
 
 ## Tabela de preço de aluguel de caçamba por tamanho
@@ -189,5 +189,5 @@ Quer saber exatamente quanto custa o **preço de aluguel de caçamba** para sua 
 <div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">✅ Preço de aluguel de caçamba com tudo incluso</h3>
   <p class="text-green-100 text-sm mb-4">Orçamento grátis, entrega em até 24h, nota fiscal e CDF sem surpresa.</p>
-  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Orçamento Grátis</a>
+  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20alugueldecacambario.com.br%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Orçamento Grátis</a>
 </div>

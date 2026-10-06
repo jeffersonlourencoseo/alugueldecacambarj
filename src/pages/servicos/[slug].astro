@@ -24,7 +24,7 @@ interface Props {
 const { servico } = Astro.props;
 const { Content } = await servico.render();
 
-const waMensagem = `Olá! Vi no site o serviço ${servico.data.title} e gostaria de um orçamento.`;
+const waMensagem = SITE_CONFIG.whatsappMessage;
 const waUrl = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(waMensagem)}`;
 const telUrl = `tel:${SITE_CONFIG.phoneRaw}`;
 ---

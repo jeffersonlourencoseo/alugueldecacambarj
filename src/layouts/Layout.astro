@@ -52,5 +52,25 @@ const { title, description, ogImage, noindex } = Astro.props;
   <body class="font-sans antialiased text-pale bg-concrete">
     <WhatsAppBtn />
     <slot />
+
+    <!-- Rastreamento de cliques em telefone e WhatsApp (eventos GA4) -->
+    <script is:inline>
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var evento = null;
+        if (href.indexOf('tel:') === 0) evento = 'click_telefone';
+        else if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) evento = 'click_whatsapp';
+        if (!evento) return;
+        gtag('event', evento, {
+          send_to: 'G-4K0HJKMNWB',
+          link_url: href.split('?')[0],
+          link_text: (a.textContent || '').trim().slice(0, 60),
+          page_path: location.pathname,
+          transport_type: 'beacon'
+        });
+      }, true);
+    </script>
   </body>
 </html>

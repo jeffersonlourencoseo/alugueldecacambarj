@@ -1,3 +1,7 @@
+// Mensagem padrão enviada ao abrir o WhatsApp (usada em todos os botões)
+const WHATSAPP_MESSAGE = 'Olá, vim através do site alugueldecacambario.com.br e gostaria de mais informações!';
+const WHATSAPP_NUMBER = '5521964754303';
+
 export const SITE_CONFIG = {
   name: 'CaçambaRápido',
   fullName: 'CaçambaRápido - Aluguel de Caçambas e Retirada de Entulho',
@@ -9,7 +13,8 @@ export const SITE_CONFIG = {
   phone: '(21) 96475-4303',
   phoneRaw: '+5521964754303',
   phoneE164: '5521964754303',
-  whatsapp: '5521964754303',
+  whatsapp: WHATSAPP_NUMBER,
+  whatsappMessage: WHATSAPP_MESSAGE,
   email: 'contato@alugueldecacambario.com.br',
 
   address: {
@@ -35,7 +40,7 @@ export const SITE_CONFIG = {
   ],
 
   social: {
-    whatsapp: 'https://wa.me/5521964754303?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21',
+    whatsapp: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
   },
 
   description:

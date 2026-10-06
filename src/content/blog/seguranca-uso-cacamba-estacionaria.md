@@ -15,7 +15,7 @@ Vou apresentar **10 regras essenciais de segurança** no uso de **caçambas de e
 <div class="my-8 rounded-2xl bg-safety p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">🚛 Precisa de caçamba de entulho agora?</h3>
   <p class="text-concrete/70 text-sm mb-4">Orçamento grátis em 30 minutos. Entrega em até 24h no Rio de Janeiro.</p>
-  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-pale px-5 py-3 text-sm font-bold text-concrete hover:bg-concrete-light transition-colors">📱 Pedir Orçamento no WhatsApp</a>
+  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20alugueldecacambario.com.br%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-pale px-5 py-3 text-sm font-bold text-concrete hover:bg-concrete-light transition-colors">📱 Pedir Orçamento no WhatsApp</a>
 </div>
 
 ## 1. Escolha o local correto para instalação da caçamba
@@ -194,7 +194,7 @@ Por isso, contratar uma empresa de **locação de caçambas estacionárias** com
 <div class="my-8 rounded-2xl bg-green-600 p-6 text-white shadow-lg">
   <h3 class="text-lg font-bold mb-2">✅ Garanta o descarte correto do seu entulho</h3>
   <p class="text-green-100 text-sm mb-4">Caçamba licenciada, nota fiscal e CDF inclusos. Sem surpresas na hora da retirada.</p>
-  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
+  <a href="https://wa.me/5521964754303?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20alugueldecacambario.com.br%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank" rel="noopener noreferrer" class="inline-block rounded-xl bg-white px-5 py-3 text-sm font-bold text-green-600 hover:bg-green-50 transition-colors">📱 Solicitar Caçamba Legal</a>
 </div>
 
 ## Conclusão: segurança é investimento, não custo
