@@ -6,10 +6,10 @@ export const SITE_CONFIG = {
   locale: 'pt_BR',
 
   // NAP (Name, Address, Phone) - Dados locais
-  phone: '(21) 99775-1577',
-  phoneRaw: '+5521997751577',
-  phoneE164: '5521997751577',
-  whatsapp: '5521997751577',
+  phone: '(21) 96475-4303',
+  phoneRaw: '+5521964754303',
+  phoneE164: '5521964754303',
+  whatsapp: '5521964754303',
   email: 'contato@alugueldecacambario.com.br',
 
   address: {
@@ -35,7 +35,7 @@ export const SITE_CONFIG = {
   ],
 
   social: {
-    whatsapp: 'https://wa.me/5521997751577?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21',
+    whatsapp: 'https://wa.me/5521964754303?text=Ol%C3%A1%2C%20achei%20voc%C3%AAs%20no%20google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21',
   },
 
   description:
