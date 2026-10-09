@@ -5,9 +5,11 @@ const blogCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    pubDate: z.date(),
-    author: z.string(),
+    pubDate: z.coerce.date(),
+    author: z.string().default('CaçambaRápido'),
     image: z.string().optional(),
+    heroImage: z.string().optional(),
+    keyword: z.string().optional(),
     tags: z.array(z.string()).optional(),
   }),
 });
