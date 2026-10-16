@@ -153,6 +153,14 @@ const faqItems = [
               </p>
             </div>
 
+            <div class="flex flex-wrap gap-2 mb-10">
+              {regiao.bairros.map((b) => (
+                <a href={`/area-de-atendimento/${b.slug}/`} class="inline-block border border-steel px-3 py-1 text-sm text-pale/60 hover:border-safety hover:text-safety transition-colors">
+                  {b.nome}
+                </a>
+              ))}
+            </div>
+
             <div class="text-left">
               <a href={`/area-de-atendimento/${regiao.slug}/`} class="inline-flex items-center gap-2 text-safety font-display uppercase tracking-wider text-lg hover:text-pale transition-colors group">
                 Ver bairros atendidos na {regiao.nome}

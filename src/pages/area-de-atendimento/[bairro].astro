@@ -24,13 +24,39 @@ const { bairro } = Astro.props;
 const prep = bairro.preposicao;
 const Prep = prep.charAt(0).toUpperCase() + prep.slice(1);
 
-const outrosBairrosMesmaZona = bairrosPorZona(bairro.zonaSlug)
-  .filter((b) => b.slug !== bairro.slug)
-  .slice(0, 6);
+// Linkagem interna distribuída: cada bairro linka os 6 anteriores e os 6 seguintes
+// da mesma zona (a lista em bairros.ts é agrupada por sub-região), em anel.
+// Assim todo bairro recebe ~12 links internos, em vez de só 6 páginas fixas receberem tudo.
+const bairrosDaZona = bairrosPorZona(bairro.zonaSlug);
+const idxNaZona = bairrosDaZona.findIndex((b) => b.slug === bairro.slug);
+const VIZINHOS = 6;
+const outrosBairrosMesmaZona = (() => {
+  const n = bairrosDaZona.length;
+  const vistos = new Set<string>([bairro.slug]);
+  const lista: Bairro[] = [];
+  for (let d = 1; d <= VIZINHOS && lista.length < n - 1; d++) {
+    for (const i of [idxNaZona - d, idxNaZona + d]) {
+      const b = bairrosDaZona[((i % n) + n) % n];
+      if (!vistos.has(b.slug)) {
+        vistos.add(b.slug);
+        lista.push(b);
+      }
+    }
+  }
+  return lista;
+})();
 
-const outrosBairrosOutrasZonas = bairros
-  .filter((b) => b.zonaSlug !== bairro.zonaSlug)
-  .slice(0, 6);
+// Bairros de outras zonas em rodízio pelo índice global, para não concentrar links sempre nos mesmos.
+const outrasZonas = bairros.filter((b) => b.zonaSlug !== bairro.zonaSlug);
+const idxGlobal = bairros.findIndex((b) => b.slug === bairro.slug);
+const outrosBairrosOutrasZonas = Array.from({ length: 4 }, (_, k) =>
+  outrasZonas[(idxGlobal * 4 + k) % outrasZonas.length]
+);
+const outrasZonasLinks = [
+  { slug: 'zona-norte', nome: 'Zona Norte' },
+  { slug: 'zona-sul', nome: 'Zona Sul' },
+  { slug: 'zona-sudoeste', nome: 'Zona Sudoeste' },
+].filter((z) => z.slug !== bairro.zonaSlug);
 
 const servicos = await getCollection('servicos');
 const waMensagem = SITE_CONFIG.whatsappMessage;
@@ -63,7 +89,9 @@ const faqItems = [
   },
 ];
 
-const title = `Aluguel de Caçamba de Entulho ${prep} ${bairro.nome} | CaçambaRápido — ${bairro.zona}`;
+// Title curto (≤ ~60 caracteres) no formato das buscas reais do GSC: "caçamba de entulho em <bairro>"
+const titleCompleto = `Caçamba de Entulho ${prep} ${bairro.nome} | Aluguel RJ`;
+const title = titleCompleto.length <= 60 ? titleCompleto : `Caçamba de Entulho ${prep} ${bairro.nome} - RJ`;
 const description = `Aluguel de caçamba de entulho ${prep} ${bairro.nome}, ${bairro.zona} do Rio de Janeiro. Entrega em até 24h, preço justo e documentação ambiental. Caçambas de 3m³, 5m³ e 7m³. Solicite orçamento grátis.`;
 ---
 
@@ -366,6 +394,14 @@ const description = `Aluguel de caçamba de entulho ${prep} ${bairro.nome}, ${ba
                 <div class="bg-concrete-light border border-steel p-8">
                   <h3 class="font-display text-lg text-pale uppercase mb-4">Outras regiões</h3>
                   <div class="flex flex-wrap gap-2">
+                    <a href={`/area-de-atendimento/${bairro.zonaSlug}/`} class="inline-block border border-safety px-3 py-1 text-xs text-safety hover:text-pale transition-colors">
+                      Todos da {bairro.zona}
+                    </a>
+                    {outrasZonasLinks.map((z) => (
+                      <a href={`/area-de-atendimento/${z.slug}/`} class="inline-block border border-steel px-3 py-1 text-xs text-pale/60 hover:border-safety hover:text-safety transition-colors">
+                        {z.nome}
+                      </a>
+                    ))}
                     {outrosBairrosOutrasZonas.map((b) => (
                       <a href={`/area-de-atendimento/${b.slug}/`} class="inline-block border border-steel px-3 py-1 text-xs text-pale/60 hover:border-safety hover:text-safety transition-colors">
                         {b.nome}
