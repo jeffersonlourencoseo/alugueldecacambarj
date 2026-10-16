@@ -18,8 +18,7 @@ export const GET: APIRoute = async () => {
     'area-de-atendimento/',
     'blog/',
     'contato/',
-    'privacidade/',
-    'termos/',
+    // privacidade/ e termos/ ficam fora: têm noindex, e o sitemap deve listar só páginas indexáveis
   ];
 
   const zoneRoutes = zonas.map((z) => `area-de-atendimento/${z.slug}/`);
