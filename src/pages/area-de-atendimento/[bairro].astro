@@ -92,7 +92,7 @@ const faqItems = [
 // Title curto (≤ ~60 caracteres) no formato das buscas reais do GSC: "caçamba de entulho em <bairro>"
 const titleCompleto = `Caçamba de Entulho ${prep} ${bairro.nome} | Aluguel RJ`;
 const title = titleCompleto.length <= 60 ? titleCompleto : `Caçamba de Entulho ${prep} ${bairro.nome} - RJ`;
-const description = `Aluguel de caçamba de entulho ${prep} ${bairro.nome}, ${bairro.zona} do Rio de Janeiro. Entrega em até 24h, preço justo e documentação ambiental. Caçambas de 3m³, 5m³ e 7m³. Solicite orçamento grátis.`;
+const description = `Precisa de caçamba de entulho ${prep} ${bairro.nome}? Veja como funciona a entrega no bairro, dicas de posicionamento e peça orçamento pelo WhatsApp.`;
 ---
 
 <Layout title={title} description={description}>
@@ -115,7 +115,7 @@ const description = `Aluguel de caçamba de entulho ${prep} ${bairro.nome}, ${ba
 
       <div class="container mx-auto px-6 md:px-12 relative">
         <div class="max-w-4xl">
-          <span class="inline-block rounded-full bg-safety/10 px-4 py-2 text-sm font-semibold text-secondary mb-6">
+          <span class="inline-block rounded-full bg-safety/10 px-4 py-2 text-sm font-semibold text-safety mb-6">
             {bairro.zona} do Rio de Janeiro
           </span>
 

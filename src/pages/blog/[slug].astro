@@ -63,7 +63,7 @@ const autores: Record<string, { nome: string; bio: string; emoji: string; tipo: 
 const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
 ---
 
-<Layout title={`${post.data.title} | Blog Aluguel de Caçamba de Entulho — ${SITE_CONFIG.name}`} description={post.data.description}>
+<Layout title={post.data.title} description={post.data.description}>
   <Header />
 
   <main class="bg-concrete">
@@ -119,7 +119,7 @@ const autorInfo = autores[post.data.author] || autores['CaçambaRápido'];
                 </div>
               </header>
 
-              <article class="prose prose-lg prose-invert max-w-none text-pale/70">
+              <article class="prose prose-lg prose-invert max-w-none text-pale/70 [&_table]:block [&_table]:overflow-x-auto [&_table]:max-w-full">
                 <Content />
               </article>
 
