@@ -1,6 +1,6 @@
 ---
-title: "Aluguel de Caçamba no Rio de Janeiro: Como Funciona e Quanto Custa"
-description: "Vai alugar caçamba de entulho no Rio? Veja tamanhos, o que influencia o preço, documentos exigidos e como evitar multa. Guia rápido antes de contratar."
+title: "Aluguel de Caçamba no Rio de Janeiro: Como Funciona, Quanto Custa e Como Escolher"
+description: "Entenda tudo sobre aluguel de caçamba de entulho no Rio de Janeiro. Tamanhos, preços, documentação, prazos e dicas para contratar sem dor de cabeça."
 pubDate: 2026-07-23
 author: "João Silva"
 tags: ["aluguel de caçamba", "caçamba de entulho", "Rio de Janeiro", "locação"]
