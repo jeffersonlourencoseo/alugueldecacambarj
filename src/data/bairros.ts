@@ -496,7 +496,6 @@ export const bairros: Bairro[] = [
     tiposObraComuns: ["Reforma de casas", "Ampliação", "Limpeza de quintal"],
     observacoesEspecificas: "Em Anchieta, informe o CEP completo para evitar confusão com endereços de Nilópolis.",
   }),
-  createBairro('Argentino', 'zona-norte'),
   createBairro('Barros Filho', 'zona-norte', {
     descricao: "Barros Filho fica na Zona Norte do Rio, entre Costa Barros, Guadalupe e Coelho Neto, com casas, conjuntos e acesso pela Avenida Brasil.",
     desafios: ["Avenida Brasil com trânsito pesado nos acessos", "Ruas internas estreitas", "Pouco espaço em frente às casas"],
