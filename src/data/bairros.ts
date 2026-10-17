@@ -751,7 +751,14 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A proximidade com o Centro e avenidas principais pode facilitar o acesso, mas o trânsito exige horários estratégicos.',
   }),
-  createBairro('Catete', 'zona-sul'),
+  createBairro('Catete', 'zona-sul', {
+    descricao: "O Catete fica na Zona Sul do Rio, entre o Flamengo e a Glória, com prédios antigos, muitos apartamentos pequenos e comércio na Rua do Catete. É um bairro de reformas constantes de apartamentos e salas comerciais.",
+    desafios: ["Rua do Catete com trânsito intenso e corredor de ônibus", "Prédios antigos sem garagem e com regras de condomínio para obras", "Pouquíssimas vagas de estacionamento nas ruas transversais"],
+    dicasEntrega: ["A caçamba de 3m³ é a mais indicada para as ruas do Catete", "Combine com o síndico o horário de descida do entulho", "Prefira entregas no início da manhã, antes do movimento da Rua do Catete"],
+    landmarks: ["Museu da República (Palácio do Catete)", "Rua do Catete", "Estação Catete (Metrô)"],
+    tiposObraComuns: ["Reforma de apartamentos", "Reforma de salas comerciais", "Troca de piso e banheiro"],
+    observacoesEspecificas: "No Catete, muitas obras são em prédios antigos: informe o andar e se há elevador de serviço para planejar a retirada.",
+  }),
   createBairro('Copacabana', 'zona-sul', {
     descricao:
       'Copacabana é um dos bairros mais conhecidos do Rio, com alto número de reformas em apartamentos e comércios. A logística de caçamba é desafiadora por causa das ruas estreitas, trânsito e restrições de carga e descarga.',
@@ -777,7 +784,14 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'Muitos prédios não possuem área de descarte interna, exigindo que a caçamba fique na calçada. Verifique a necessidade de autorização da prefeitura.',
   }),
-  createBairro('Cosme Velho', 'zona-sul'),
+  createBairro('Cosme Velho', 'zona-sul', {
+    descricao: "O Cosme Velho é um bairro residencial e tranquilo da Zona Sul do Rio, ao pé do Corcovado, com casas, vilas e ruas em aclive. É onde fica a estação do Trem do Corcovado e o Largo do Boticário.",
+    desafios: ["Ruas em aclive e com curvas", "Movimento de turistas perto da estação do Trem do Corcovado", "Casas com acesso estreito e pouco espaço na frente"],
+    dicasEntrega: ["Prefira a caçamba de 3m³ nas ruas mais íngremes", "Evite o horário de maior movimento de turistas na Rua Cosme Velho", "Sinalize bem a caçamba em trechos de curva"],
+    landmarks: ["Estação do Trem do Corcovado", "Largo do Boticário", "Rua Cosme Velho"],
+    tiposObraComuns: ["Reforma de casas", "Reforma de casarões antigos", "Limpeza de quintal"],
+    observacoesEspecificas: "No Cosme Velho, informe se o imóvel fica em ladeira para escolhermos a melhor forma de posicionar a caçamba.",
+  }),
   createBairro('Flamengo', 'zona-sul', {
     descricao:
       'Flamengo é um bairro residencial tradicional da Zona Sul, com avenidas largas na orla e ruas mais estreitas no interior. Tem forte demanda por reformas e retrofit de apartamentos antigos.',
@@ -801,8 +815,22 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'Prédios antigos podem não ter área de descarte adequada. Avalie a possibilidade de retirada de entulho como alternativa.',
   }),
-  createBairro('Gávea', 'zona-sul'),
-  createBairro('Humaitá', 'zona-sul'),
+  createBairro('Gávea', 'zona-sul', {
+    descricao: "A Gávea é um bairro da Zona Sul do Rio entre o Jardim Botânico, a Lagoa e o Leblon, com a PUC-Rio, o Planetário e o Jockey Club. Tem prédios residenciais de alto padrão, casas e muito movimento de estudantes.",
+    desafios: ["Trânsito intenso na Rua Marquês de São Vicente", "Condomínios com regras rígidas para obras e caçambas", "Pouca vaga nas ruas próximas à PUC-Rio"],
+    dicasEntrega: ["Agende com o condomínio e confirme a autorização por escrito", "Prefira entregas cedo, antes do movimento da PUC", "A caçamba de 3m³ costuma ser a mais aceita pelos condomínios"],
+    landmarks: ["PUC-Rio", "Planetário da Gávea", "Jockey Club (Hipódromo da Gávea)"],
+    tiposObraComuns: ["Reforma de apartamentos", "Reforma de casas", "Obras comerciais"],
+    observacoesEspecificas: "Na Gávea, a maioria dos condomínios pede agendamento prévio: avise com antecedência para não atrasar a obra.",
+  }),
+  createBairro('Humaitá', 'zona-sul', {
+    descricao: "O Humaitá fica na Zona Sul do Rio, entre Botafogo, a Lagoa e o Jardim Botânico, com prédios residenciais, vilas e restaurantes. A Cobal do Humaitá é um dos pontos de referência do bairro.",
+    desafios: ["Rua Humaitá com trânsito pesado ligando Botafogo à Lagoa", "Vilas e ruas internas estreitas", "Vagas disputadas por causa do comércio e dos restaurantes"],
+    dicasEntrega: ["Para vilas, combine a caçamba na rua principal", "A caçamba de 3m³ é a mais indicada", "Agende fora do horário de pico da Rua Humaitá"],
+    landmarks: ["Cobal do Humaitá", "Rua Humaitá", "Divisa com Botafogo e Lagoa"],
+    tiposObraComuns: ["Reforma de apartamentos", "Reforma de casas de vila", "Reforma de restaurantes"],
+    observacoesEspecificas: "No Humaitá, imóveis dentro de vilas precisam de atenção ao ponto de apoio da caçamba: mande a localização no WhatsApp.",
+  }),
   createBairro('Ipanema', 'zona-sul', {
     descricao:
       'Ipanema é um bairro nobre da Zona Sul com grande densidade de apartamentos, comércios de luxo e reformas constantes. O espaço para caçamba é limitado e a fiscalização é rigorosa.',
@@ -827,8 +855,22 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A proximidade com a Lagoa e áreas de proteção ambiental exige atenção redobrada com o descarte. Empresa licenciada é essencial.',
   }),
-  createBairro('Jardim Botânico', 'zona-sul'),
-  createBairro('Lagoa', 'zona-sul'),
+  createBairro('Jardim Botânico', 'zona-sul', {
+    descricao: "O Jardim Botânico é um bairro residencial da Zona Sul do Rio, ao lado da Lagoa Rodrigo de Freitas, com casas, vilas e prédios baixos. Leva o nome do Jardim Botânico do Rio e abriga o Parque Lage.",
+    desafios: ["Rua Jardim Botânico com trânsito intenso nos dois sentidos", "Ruas internas estreitas e arborizadas", "Condomínios e vilas com regras para obras"],
+    dicasEntrega: ["Evite posicionar a caçamba na Rua Jardim Botânico; prefira as transversais", "A caçamba de 3m³ facilita a manobra nas ruas arborizadas", "Agende com antecedência com o condomínio"],
+    landmarks: ["Jardim Botânico do Rio de Janeiro", "Parque Lage", "Rua Jardim Botânico"],
+    tiposObraComuns: ["Reforma de casas", "Reforma de apartamentos", "Limpeza de jardim e quintal"],
+    observacoesEspecificas: "No Jardim Botânico, galhos e restos de poda também podem ir na caçamba: avise o tipo de resíduo no pedido.",
+  }),
+  createBairro('Lagoa', 'zona-sul', {
+    descricao: "A Lagoa é um bairro de alto padrão da Zona Sul do Rio, em volta da Lagoa Rodrigo de Freitas, com prédios residenciais e condomínios exigentes. As obras costumam ser reformas completas de apartamentos.",
+    desafios: ["Avenida Epitácio Pessoa com trânsito intenso e pouco espaço para parar", "Condomínios com regras rígidas de horário e local da caçamba", "Fiscalização frequente de trânsito e estacionamento"],
+    dicasEntrega: ["Confirme com a administração do prédio onde a caçamba pode ficar", "Agende entregas e trocas no início da manhã", "A caçamba de 3m³ é a mais aceita pelos condomínios"],
+    landmarks: ["Lagoa Rodrigo de Freitas", "Avenida Epitácio Pessoa", "Parque do Cantagalo"],
+    tiposObraComuns: ["Reforma completa de apartamentos", "Troca de piso e revestimento", "Demolição de paredes internas"],
+    observacoesEspecificas: "Na Lagoa, a autorização do condomínio é o que mais define o prazo: envie o contato da administração junto com o pedido.",
+  }),
   createBairro('Laranjeiras', 'zona-sul', {
     descricao:
       'Laranjeiras é um bairro residencial nobre e tranquilo da Zona Sul, com ruas arborizadas, casarões e prédios históricos. As reformas são frequentes, mas a logística exige cuidado com o espaço.',
@@ -876,10 +918,38 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'Edifícios de alto padrão costumam exigir seguro de responsabilidade civil e comprovação de licença ambiental.',
   }),
-  createBairro('Leme', 'zona-sul'),
-  createBairro('Rocinha', 'zona-sul'),
-  createBairro('São Conrado', 'zona-sul'),
-  createBairro('Urca', 'zona-sul'),
+  createBairro('Leme', 'zona-sul', {
+    descricao: "O Leme é um bairro pequeno da Zona Sul do Rio, no início da orla de Copacabana, entre a Avenida Princesa Isabel e a Pedra do Leme. Tem prédios residenciais, hotéis e ruas curtas.",
+    desafios: ["Avenida Atlântica e Avenida Princesa Isabel com trânsito intenso", "Ruas curtas e com poucas vagas", "Prédios sem garagem e com regras de condomínio"],
+    dicasEntrega: ["A caçamba de 3m³ é a mais indicada para as ruas do Leme", "Evite a orla em fins de semana e feriados", "Combine com o síndico o horário de retirada do entulho"],
+    landmarks: ["Pedra do Leme", "Forte Duque de Caxias", "Avenida Princesa Isabel"],
+    tiposObraComuns: ["Reforma de apartamentos", "Reforma de hotéis e pousadas", "Troca de piso e banheiro"],
+    observacoesEspecificas: "No Leme, o espaço é curto: avise se o prédio tem área de carga e descarga própria.",
+  }),
+  createBairro('Rocinha', 'zona-sul', {
+    descricao: "A Rocinha fica entre a Gávea e São Conrado, na Zona Sul do Rio, e é cortada pela Estrada da Gávea. A maior parte das casas fica em becos e vielas onde o caminhão não entra.",
+    desafios: ["Becos e vielas sem acesso para caminhão", "Estrada da Gávea com trânsito intenso e curvas", "Pouco espaço para deixar a caçamba na via principal"],
+    dicasEntrega: ["A caçamba precisa ficar em ponto com acesso pela Estrada da Gávea", "Planeje o transporte do entulho até a caçamba", "Prefira a caçamba de 3m³"],
+    landmarks: ["Estrada da Gávea", "Divisa com Gávea e São Conrado", "Autoestrada Lagoa-Barra"],
+    tiposObraComuns: ["Reforma de casas", "Construção de lajes", "Pequenas demolições"],
+    observacoesEspecificas: "Na Rocinha, mande a localização exata pelo WhatsApp para combinarmos um ponto de entrega acessível ao caminhão.",
+  }),
+  createBairro('São Conrado', 'zona-sul', {
+    descricao: "São Conrado fica na Zona Sul do Rio, entre o Vidigal e a Barra, com condomínios de alto padrão, casas e a praia onde pousam as asas-deltas que saem da Pedra Bonita. O acesso é pela Autoestrada Lagoa-Barra e pela Avenida Niemeyer.",
+    desafios: ["Condomínios com controle de acesso e regras para caminhões", "Autoestrada Lagoa-Barra com trânsito pesado no pico", "Casas em encosta com acesso íngreme"],
+    dicasEntrega: ["Libere o acesso na portaria antes da entrega", "Para casas grandes, avalie a caçamba de 5m³", "Agende fora do pico da Lagoa-Barra"],
+    landmarks: ["Pedra Bonita (rampa de voo livre)", "Fashion Mall", "Autoestrada Lagoa-Barra"],
+    tiposObraComuns: ["Reforma de casas", "Reforma de apartamentos", "Obras em condomínios"],
+    observacoesEspecificas: "Em São Conrado, informe o nome do condomínio e o contato da portaria no pedido para agilizar a entrada do caminhão.",
+  }),
+  createBairro('Urca', 'zona-sul', {
+    descricao: "A Urca é um bairro residencial e tranquilo da Zona Sul do Rio, aos pés do Pão de Açúcar, com casas, prédios baixos e áreas militares. As ruas são estreitas e o bairro tem uma única entrada pela Avenida Pasteur.",
+    desafios: ["Ruas estreitas e com muitas casas coladas", "Acesso ao bairro concentrado pela Avenida Pasteur", "Movimento de turistas perto do bondinho do Pão de Açúcar"],
+    dicasEntrega: ["A caçamba de 3m³ é a mais indicada para as ruas da Urca", "Evite o horário de maior movimento de turistas na Praia Vermelha", "Combine com vizinhos uma vaga livre na rua"],
+    landmarks: ["Pão de Açúcar", "Praia Vermelha", "Avenida Pasteur"],
+    tiposObraComuns: ["Reforma de casas", "Reforma de apartamentos", "Pequenas obras"],
+    observacoesEspecificas: "Na Urca, as ruas são estreitas: informe a largura aproximada da rua para definirmos o melhor posicionamento.",
+  }),
   createBairro('Vidigal', 'zona-sul', {
     descricao: "O Vidigal fica na Zona Sul do Rio, entre o Leblon e São Conrado, na encosta do Morro Dois Irmãos. O acesso principal é pela Avenida Niemeyer e as ruas sobem o morro com curvas fechadas e pouca largura.",
     desafios: ["Ladeiras íngremes e ruas estreitas na subida do morro", "Avenida Niemeyer com trânsito intenso e pouco espaço para parar", "Pontos onde o caminhão não consegue subir"],
@@ -892,7 +962,14 @@ export const bairros: Bairro[] = [
   // ============================================================
   // ZONA SUDOESTE — Lei 2025 (21 bairros)
   // ============================================================
-  createBairro('Anil', 'zona-sudoeste'),
+  createBairro('Anil', 'zona-sudoeste', {
+    descricao: "O Anil fica em Jacarepaguá, na Zona Sudoeste do Rio, entre a Freguesia e a Gardênia Azul, com casas, condomínios e prédios novos. A Estrada de Jacarepaguá é o principal eixo do bairro.",
+    desafios: ["Estrada de Jacarepaguá com trânsito pesado no pico", "Condomínios com controle de acesso", "Ruas internas sem saída e estreitas"],
+    dicasEntrega: ["Libere a entrada do caminhão na portaria do condomínio", "Para casas, a caçamba de 3m³ ou 5m³ costuma bastar", "Agende fora do pico da Estrada de Jacarepaguá"],
+    landmarks: ["Estrada de Jacarepaguá", "Divisa com Freguesia", "Divisa com Gardênia Azul"],
+    tiposObraComuns: ["Reforma de casas", "Obras em condomínios", "Construção e ampliação"],
+    observacoesEspecificas: "No Anil, informe se o imóvel fica em condomínio fechado e o nome da rua interna.",
+  }),
   createBairro('Barra da Tijuca', 'zona-sudoeste', {
     descricao:
       'A Barra da Tijuca é a região com maior volume de obras da Zona Sudoeste do Rio. Ruas largas, condomínios fechados e muitas demolições e construções fazem da caçamba de 5m³ e 7m³ as mais solicitadas.',
@@ -917,9 +994,30 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A Barra é o bairro com maior demanda por caçambas de grande porte no Rio. Para obras longas, pacotes mensais costumam ser mais vantajosos.',
   }),
-  createBairro('Barra Olímpica', 'zona-sudoeste'),
-  createBairro('Camorim', 'zona-sudoeste'),
-  createBairro('Cidade de Deus', 'zona-sudoeste'),
+  createBairro('Barra Olímpica', 'zona-sudoeste', {
+    descricao: "A Barra Olímpica é um bairro novo da Zona Sudoeste do Rio, criado em torno do Parque Olímpico e da Avenida Abelardo Bueno. Tem grandes condomínios de prédios e muitas obras de acabamento em apartamentos novos.",
+    desafios: ["Condomínios grandes com regras de horário e área de carga", "Avenida Abelardo Bueno com trânsito intenso em dias de evento", "Distância entre a portaria e as torres em alguns condomínios"],
+    dicasEntrega: ["Confirme com a administração o local da caçamba dentro do condomínio", "Evite dias de evento no Parque Olímpico", "A caçamba de 3m³ atende a maioria das reformas de apartamento"],
+    landmarks: ["Parque Olímpico", "Avenida Abelardo Bueno"],
+    tiposObraComuns: ["Acabamento de apartamentos novos", "Reforma de apartamentos", "Troca de piso e revestimento"],
+    observacoesEspecificas: "Na Barra Olímpica, quase todas as entregas são em condomínio: envie o contato da administração junto com o pedido.",
+  }),
+  createBairro('Camorim', 'zona-sudoeste', {
+    descricao: "O Camorim fica na Zona Sudoeste do Rio, junto ao Parque Estadual da Pedra Branca, com casas, sítios e condomínios em expansão. Abriga a capela histórica de São Gonçalo do Amarante.",
+    desafios: ["Ruas sem asfalto ou estreitas nas áreas mais afastadas", "Proximidade de área de proteção ambiental", "Distância maior em relação aos pátios centrais"],
+    dicasEntrega: ["Informe se a rua é asfaltada para avaliarmos o acesso", "Para terrenos grandes, avalie a caçamba de 5m³ ou 7m³", "Agende com antecedência por causa da distância"],
+    landmarks: ["Parque Estadual da Pedra Branca", "Igreja de São Gonçalo do Amarante", "Estrada do Camorim"],
+    tiposObraComuns: ["Construção de casas", "Limpeza de terreno", "Obras em sítios"],
+    observacoesEspecificas: "No Camorim, entulho de obra e restos de vegetação devem ser separados: avise o tipo de resíduo no pedido.",
+  }),
+  createBairro('Cidade de Deus', 'zona-sudoeste', {
+    descricao: "A Cidade de Deus fica em Jacarepaguá, na Zona Sudoeste do Rio, próxima à Linha Amarela, com casas e prédios de conjunto habitacional e muitas obras de ampliação.",
+    desafios: ["Ruas internas estreitas e muito ocupadas", "Pouco espaço na frente das casas", "Trânsito intenso nas vias de acesso"],
+    dicasEntrega: ["A caçamba de 3m³ é a mais indicada", "Combine um ponto de entrega numa rua mais larga", "Agende no início da manhã"],
+    landmarks: ["Linha Amarela", "Divisa com Freguesia e Taquara"],
+    tiposObraComuns: ["Ampliação de casas", "Construção de lajes", "Reformas residenciais"],
+    observacoesEspecificas: "Na Cidade de Deus, mande a localização pelo WhatsApp para combinarmos o melhor ponto de entrega.",
+  }),
   createBairro('Curicica', 'zona-sudoeste', {
     descricao: "Curicica fica em Jacarepaguá, na Zona Sudoeste do Rio, cortada pela Estrada dos Bandeirantes e pelo BRT TransOlímpica. É onde ficam os Estúdios Globo e mistura condomínios, casas e áreas em expansão.",
     desafios: ["Estrada dos Bandeirantes com trânsito pesado em horário de pico", "Condomínios com controle de acesso para caminhões", "Obras de construção e ampliação gerando muito volume de entulho"],
@@ -950,9 +1048,30 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A região está em forte expansão. Reservar caçamba com antecedência garante disponibilidade em períodos de pico.',
   }),
-  createBairro('Gardênia Azul', 'zona-sudoeste'),
-  createBairro('Grumari', 'zona-sudoeste'),
-  createBairro('Itanhangá', 'zona-sudoeste'),
+  createBairro('Gardênia Azul', 'zona-sudoeste', {
+    descricao: "A Gardênia Azul é um bairro residencial de Jacarepaguá, na Zona Sudoeste do Rio, entre o Anil e Rio das Pedras, perto da Linha Amarela. Tem casas, pequenos prédios e muitas reformas.",
+    desafios: ["Ruas residenciais estreitas", "Trânsito intenso nas saídas para a Linha Amarela", "Pouca vaga em frente às casas"],
+    dicasEntrega: ["A caçamba de 3m³ resolve a maioria das obras", "Deixe a vaga livre na véspera da entrega", "Agende fora do horário de pico"],
+    landmarks: ["Linha Amarela", "Divisa com Anil", "Divisa com Rio das Pedras"],
+    tiposObraComuns: ["Reforma de casas", "Ampliação e construção", "Limpeza de quintal"],
+    observacoesEspecificas: "Na Gardênia Azul, informe um ponto de referência próximo para o motorista localizar a rua com facilidade.",
+  }),
+  createBairro('Grumari', 'zona-sudoeste', {
+    descricao: "Grumari é uma área de proteção ambiental na Zona Sudoeste do Rio, com praias, poucas casas e acesso pela Estrada do Grumari. Obras na região têm regras ambientais mais rígidas.",
+    desafios: ["Área de proteção ambiental com regras para obras", "Estrada estreita e com curvas", "Distância grande dos pátios"],
+    dicasEntrega: ["Confirme se a obra tem autorização para a área", "Agende com bastante antecedência", "Prefira a caçamba de 3m³ pelo acesso estreito"],
+    landmarks: ["Praia de Grumari", "Estrada do Grumari"],
+    tiposObraComuns: ["Pequenas reformas", "Manutenção de casas e quiosques", "Limpeza de terreno"],
+    observacoesEspecificas: "Em Grumari, o descarte correto com destinação documentada é ainda mais importante por ser área de proteção ambiental.",
+  }),
+  createBairro('Itanhangá', 'zona-sudoeste', {
+    descricao: "O Itanhangá fica na Zona Sudoeste do Rio, entre a Barra e São Conrado, com casas grandes, condomínios e o Itanhangá Golf Club. O acesso principal é pela Estrada da Barra da Tijuca.",
+    desafios: ["Estrada da Barra da Tijuca com trânsito pesado", "Condomínios fechados com controle de acesso", "Casas em encosta com acesso íngreme"],
+    dicasEntrega: ["Libere o acesso na portaria antes da entrega", "Para casas grandes, avalie a caçamba de 5m³", "Agende fora do pico"],
+    landmarks: ["Itanhangá Golf Club", "Estrada da Barra da Tijuca"],
+    tiposObraComuns: ["Reforma de casas", "Construção", "Obras em condomínios"],
+    observacoesEspecificas: "No Itanhangá, informe o nome do condomínio e se a rua é em subida para planejarmos o acesso do caminhão.",
+  }),
   createBairro('Jacarepaguá', 'zona-sudoeste', {
     descricao:
       'Jacarepaguá é uma região extensa e em crescimento na Zona Sudoeste, misturando áreas residenciais, comerciais e industriais. Tem acesso facilitado pela Avenida Nelson Cardoso e pela Transolímpica.',
@@ -975,9 +1094,30 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A região é muito extensa. Informar o sub-bairro exato ajuda a calcular o prazo e o frete com precisão.',
   }),
-  createBairro('Joá', 'zona-sudoeste'),
-  createBairro('Pechincha', 'zona-sudoeste'),
-  createBairro('Praça Seca', 'zona-sudoeste'),
+  createBairro('Joá', 'zona-sudoeste', {
+    descricao: "O Joá é um bairro pequeno e exclusivo da Zona Sudoeste do Rio, com casas em encosta voltadas para o mar, entre São Conrado e a Barra, acessado pela Estrada do Joá.",
+    desafios: ["Ruas em encosta, estreitas e com curvas fechadas", "Pouco espaço para parar o caminhão", "Casas com acesso por escadas ou rampas"],
+    dicasEntrega: ["A caçamba de 3m³ é a mais viável nas ruas do Joá", "Confirme antes o ponto exato de apoio", "Planeje o transporte do entulho até a rua"],
+    landmarks: ["Estrada do Joá", "Pedra da Joatinga", "Elevado do Joá"],
+    tiposObraComuns: ["Reforma de casas", "Reforma de áreas externas", "Pequenas demolições"],
+    observacoesEspecificas: "No Joá, mande fotos da rua pelo WhatsApp para avaliarmos o acesso antes da entrega.",
+  }),
+  createBairro('Pechincha', 'zona-sudoeste', {
+    descricao: "O Pechincha fica em Jacarepaguá, na Zona Sudoeste do Rio, entre a Freguesia, a Taquara e o Tanque, com muitos prédios, condomínios e comércio de bairro.",
+    desafios: ["Trânsito intenso nas vias principais de Jacarepaguá", "Condomínios com regras de horário para obras", "Ruas residenciais com carros estacionados"],
+    dicasEntrega: ["Combine com o condomínio o local da caçamba", "A caçamba de 3m³ costuma ser suficiente para apartamentos", "Agende no início da manhã"],
+    landmarks: ["Divisa com Freguesia", "Divisa com Taquara", "Divisa com Tanque"],
+    tiposObraComuns: ["Reforma de apartamentos", "Reforma de casas", "Obras em condomínios"],
+    observacoesEspecificas: "No Pechincha, a maior parte das obras é em condomínio: confirme a autorização antes de agendar.",
+  }),
+  createBairro('Praça Seca', 'zona-sudoeste', {
+    descricao: "A Praça Seca fica em Jacarepaguá, na Zona Sudoeste do Rio, cortada pela Rua Cândido Benício e pelo BRT TransCarioca. Tem casas antigas, vilas e comércio em volta da Praça Barão da Taquara.",
+    desafios: ["Rua Cândido Benício com corredor do BRT e trânsito intenso", "Vilas e ruas internas estreitas", "Comércio movimentado em volta da praça"],
+    dicasEntrega: ["Não posicione a caçamba no corredor do BRT", "Para vilas, combine a caçamba na rua principal", "A caçamba de 3m³ é a mais indicada"],
+    landmarks: ["Praça Barão da Taquara", "Rua Cândido Benício", "BRT TransCarioca"],
+    tiposObraComuns: ["Reforma de casas antigas", "Obras em vilas", "Reformas comerciais"],
+    observacoesEspecificas: "Na Praça Seca, informe se o imóvel fica perto da Cândido Benício para planejarmos a rota sem atrapalhar o BRT.",
+  }),
   createBairro('Recreio dos Bandeirantes', 'zona-sudoeste', {
     descricao:
       'O Recreio dos Bandeirantes é uma região em expansão na Zona Sudoeste, com obras residenciais, condomínios e comércios em crescimento. A distância é maior, mas o acesso viário é bom.',
@@ -1002,8 +1142,22 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A distância torna o planejamento essencial. Obras urgentes devem ser agendadas com margem de segurança.',
   }),
-  createBairro('Rio das Pedras', 'zona-sudoeste'),
-  createBairro('Tanque', 'zona-sudoeste'),
+  createBairro('Rio das Pedras', 'zona-sudoeste', {
+    descricao: "Rio das Pedras fica em Jacarepaguá, na Zona Sudoeste do Rio, entre o Itanhangá e a Gardênia Azul, com construções densas, ruas estreitas e muitas obras de ampliação.",
+    desafios: ["Ruas muito estreitas e movimentadas", "Construções coladas, sem recuo", "Trânsito intenso na Estrada de Jacarepaguá"],
+    dicasEntrega: ["A caçamba de 3m³ é a única opção na maioria das ruas", "Combine um ponto de entrega em via mais larga", "Agende cedo"],
+    landmarks: ["Estrada de Jacarepaguá", "Divisa com Itanhangá", "Divisa com Gardênia Azul"],
+    tiposObraComuns: ["Ampliação de imóveis", "Construção de lajes", "Reformas"],
+    observacoesEspecificas: "Em Rio das Pedras, mande a localização pelo WhatsApp para combinarmos o ponto de entrega com acesso ao caminhão.",
+  }),
+  createBairro('Tanque', 'zona-sudoeste', {
+    descricao: "O Tanque fica em Jacarepaguá, na Zona Sudoeste do Rio, entre a Praça Seca, a Taquara e o Pechincha, com estação do BRT TransCarioca, casas e prédios residenciais.",
+    desafios: ["Corredor do BRT TransCarioca com trânsito intenso", "Ruas residenciais estreitas", "Morros e ladeiras em parte do bairro"],
+    dicasEntrega: ["Evite posicionar a caçamba no corredor do BRT", "A caçamba de 3m³ facilita nas ladeiras", "Agende no início da manhã"],
+    landmarks: ["BRT TransCarioca", "Divisa com Praça Seca", "Divisa com Taquara"],
+    tiposObraComuns: ["Reforma de casas", "Reforma de apartamentos", "Ampliação"],
+    observacoesEspecificas: "No Tanque, informe se a rua é em subida para escolhermos o melhor tamanho de caçamba.",
+  }),
   createBairro('Taquara', 'zona-sudoeste', {
     descricao:
       'A Taquara é um bairro residencial da Zona Sudoeste com perfil familiar, ruas mais tranquilas e reformas residenciais frequentes. A entrega de caçamba é facilitada pelas vias de acesso.',
@@ -1026,9 +1180,30 @@ export const bairros: Bairro[] = [
     observacoesEspecificas:
       'A proximidade com Jacarepaguá e Freguesia facilita a logística, mas a distância ainda impacta o frete.',
   }),
-  createBairro('Vargem Grande', 'zona-sudoeste'),
-  createBairro('Vargem Pequena', 'zona-sudoeste'),
-  createBairro('Vila Valqueire', 'zona-sudoeste'),
+  createBairro('Vargem Grande', 'zona-sudoeste', {
+    descricao: "Vargem Grande é um bairro da Zona Sudoeste do Rio com sítios, chácaras, condomínios e um polo gastronômico, cortado pela Estrada dos Bandeirantes e cercado pelo Maciço da Pedra Branca.",
+    desafios: ["Ruas sem asfalto e estradas de terra em algumas áreas", "Alagamentos em dias de chuva forte", "Distância maior dos pátios centrais"],
+    dicasEntrega: ["Informe se o acesso é de terra para avaliarmos o caminhão", "Para terrenos e construções, avalie a caçamba de 5m³ ou 7m³", "Evite agendar em dias de chuva forte"],
+    landmarks: ["Estrada dos Bandeirantes", "Maciço da Pedra Branca", "Polo gastronômico de Vargem Grande"],
+    tiposObraComuns: ["Construção de casas", "Limpeza de terreno", "Obras em sítios e chácaras"],
+    observacoesEspecificas: "Em Vargem Grande, o tipo de acesso ao terreno define o tamanho da caçamba: mande fotos do local se puder.",
+  }),
+  createBairro('Vargem Pequena', 'zona-sudoeste', {
+    descricao: "Vargem Pequena fica na Zona Sudoeste do Rio, entre o Recreio e Vargem Grande, com condomínios em expansão, casas e terrenos. A Estrada dos Bandeirantes é o principal acesso.",
+    desafios: ["Área de baixada sujeita a alagamentos", "Condomínios novos com regras de acesso", "Estrada dos Bandeirantes com trânsito no pico"],
+    dicasEntrega: ["Libere o acesso na portaria do condomínio", "Para construção, avalie a caçamba de 5m³ ou 7m³", "Evite dias de chuva forte"],
+    landmarks: ["Estrada dos Bandeirantes", "Divisa com Recreio", "Divisa com Vargem Grande"],
+    tiposObraComuns: ["Construção de casas", "Acabamento em condomínios novos", "Limpeza de terreno"],
+    observacoesEspecificas: "Em Vargem Pequena, muitas obras são de construção do zero: combine trocas programadas da caçamba conforme o avanço da obra.",
+  }),
+  createBairro('Vila Valqueire', 'zona-sudoeste', {
+    descricao: "Vila Valqueire é um bairro residencial da Zona Sudoeste do Rio, vizinho da Praça Seca e de Jardim Sulacap, com casas grandes, ruas arborizadas e o Valqueire Tênis Clube.",
+    desafios: ["Ruas residenciais com carros estacionados", "Trânsito nas vias de ligação com a Zona Norte", "Casas com muro e portão estreito"],
+    dicasEntrega: ["Para casas com quintal, avalie posicionar a caçamba no recuo", "A caçamba de 3m³ ou 5m³ atende a maioria das reformas", "Agende no início da manhã"],
+    landmarks: ["Valqueire Tênis Clube", "Divisa com Praça Seca", "Divisa com Jardim Sulacap"],
+    tiposObraComuns: ["Reforma de casas", "Construção e ampliação", "Limpeza de quintal"],
+    observacoesEspecificas: "Em Vila Valqueire, as ruas são tranquilas e a caçamba pode ficar alguns dias sem atrapalhar o trânsito.",
+  }),
 ];
 
 export const bairrosPorZona = (zonaSlug: string) =>
