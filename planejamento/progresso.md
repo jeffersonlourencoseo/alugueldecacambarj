@@ -8,7 +8,13 @@
 - [x] Etapa 4 — outlines H1/H2/H3 de 9 concorrentes extraídos via Chrome (`outlines/`)
 - [x] Etapa 5 — mapa palavra → destino (`palavras-chave.md`)
 - [x] 2 backlinks criados em 16/11 (âncoras "alugar caçamba RJ" e "aluguel de caçamba no Rio de Janeiro", ambos pendentes) foram **apagados** no 8links
-- [ ] Backlinks da semana 1 (ver `cronograma-backlinks.md`)
+- [x] Semana 1 criada no 8links (16/11/2026), ainda na fila de geração, **não publicados**: "aluguel de caçamba RJ" (home, parceiro mobiliintelligenti.com.br) e "caçamba de entulho no Rio de Janeiro" (home, parceiro atelierh2o.com.br). Falta clicar em Publicar quando ficarem Pendentes.
+- [ ] Semana 2 em diante (ver `cronograma-backlinks.md`)
+
+## Dicas do 8links (aprendidas em 16/11/2026)
+- Ao trocar de projeto no seletor, o 8links às vezes volta sozinho para outro site: **confira o nome do site no topo antes de criar ou apagar**.
+- O filtro de parceiros aceita nicho; use "Construção" (5 parceiros). Cada parceiro só reforça uma página uma vez: alterne parceiros e páginas.
+- Parceiros já usados e descartados nesta campanha: prefeituradecampogrande.com.br e decorandocomclasseshop.com.br (não gostou do resultado).
 
 ## Backlinks publicados
 (preencher: data | âncora | destino | link do 8links)
