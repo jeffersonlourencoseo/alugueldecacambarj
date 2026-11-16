@@ -8,7 +8,7 @@
 - [x] Etapa 4 — outlines H1/H2/H3 de 9 concorrentes extraídos via Chrome (`outlines/`)
 - [x] Etapa 5 — mapa palavra → destino (`palavras-chave.md`)
 - [x] 2 backlinks criados em 16/11 (âncoras "alugar caçamba RJ" e "aluguel de caçamba no Rio de Janeiro", ambos pendentes) foram **apagados** no 8links
-- [x] Semana 1 criada no 8links (16/11/2026), ainda na fila de geração, **não publicados**: "aluguel de caçamba RJ" (home, parceiro mobiliintelligenti.com.br) e "caçamba de entulho no Rio de Janeiro" (home, parceiro atelierh2o.com.br). Falta clicar em Publicar quando ficarem Pendentes.
+- [x] Semana 1 criada e **publicada** no 8links (16/11/2026).
 - [ ] Semana 2 em diante (ver `cronograma-backlinks.md`)
 
 ## Dicas do 8links (aprendidas em 16/11/2026)
@@ -17,4 +17,6 @@
 - Parceiros já usados e descartados nesta campanha: prefeituradecampogrande.com.br e decorandocomclasseshop.com.br (não gostou do resultado).
 
 ## Backlinks publicados
-(preencher: data | âncora | destino | link do 8links)
+(data | âncora | destino | link publicado)
+- 16/11/2026 | caçamba de entulho no Rio de Janeiro | home | https://atelierh2o.com.br/como-descartar-entulho-de-obra-no-rio-de-janeiro (DA 28)
+- 16/11/2026 | aluguel de caçamba RJ | home | https://mobiliintelligenti.com.br/como-descartar-entulho-na-obra-de-forma-correta (DA 30)
