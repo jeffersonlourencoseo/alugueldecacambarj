@@ -14,7 +14,7 @@
 ## Dicas do 8links (aprendidas em 16/11/2026)
 - Ao trocar de projeto no seletor, o 8links às vezes volta sozinho para outro site: **confira o nome do site no topo antes de criar ou apagar**.
 - O filtro de parceiros aceita nicho; use "Construção" (5 parceiros). Cada parceiro só reforça uma página uma vez: alterne parceiros e páginas.
-- Parceiros já usados e descartados nesta campanha: prefeituradecampogrande.com.br e decorandocomclasseshop.com.br (não gostou do resultado).
+- Os 2 backlinks antigos (16/11, apagados) foram descartados só por não terem pesquisa de palavras-chave por trás, não por causa dos parceiros. Todos os parceiros do nicho Construção podem ser usados: prefeituradecampogrande.com.br (DA 36), decorandocomclasseshop.com.br (DA 30), mobiliintelligenti.com.br (DA 30), atelierh2o.com.br (DA 28), dingbatcobogo.com.br (DA 28).
 
 ## Backlinks publicados
 (data | âncora | destino | link publicado)
