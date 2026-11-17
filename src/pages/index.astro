@@ -34,6 +34,25 @@ const faqItems = [
     question: 'Posso descartar qualquer tipo de entulho na caçamba?',
     answer: 'Aceitamos entulho de construção civil, madeira, metal, plástico, cerâmica e concreto na caçamba de entulho. Não são permitidos líquidos, produtos químicos, pilhas, baterias e materiais inflamáveis. Em caso de dúvida, consulte nossa equipe.',
   },
+  {
+    question: 'Como é cobrado o aluguel de caçamba?',
+    answer: 'O aluguel é cobrado por pacote, e não por diária avulsa. Nos valores que informamos, a caçamba fica por 7 dias e o preço já inclui entrega, retirada, nota fiscal e certificado de destinação. O valor muda conforme o tamanho, o bairro, o acesso do caminhão e o tipo de entulho. Se você precisa de outro prazo, informe no orçamento pelo WhatsApp.',
+  },
+  {
+    question: 'Dá para conseguir uma caçamba gratuita pela prefeitura?',
+    answer: 'A Comlurb faz remoção gratuita pelo Portal Rio 1746, mas só para residências e em pequena quantidade (pequenas obras e bens sem uso, até 150 sacos de 20 litros), com atendimento em até 10 dias úteis. Obras feitas por empreiteira, comércio, indústria e pessoa jurídica não entram. Nesses casos, e quando o volume é maior, é preciso contratar uma empresa de caçamba.',
+  },
+];
+
+const bairrosMaisBuscados = [
+  { label: 'Caçamba na Barra da Tijuca', href: '/area-de-atendimento/barra-da-tijuca/' },
+  { label: 'Caçamba em Jacarepaguá', href: '/area-de-atendimento/jacarepagua/' },
+  { label: 'Caçamba no Recreio', href: '/area-de-atendimento/recreio-dos-bandeirantes/' },
+  { label: 'Caçamba em Copacabana', href: '/area-de-atendimento/copacabana/' },
+  { label: 'Caçamba na Tijuca', href: '/area-de-atendimento/tijuca/' },
+  { label: 'Caçamba no Méier', href: '/area-de-atendimento/meier/' },
+  { label: 'Caçamba em Madureira', href: '/area-de-atendimento/madureira/' },
+  { label: 'Caçamba em Botafogo', href: '/area-de-atendimento/botafogo/' },
 ];
 ---
 
@@ -108,12 +127,65 @@ const faqItems = [
           <a href="/area-de-atendimento/" class="inline-flex items-center justify-center rounded-xl bg-secondary px-8 py-4 text-base font-bold text-white hover:bg-blue-900 transition-colors">
             Ver Toda a Área de Atendimento
           </a>
+          <p class="text-gray-500 text-sm mt-10 mb-4">Bairros mais procurados:</p>
+          <div class="flex flex-wrap justify-center gap-3">
+            {bairrosMaisBuscados.map((b) => (
+              <a href={b.href} class="rounded-full border border-gray-200 bg-white px-5 py-2 text-sm font-semibold text-gray-700 hover:border-secondary hover:text-secondary transition-colors">
+                {b.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como pedir + cuidado com golpe -->
+    <section class="py-24 md:py-32 bg-gray-50" id="como-pedir">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto mb-16 text-center">
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            Como Alugar sua Caçamba em 4 Passos
+          </h2>
+          <p class="text-lg text-gray-600">
+            Do pedido à retirada do entulho, sem complicação.
+          </p>
+        </div>
+
+        <ol class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+          <li class="rounded-2xl bg-white border border-gray-100 p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">1. Envie os dados pelo WhatsApp</h3>
+            <p class="text-gray-600">Informe o bairro, o tipo de entulho e o tamanho de caçamba que você pensa em usar. Se tiver dúvida no tamanho, a equipe orienta.</p>
+          </li>
+          <li class="rounded-2xl bg-white border border-gray-100 p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">2. Receba o orçamento grátis</h3>
+            <p class="text-gray-600">Retorno em até 30 minutos, com o valor e o que está incluso.</p>
+          </li>
+          <li class="rounded-2xl bg-white border border-gray-100 p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">3. Caçamba entregue na sua obra</h3>
+            <p class="text-gray-600">Entrega no mesmo dia ou em até 24 horas úteis após a confirmação do pedido.</p>
+          </li>
+          <li class="rounded-2xl bg-white border border-gray-100 p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">4. Retirada e documentação</h3>
+            <p class="text-gray-600">Retiramos a caçamba cheia e você recebe nota fiscal, certificado de destinação e comprovante de descarte em aterro licenciado.</p>
+          </li>
+        </ol>
+
+        <div class="max-w-3xl mx-auto rounded-2xl bg-white border border-amber-200 p-8 md:p-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Cuidado com preço muito baixo e golpe no aluguel de caçamba</h2>
+          <p class="text-gray-600 mb-4">
+            Orçamento bem abaixo do valor de mercado costuma significar que falta alguma coisa: nota fiscal, certificado de destinação ou descarte em aterro licenciado. Se o entulho for despejado em lugar irregular, a multa ambiental pode recair sobre quem gerou o resíduo.
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>Peça nota fiscal e certificado de destinação antes de fechar.</li>
+            <li>Confirme que o descarte é feito em aterro licenciado.</li>
+            <li>Compare o que cada orçamento inclui, não só o valor final.</li>
+          </ul>
         </div>
       </div>
     </section>
 
     {/* FAQ — otimizado para AI Overviews e featured snippets */}
-    <section class="py-24 md:py-32 bg-gray-50" id="faq">
+    <section class="py-24 md:py-32 bg-white" id="faq">
       <div class="container mx-auto px-6 md:px-12">
         <div class="max-w-3xl mx-auto mb-16 text-center">
           <span class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-safety mb-6">

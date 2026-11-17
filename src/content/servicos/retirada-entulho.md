@@ -33,6 +33,28 @@ A retirada de entulho é a melhor opção em situações como:
 
 Se você ainda está na fase de geração de entulho, talvez a [locação de caçamba seja mais econômica](/servicos/cacamba-5m3/). Se o entulho já está no chão, a retirada é o caminho.
 
+## Retirada gratuita da prefeitura ou serviço particular?
+
+Muita gente pesquisa "retirada de entulho grátis" antes de contratar. Esse serviço existe: a Comlurb faz a remoção gratuita de entulho de pequenas obras e de bens sem uso em residências, pedida pelo Portal Rio 1746. Mas ele tem limites, e é por causa deles que muita obra acaba precisando de empresa particular.
+
+**Como funciona a remoção gratuita da Comlurb** (conforme o [Portal Rio 1746](https://www.1746.rio/hc/pt-br/articles/10219766128667-Remo%C3%A7%C3%A3o-de-entulho), página atualizada em 04/12/2025):
+
+- É para moradores do município, em residências, com restos de pequenas obras como telhas, tijolos, galhos e troncos
+- O entulho precisa estar em sacos plásticos de até 20 litros, com no máximo 150 sacos por residência
+- Atendimento de segunda a sábado, em até 10 dias úteis
+- Um novo pedido só pode ser feito 12 dias depois do atendimento anterior
+
+**O que a remoção gratuita não cobre:** unidades comerciais, industriais e de prestação de serviço, obras feitas por empreiteira, pessoa jurídica e quantidades acima do limite. Nesses casos, o próprio portal orienta contratar uma empresa de caçamba credenciada.
+
+| Situação | Melhor caminho |
+|---|---|
+| Poucos sacos de entulho de pequeno reparo em casa | Remoção gratuita da Comlurb |
+| Reforma com volume acima do limite de sacos | Retirada particular ou caçamba estacionária |
+| Obra feita por empreiteira, comércio ou empresa | Retirada particular ou caçamba estacionária |
+| Precisa de data e horário definidos | Retirada particular |
+
+Se o seu caso passa do limite, fale com a gente pelo WhatsApp que indicamos a opção mais econômica, que pode ser a retirada ou a [locação de caçamba](/servicos/cacamba-5m3/).
+
 ## O que está incluso na retirada de entulho?
 
 Nosso serviço de retirada de entulho inclui:
@@ -99,6 +121,23 @@ O valor é sob consulta porque depende de fatores como:
 - Necessidade de mão de obra para carregamento
 
 Envie uma foto pelo WhatsApp que fazemos um orçamento justo em até 30 minutos.
+
+## Perguntas frequentes sobre retirada de entulho
+
+**A retirada de entulho é gratuita?**
+Pela prefeitura, só em casos específicos: residências, pequena quantidade e dentro dos limites da Comlurb (veja a seção acima). O serviço particular da CaçambaRápido é pago e o valor é sob consulta, conforme volume, tipo de resíduo e bairro.
+
+**Qual a diferença entre retirada de entulho e aluguel de caçamba?**
+Na retirada, nossa equipe vai ao local, carrega o entulho que já está acumulado e leva para descarte. No aluguel de caçamba estacionária, a caçamba fica na sua obra e você enche ao longo dos dias.
+
+**Quanto tempo leva para retirar o entulho?**
+Em emergências, atendemos em até 4 horas na região metropolitana do Rio, dependendo do bairro e da logística. Nos demais casos, o dia e o horário são combinados no orçamento.
+
+**Recebo documento do descarte?**
+Sim. Você recebe nota fiscal, certificado de destinação final (CDF) e a guia de manifesto, quando exigida.
+
+**Atendem perto de mim?**
+Atendemos Zona Norte, Zona Sul e Zona Sudoeste do Rio de Janeiro. Veja se o seu bairro está na [área de atendimento](/area-de-atendimento/).
 
 ## Solicite retirada de entulho agora
 

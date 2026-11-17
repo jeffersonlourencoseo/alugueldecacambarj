@@ -68,9 +68,15 @@ SERP do Rio ("retirada de entulho rio de janeiro") é mista: 1746.rio (prefeitur
 | `/blog/descarte-correto-entulho/` | descarte de entulho | retirada de entulho |
 | `/blog/cacamba-legal-evitar-multas-rj/` | caçamba legal | home |
 
-## 6. Páginas que NÃO existem e a concorrência tem (oportunidade)
+## 6. Páginas de bairro (CORRIGIDO em 16/11/2026)
 
-- Páginas de atuação por bairro/zona: doutorentulho.com.br tem "Aluguel de Caçambas em Realengo – RJ" e alugueldecacambasrj.com.br lista Zona Norte, Sul, Oeste, Centro. O volume é baixo e vem misturado com São Paulo (caçamba zona norte: 140 / KD 13; aluguel de caçamba zona norte: 50), então só vale criar quando a página tiver conteúdo próprio (mínimo 60% diferente entre elas). Sugestão futura: Barra da Tijuca, Jacarepaguá, Zona Oeste, Zona Norte, Zona Sul, Centro.
+**Correção:** a versão anterior deste arquivo dizia que o site não tinha páginas de bairro. Tem: `/area-de-atendimento/<bairro>/` com **125 bairros** (gerados por `src/data/bairros.ts`) e 3 páginas de zona (norte, sul, sudoeste).
+
+SERP do Google em 16/11/2026 para busca por bairro (ex.: "caçamba barra da tijuca", "caçamba jacarepaguá", "caçamba copacabana"): o resultado são **páginas dedicadas de bairro** dos concorrentes (doutorentulho.com.br/aluguel-de-cacambas-barra-da-tijuca/, .../aluguel-de-cacambas-jacarepagua/, cacambadeentulhonorj.com.br/cacamba-de-entulho-em-copacabana, rjentulho.com.br, freitasentulho.com.br, katalao.com.br). **O nosso site não aparece no top 8 de nenhuma dessas buscas**, apesar de ter as páginas.
+- Volume dessas palavras de bairro: **não medido**, porque o limite diário de consultas do Semrush acabou em 16/11. Medir na próxima sessão (Keyword Magic: "caçamba barra da tijuca", "caçamba jacarepaguá", "caçamba copacabana", "caçamba tijuca", "caçamba méier", "caçamba madureira").
+- "caçamba zona norte" (140 / KD 13) vem misturado com São Paulo; as buscas de zona pelo Semrush ("caçamba zona oeste") não retornaram dados.
+- **Risco a investigar:** as 125 páginas usam modelo (template) com poucos trechos próprios por bairro. O Google costuma ignorar páginas muito parecidas. Antes de criar mais, aprofundar as páginas dos bairros de maior busca (Barra, Jacarepaguá, Copacabana, Tijuca, Méier, Madureira, Recreio) com conteúdo único: ruas e condomínios reais, tipo de obra comum, prazo, perguntas locais.
+- Links da home para esses bairros foram adicionados em 16/11/2026.
 - Não criar página própria para "cata-bagulho" (480 / KD 32): intenção de serviço público gratuito, outra intenção.
 
 ## Fica de fora

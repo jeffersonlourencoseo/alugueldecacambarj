@@ -8,8 +8,8 @@ Mix de âncoras: exata (palavra do mapa), parcial (variação), marca (CaçambaR
 
 | Sem | Data | Destino (página do site) | Âncora | Tipo | Feito |
 |---|---|---|---|---|---|
-| 1 | 16/11/2026 | `/` | aluguel de caçamba RJ | exata | [x] |
-| 1 | 16/11/2026 | `/` | caçamba de entulho no Rio de Janeiro | exata | [x] |
+| 1 | 16/11/2026 | `/` | aluguel de caçamba RJ | exata | [ ] |
+| 1 | 19/11/2026 | `/` | caçamba de entulho no Rio de Janeiro | exata | [ ] |
 | 2 | 23/11/2026 | `/blog/quanto-custa-alugar-cacamba/` | quanto custa alugar uma caçamba no Rio | parcial | [ ] |
 | 2 | 26/11/2026 | `/servicos/retirada-entulho/` | retirada de entulho no Rio de Janeiro | exata | [ ] |
 | 3 | 30/11/2026 | `/` | CaçambaRápido | marca | [ ] |

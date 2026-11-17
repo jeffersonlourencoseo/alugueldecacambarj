@@ -9,6 +9,10 @@
 - [x] Etapa 5 — mapa palavra → destino (`palavras-chave.md`)
 - [x] 2 backlinks criados em 16/11 (âncoras "alugar caçamba RJ" e "aluguel de caçamba no Rio de Janeiro", ambos pendentes) foram **apagados** no 8links
 - [x] Semana 1 criada e **publicada** no 8links (16/11/2026).
+- [x] 16/11/2026 — textos do site atualizados com base nas outlines (ver commit): home (FAQ com "como é cobrado" e "caçamba gratuita pela prefeitura", seção "Como alugar em 4 passos", aviso de golpe/preço baixo, links para 8 bairros), página de retirada de entulho (seção retirada gratuita da Comlurb x particular, com dados do Portal Rio 1746 atualizado em 04/12/2025, e FAQ) e artigo de preço (seção do que pode/não pode e FAQ com as perguntas do Google). Build ok, 155 páginas.
+- [x] SERP de "aluguel de caçamba rio de janeiro" e de bairros (Barra, Jacarepaguá, Copacabana) concluída.
+- [ ] **Pendente:** volume das palavras de bairro no Semrush (limite diário esgotado em 16/11). Medir na próxima sessão.
+- [ ] **Pendente:** aprofundar as páginas de bairro de maior busca; o site tem 125 e nenhuma aparece no top 8.
 - [ ] Semana 2 em diante (ver `cronograma-backlinks.md`)
 
 ## Dicas do 8links (aprendidas em 16/11/2026)

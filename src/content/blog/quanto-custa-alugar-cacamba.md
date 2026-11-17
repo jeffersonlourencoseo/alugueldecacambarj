@@ -171,6 +171,32 @@ Madureira e os bairros vizinhos compartilham a vantagem de estarem próximos à 
 
 Se você ainda tem dúvidas sobre qual tamanho escolher, confira nosso guia sobre [como escolher a caçamba ideal](/blog/como-escolher-cacamba-ideal/). E para entender por que a documentação importa tanto quanto o valor, leia sobre o [descarte correto de entulho](/blog/descarte-correto-entulho/).
 
+## O que pode e o que não pode jogar na caçamba (e como isso mexe no preço)
+
+O tipo de entulho muda o peso e o destino do descarte, e por isso pode mudar o valor. Na CaçambaRápido aceitamos entulho de construção civil, madeira, metal, plástico, cerâmica e concreto. Não podem ir na caçamba líquidos, produtos químicos, pilhas, baterias e materiais inflamáveis. Material proibido misturado ao entulho pode gerar cobrança extra, como citado nos custos escondidos acima. Para o guia completo, veja o artigo sobre [descarte correto de entulho](/blog/descarte-correto-entulho/).
+
+## Perguntas frequentes sobre o preço da caçamba
+
+### Quanto custa o aluguel de uma caçamba de entulho no Rio de Janeiro?
+
+Em 2026, os pacotes padrão de 7 dias ficam entre R$ 350 e R$ 450 para 3m³, R$ 450 e R$ 600 para 5m³ e R$ 600 e R$ 800 para 7m³, com entrega, retirada, nota fiscal e CDF. O bairro, o acesso e o tipo de entulho ajustam esse valor.
+
+### Qual o valor da diária de uma caçamba de entulho?
+
+Os preços acima são de pacote de 7 dias, não de diária avulsa. Se você precisa de um prazo diferente, informe no pedido de orçamento pelo WhatsApp para receber o valor para o seu caso.
+
+### Como é cobrado o aluguel de caçamba?
+
+Por pacote, conforme o tamanho da caçamba, o bairro e o prazo. Na CaçambaRápido, entrega, retirada, nota fiscal e CDF já estão no valor. Confira sempre o que cada orçamento inclui, porque taxas como cancelamento, caçamba suja e permanência em via pública podem aparecer depois em outras empresas.
+
+### Qual o valor de uma caçamba de pegar entulho?
+
+Depende do tamanho: a caçamba de 3m³ costuma custar de R$ 350 a R$ 450, a de 5m³ de R$ 450 a R$ 600 e a de 7m³ de R$ 600 a R$ 800 no pacote de 7 dias.
+
+### Como conseguir uma caçamba gratuita pela prefeitura?
+
+O serviço gratuito da prefeitura é a remoção da Comlurb, pedida pelo Portal Rio 1746, e não a entrega de uma caçamba. Ele atende residências e pequenas quantidades de entulho, em sacos de até 20 litros e no máximo 150 sacos por residência. Obras de empreiteira, comércio e empresas ficam de fora. Veja os detalhes na página de [retirada de entulho](/servicos/retirada-entulho/).
+
 ## Depoimento de cliente: economia real
 
 > *"Fizemos uma reforma de 80m² em Copacabana. O primeiro orçamento que recebi foi de R$ 750 com uma empresa que não mencionava CDF. Pedi outro orçamento na CaçambaRápido: R$ 600 com nota fiscal, CDF e entrega no mesmo dia. Além de pagar menos, dormi tranquilo sabendo que o entulho foi descartado corretamente."*
