@@ -34,5 +34,5 @@
 - Pagamento: PIX, boleto ou transferência
 
 ## Contato para orçamento
-- WhatsApp: (21) 99775-1577
+- WhatsApp: (21) 97254-6056
 - E-mail: contato@alugueldecacambario.com.br

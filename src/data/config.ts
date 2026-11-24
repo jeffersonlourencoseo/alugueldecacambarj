@@ -1,6 +1,6 @@
 // Mensagem padrão enviada ao abrir o WhatsApp (usada em todos os botões)
 const WHATSAPP_MESSAGE = 'Olá, vim através do site alugueldecacambario.com.br e gostaria de mais informações!';
-const WHATSAPP_NUMBER = '5521997751577';
+const WHATSAPP_NUMBER = '5521972546056';
 
 export const SITE_CONFIG = {
   name: 'CaçambaRápido',
@@ -10,9 +10,9 @@ export const SITE_CONFIG = {
   locale: 'pt_BR',
 
   // NAP (Name, Address, Phone) - Dados locais
-  phone: '(21) 99775-1577',
-  phoneRaw: '+5521997751577',
-  phoneE164: '5521997751577',
+  phone: '(21) 97254-6056',
+  phoneRaw: '+5521972546056',
+  phoneE164: '5521972546056',
   whatsapp: WHATSAPP_NUMBER,
   whatsappMessage: WHATSAPP_MESSAGE,
   email: 'contato@alugueldecacambario.com.br',
