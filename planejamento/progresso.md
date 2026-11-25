@@ -15,6 +15,14 @@
 - [ ] **Pendente:** aprofundar as páginas de bairro de maior busca; o site tem 125 e nenhuma aparece no top 8.
 - [ ] Semana 2 em diante (ver `cronograma-backlinks.md`)
 
+## 25/11/2026
+- [x] Artigo novo publicado no site: "o que pode jogar na caçamba de entulho" (`/blog/o-que-pode-jogar-na-cacamba-de-entulho/`). SERP conferida no Google em 25/11: resultados de artigo. Volume não medido no Semrush. Link interno adicionado no artigo de preço.
+- [x] Semana 2: 2 backlinks **criados** no 8links, status **Pendente** (falta publicar):
+  - quanto custa alugar uma caçamba no Rio → `/blog/quanto-custa-alugar-cacamba/` (prefeituradecampogrande.com.br)
+  - retirada de entulho no Rio de Janeiro → `/servicos/retirada-entulho/` (decorandocomclasseshop.com.br)
+- Projeto certo no 8links: `www.alugueldecacambario.com.br` (com www). O projeto sem www é outro cadastro, com 2 pendentes antigos de 16/11 (motterhome.com.br e vidigalbergue.com.br), não mexidos.
+- **Não rodar o 8links em várias sessões ao mesmo tempo:** o site selecionado é compartilhado e muda no meio do formulário.
+
 ## Dicas do 8links (aprendidas em 16/11/2026)
 - Ao trocar de projeto no seletor, o 8links às vezes volta sozinho para outro site: **confira o nome do site no topo antes de criar ou apagar**.
 - O filtro de parceiros aceita nicho; use "Construção" (5 parceiros). Cada parceiro só reforça uma página uma vez: alterne parceiros e páginas.
