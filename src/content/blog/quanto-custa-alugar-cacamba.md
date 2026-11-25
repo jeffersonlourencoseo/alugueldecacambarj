@@ -173,7 +173,7 @@ Se você ainda tem dúvidas sobre qual tamanho escolher, confira nosso guia sobr
 
 ## O que pode e o que não pode jogar na caçamba (e como isso mexe no preço)
 
-O tipo de entulho muda o peso e o destino do descarte, e por isso pode mudar o valor. Na CaçambaRápido aceitamos entulho de construção civil, madeira, metal, plástico, cerâmica e concreto. Não podem ir na caçamba líquidos, produtos químicos, pilhas, baterias e materiais inflamáveis. Material proibido misturado ao entulho pode gerar cobrança extra, como citado nos custos escondidos acima. Para o guia completo, veja o artigo sobre [descarte correto de entulho](/blog/descarte-correto-entulho/).
+O tipo de entulho muda o peso e o destino do descarte, e por isso pode mudar o valor. Na CaçambaRápido aceitamos entulho de construção civil, madeira, metal, plástico, cerâmica e concreto. Não podem ir na caçamba líquidos, produtos químicos, pilhas, baterias e materiais inflamáveis. Material proibido misturado ao entulho pode gerar cobrança extra, como citado nos custos escondidos acima. Veja a lista completa em [o que pode jogar na caçamba de entulho](/blog/o-que-pode-jogar-na-cacamba-de-entulho/) e as obrigações no artigo sobre [descarte correto de entulho](/blog/descarte-correto-entulho/).
 
 ## Perguntas frequentes sobre o preço da caçamba
 
